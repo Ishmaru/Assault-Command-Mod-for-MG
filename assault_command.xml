@@ -1,0 +1,35 @@
+<?xml version="1.0" standalone="no"?>
+
+<tech-tree>
+	
+	<attack-types>
+<attack-type name="bullet"/>
+<attack-type name="hmg"/>
+<attack-type name="explosive"/>
+<attack-type name="energy"/>
+	</attack-types>
+	
+	<armor-types>
+<armor-type name="infantry"/>
+<armor-type name="armor"/>
+<armor-type name="building"/>
+	</armor-types>
+	
+	<damage-multipliers>
+<damage-multiplier attack="bullet" armor="infantry" value="20.0"/>
+<damage-multiplier attack="bullet" armor="armor" value="1"/>
+<damage-multiplier attack="bullet" armor="building" value="15.0"/>
+
+<damage-multiplier attack="hmg" armor="infantry" value="30.0"/>
+<damage-multiplier attack="hmg" armor="armor" value="15.0"/>
+<damage-multiplier attack="hmg" armor="building" value="10.0"/>
+
+<damage-multiplier attack="explosive" armor="infantry" value="20.0"/>
+<damage-multiplier attack="explosive" armor="armor" value="60.0"/>
+<damage-multiplier attack="explosive" armor="building" value="30.0"/>
+
+<damage-multiplier attack="energy" armor="infantry" value="20.0"/>
+<damage-multiplier attack="energy" armor="armor" value="70.0"/>
+<damage-multiplier attack="energy" armor="building" value="10.0"/>
+	</damage-multipliers>
+</tech-tree>

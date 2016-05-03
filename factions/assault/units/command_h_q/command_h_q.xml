@@ -1,0 +1,169 @@
+<?xml version="1.0" standalone="no" ?>
+<unit>
+	<!-- *** parameters *** -->
+	<parameters>
+		<size value="6" />
+		<height value="4" />
+		<max-hp value="3000" regeneration="0"/>
+		<max-ep value="0" />
+		<armor value="0" />
+		<armor-type value="building"/>
+		<sight value="10" />
+		<time value="100" />
+		<multi-selection value="false" />
+		<cellmap value="true">
+			<row value="111111"/>
+			<row value="111111"/>
+			<row value="111111"/>
+			<row value="111111"/>
+			<row value="111111"/>
+			<row value="110011"/>
+
+		</cellmap>
+		<levels/>
+		<fields>
+			<field value="land" />
+		</fields>
+		<properties>
+			<property value="burnable"/>
+		</properties>
+		<light enabled="false" />
+		<unit-requirements>
+		</unit-requirements>
+		<upgrade-requirements />
+		<resource-requirements>
+			<resource name="oil" amount="2000" />
+		</resource-requirements>
+		<resources-stored>
+			<resource name="oil" amount="2000"/>
+			<resource name="housing" amount="2000"/>
+		</resources-stored>
+		<image path="/images/null.bmp"/>
+		<image-cancel path="/images/null.bmp"/>
+		<meeting-point value="true" image-path="/images/null.bmp"/>
+		<selection-sounds enabled="true">
+			<sound path="sounds/steammach.wav" />
+		</selection-sounds>
+		<command-sounds enabled="true">
+			<sound path="sounds/steammach.wav" />
+		</command-sounds>
+	</parameters>
+	
+	<!-- *** skills *** -->
+	<skills>
+		<!-- *** skill 0 *** -->
+		<skill>
+			<type value="stop"/>	
+			<name value="stop_skill"/>
+			<ep-cost value="0" />
+			<speed value="50" />
+			<anim-speed value="20" />
+			<animation path="fort/fort.g3d" />
+			<sound enabled="false" />
+		</skill>
+		
+		<!-- *** skill 1 *** -->
+		<skill>
+			<type value="be_built" />	
+			<name value="be_built_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="fort/fort.g3d" />
+			<sound enabled="false" />
+		</skill>	
+		
+		
+		<!-- *** skill 3 *** -->
+		<skill>
+			<type value="produce"/>
+			<name value="produce_skill"/>	
+			<ep-cost value="0" />
+			<speed value="100" />
+			<anim-speed value="20" />
+			<animation path="fort/fort.g3d" />
+			<sound enabled="false" />
+		</skill>	
+
+	
+		<!-- *** skill 4 *** -->
+		<skill>
+			<type value="die" />	
+			<name value="die_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="30" />
+			<animation path="fort/fortdie.g3d" />    <particles value="true">
+         <particle-file path="smoke.xml"/>
+			</particles>
+			<sound enabled="true" start-time="0">
+				<sound-file path="/sounds/tech_building_fall4.wav"/>
+			</sound>			
+			<fade value="false"/>
+		</skill>
+
+	</skills>
+	
+	<!-- *** commands *** -->
+	<commands>
+
+		<command>
+			<type value="produce"/>
+			<name value="produce_grunt" />
+			<image path="../grunt/images/troop.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="grunt"/>
+		</command>
+
+		<command>
+			<type value="produce"/>
+			<name value="produce_recon" />
+			<image path="../grunt/images/troop.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="recon"/>
+		</command>
+
+		<command>
+			<type value="produce"/>
+			<name value="produce_i_f_v" />
+			<image path="../grunt/images/troop.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="i_f_v"/>
+		</command>
+
+		<command>
+			<type value="produce"/>
+			<name value="produce_battle_tank" />
+			<image path="../grunt/images/troop.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="battle_tank"/>
+		</command>
+
+		<command>
+			<type value="produce"/>
+			<name value="produce_cobra_m_r_l_s" />
+			<image path="../grunt/images/troop.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="cobra_m_r_l_s"/>
+		</command>
+		<command>
+			<type value="produce"/>
+			<name value="produce_transport_heli" />
+			<image path="../grunt/images/troop.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="transport_heli"/>
+		</command>
+	</commands>
+</unit>

@@ -1,0 +1,145 @@
+<?xml version="1.0" standalone="no"?>
+
+<unit>
+
+	<!-- *** parameters *** -->
+
+	<parameters>
+		<size value="2"/>
+		<height value="3"/>
+		<max-hp value="75" regeneration="0"/>
+		<max-ep value="10" regeneration="1"/>
+		<armor value="0"/>	
+		<armor-type value="armor"/>				
+		<sight value="10"/>
+		<time value="35"/>	
+		<multi-selection value="false"/>	
+		<cellmap value="false"/>
+		<levels>
+		</levels>
+		<fields>
+			<field value="land"/>
+		</fields>	
+		<properties/>
+		<light enabled="false"/>
+		<unit-requirements>
+		</unit-requirements>
+		<upgrade-requirements/>
+		<resource-requirements>
+			<resource name="oil" amount="100"/>				
+		</resource-requirements>
+		<resources-stored/>
+		<image path="images/troop.bmp"/>
+		<image-cancel path="/images/null.bmp"/>"/>
+		<meeting-point value="false"/>
+		<selection-sounds enabled="true">
+		</selection-sounds>
+		<command-sounds enabled="true">
+		</command-sounds>
+	</parameters>
+
+
+	<!-- *** skills *** -->
+
+	<skills>
+	
+		<skill>
+			<type value="stop"/>
+			<name value="stop_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="500"/>
+			<anim-speed value="10"/>
+			<animation path="sentry/gunturretstand.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+		
+		<skill>
+			<type value="move"/>
+			<name value="move_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="600"/>
+			<anim-speed value="125"/>
+			<animation path="sentry/gunturretstand.g3d"/>
+			<sound enabled="false">
+			</sound>
+		</skill>
+
+		<skill>
+			<type value="be_built" />	
+			<name value="be_built_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="1" />
+			<animation path="sentry/gunturretstand.g3d" />
+			<sound enabled="false" />
+		</skill>
+
+		<skill>
+			<type value="attack"/>
+			<name value="attack_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="100"/>
+			<anim-speed value="100"/>
+			<animation path="sentry/gunturretshoot.g3d"/>
+			<sound enabled="true" start-time="0.20">
+				<sound-file path="/sounds/shoot.wav"/>
+
+			</sound>
+			<attack-strenght value="2"/>
+			<attack-var value="2"/>
+			<attack-range value="8"/>
+			<attack-type value="hmg"/>
+			<attack-start-time value="0.60"/>
+			<attack-fields>
+				<field value="land"/>
+				<field value="air"/>
+			</attack-fields>
+			<projectile value="false"/>
+			<splash value="false"/>
+		</skill>
+
+		
+		<skill>
+			<type value="die"/>
+			<name value="die_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="60"/>
+			<anim-speed value="80"/>
+			<animation path="sentry/gunturretdie.g3d"/>       <particles value="true">
+         <particle-file path="smoke.xml"/>
+			</particles>
+			<sound enabled="true" start-time="0">
+				<sound-file path="sounds/tank_destroy_2.wav"/>
+			</sound>			
+			<fade value="false"/>
+		</skill>
+
+
+	</skills>
+
+	<!-- *** commands *** -->
+	
+	<commands>
+
+		<command>
+			<type value="attack_stopped"/>
+			<name value="on"/>
+			<image path="/images/null.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+			<attack-skill value="attack_skill"/>
+		</command>
+
+		<command>
+			<type value= "stop"/>
+			<name value="off"/>
+			<image path="/images/null.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+		</command>
+
+		
+	</commands>
+</unit>
