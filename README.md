@@ -24,3 +24,4 @@ start megaglest and select Assault Command from the Techs option (in custom game
 * No Hud or buttons, a simple place holder is used instead.
 * Lack of sound.
 * Rocket Grunts are disporportunatly large.
+* Capital letters in file name.
