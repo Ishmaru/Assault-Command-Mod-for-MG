@@ -121,7 +121,15 @@
 			<sound enabled="false"/>
 
 		</skill>
-
+		<skill>
+			<type value="produce"/>
+			<name value="produce_skill"/>	
+			<ep-cost value="0" />
+			<speed value="100" />
+			<anim-speed value="100" />
+			<animation path="transport/transportstand.g3d" />
+			<sound enabled="false" />
+		</skill>
 	</skills>
 
 
@@ -164,6 +172,14 @@
 			<max-load value="300"/>
 			<hits-per-unit value="1"/>				
 		</command>
-		
+		<command>
+			<type value="produce"/>
+			<name value="produce_grunt" />
+			<image path="../grunt/images/troop.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="grunt"/>
+		</command>
 	</commands>
 </unit>

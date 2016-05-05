@@ -139,6 +139,16 @@
 
 		<command>
 			<type value="produce"/>
+			<name value="produce_stalker" />
+			<image path="../grunt/images/troop.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="stalker"/>
+		</command>
+
+		<command>
+			<type value="produce"/>
 			<name value="produce_battle_tank" />
 			<image path="../grunt/images/troop.bmp" />
 			<unit-requirements />

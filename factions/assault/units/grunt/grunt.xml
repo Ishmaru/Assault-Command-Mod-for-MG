@@ -286,6 +286,7 @@
 				<unit name="energy_cannon"/>
 				<unit name="i_f_v"/>
 				<unit name="recon"/>
+				<unit name="stalker"/>
 				<unit name="battle_tank"/>
 				<unit name="cobra_m_r_l_s"/>				
 			</repaired-units>		
