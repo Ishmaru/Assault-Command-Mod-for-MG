@@ -38,7 +38,17 @@ the rules of CC-by-Sa (refer to above), and please Include a link to Annex
 Various Guns, Cannons, Rockets, and Explosions Provided by Michael Bethencourt.
 (CC by Sa)
 
+*******
+*Music*
+*******
+All Music bt the talented "Sector 31 -Tech"
+CC-0 Lisence
 
+Songs used:
+"Night Prowler" http://opengameart.org/content/night-prowler
+"Undercover Operative" http://opengameart.org/content/undercover-operative
+"200% Production" http://opengameart.org/content/200-production
+"Sentry" http://opengameart.org/content/sentry
 
 
 **************
@@ -46,3 +56,4 @@ Various Guns, Cannons, Rockets, and Explosions Provided by Michael Bethencourt.
 **************
 unzip and place assault_command into your megaglest user data directory
 start megaglest and select Assault Command from the Techs option (in custom game menu)on lower right
+
