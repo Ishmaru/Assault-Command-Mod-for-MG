@@ -13,6 +13,7 @@
 <armor-type name="infantry"/>
 <armor-type name="armor"/>
 <armor-type name="building"/>
+<armor-type name="na"/>
 	</armor-types>
 	
 	<damage-multipliers>
