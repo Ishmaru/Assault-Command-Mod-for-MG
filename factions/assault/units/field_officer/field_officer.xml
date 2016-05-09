@@ -7,18 +7,18 @@
 	<parameters>
 		<size value="1"/>
 		<height value="2"/>
-		<max-hp value="100" regeneration="1"/>
+		<max-hp value="100" regeneration="2"/>
 		<max-ep value="30" regeneration="1"/>
 		<armor value="2"/>	
 		<armor-type value="infantry"/>				
 		<sight value="10"/>
-		<time value="1"/>	
+		<time value="3"/>	
 		<multi-selection value="true"/>	
 		<cellmap value="false"/>
 		<levels>
-			<level name="rookie" kills="2"/>
-			<level name="experienced" kills="4"/>
-			<level name="veteran" kills="8"/>
+			<level name="rookie" kills="6"/>
+			<level name="experienced" kills="12"/>
+			<level name="veteran" kills="24"/>
 		</levels>
 		<fields>
 			<field value="land"/>
@@ -29,7 +29,7 @@
 		</unit-requirements>
 		<upgrade-requirements/>
 		<resource-requirements>	
-					<resource name="oil" amount="500" />			
+					<resource name="oil" amount="1000" />			
 		</resource-requirements>
 		<resources-stored/>
 		<image path="images/troop.bmp"/>
@@ -87,7 +87,7 @@
 				<sound-file path="/sounds/shoot.wav"/>
 
 			</sound>
-			<attack-strenght value="2"/>
+			<attack-strenght value="3"/>
 			<attack-var value="2"/>
 			<attack-range value="8"/>
 			<attack-type value="bullet"/>
@@ -299,5 +299,32 @@
 			<produce-skill value="produce_skill"/>
 			<produced-unit name="production"/>
 		</command>	
+		<command>
+			<type value="produce"/>
+			<name value="better_intell" />
+			<image path="../grunt/images/troop.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="adv_recon"/>
+		</command>	
+		<command>
+			<type value="produce"/>
+			<name value="decoy_tank" />
+			<image path="../grunt/images/troop.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="decoy_tank"/>
+		</command>	
+		<command>
+			<type value="produce"/>
+			<name value="air_strike" />
+			<image path="../grunt/images/troop.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="stingray_bomber"/>
+		</command>
 	</commands>
 </unit>

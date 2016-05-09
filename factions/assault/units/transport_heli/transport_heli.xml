@@ -102,6 +102,9 @@
 			<speed value="100"/>
 			<anim-speed value="100"/>
 			<animation path="transport/transportdie.g3d"/>
+			<particles value="true">
+         		<particle-file path="dust.xml"/>  <particle-file path="expl_small.xml"/>
+			</particles>
 			<sound enabled="true" start-time="0">
 				<sound-file path="sounds/tank_destroy_2.wav"/>
 			</sound>				
@@ -125,7 +128,7 @@
 			<type value="produce"/>
 			<name value="produce_skill"/>	
 			<ep-cost value="0" />
-			<speed value="100" />
+			<speed value="350" />
 			<anim-speed value="100" />
 			<animation path="transport/transportstand.g3d" />
 			<sound enabled="false" />

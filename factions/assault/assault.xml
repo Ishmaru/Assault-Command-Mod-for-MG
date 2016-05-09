@@ -5,8 +5,9 @@
 				<resource name="oil" amount="500"/>
 	</starting-resources>
 	<starting-units>
-				<unit name="command_h_q" amount="2"/>
+		<unit name="command_h_q" amount="2"/>
 		<unit name="grunt" amount="10"/>
+		<unit name="field_officer" amount="0"/>
 	</starting-units>	
 	
 	<healthbar>
@@ -25,7 +26,7 @@
 		<static-values>
 			<static type-name="MinStaticResourceCount" value="-10"/>
 			<static type-name="MinWorkerAttackersHarvesting" value="6"/>
-			<static type-name="MinBuildSpacing" value="2"/>
+			<static type-name="MinBuildSpacing" value="3"/>
 			<static type-name="MinMinWarriors" value="1"/>
 			<static type-name="MaxMinWarriors" value="2"/>
 		</static-values>

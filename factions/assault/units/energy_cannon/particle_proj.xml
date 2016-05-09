@@ -1,21 +1,21 @@
 <?xml version="1.0" standalone="yes"?>
 <projectile-particle-system>
- 	  	<texture value="true" path="../command_h_q/images/particle_2.bmp" luminance="true"/>
+    	<texture value="true" path="../command_h_q/images/lightning.bmp" luminance="true"/>
     	<model value="false"/>
-	<primitive value="line"/>
+	<primitive value="quad"/>
 	<offset x="0" y="0" z="0"/>
-	<color red="0.19" green="0.45" blue="1" alpha="1" />
-	<color-no-energy red="0.0" green="0.1" blue="0.3" alpha="0.0" />
-    	<size value="18" />
-    	<size-no-energy value="18" />
-    	<speed value="0" />
+	<color red="0.8" green="0.8" blue="1" alpha="0.8" />
+	<color-no-energy red="0.1" green="0.1" blue="1" alpha="0.5" />
+    	<size value="0.8" />
+    	<size-no-energy value="0.8" />
+    	<speed value="0.0" />
 	<gravity value="0"/>
-    	<emission-rate value="1" />
-    	<energy-max value="20" />
+    	<emission-rate value="10" />
+    	<energy-max value="15" />
     	<energy-var value="0" />
 	
-	<trajectory type="linear">
-		<speed value="30"/>
-		<scale value="1.5"/>
+	<trajectory type="parabolic">
+		<speed value="30.0"/>
+		<scale value="0"/>
 	</trajectory>
 </projectile-particle-system>

@@ -191,7 +191,6 @@
 			<speed value="100"/>											
 			<anim-speed value="60"/>
 			<animation path="troop/troopbomb.g3d"/>
-			<anim-progress-bound value="true"/>	
 			<sound enabled="false"/>								
 		</skill>
 

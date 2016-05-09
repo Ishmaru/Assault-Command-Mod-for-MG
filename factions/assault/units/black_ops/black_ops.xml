@@ -7,12 +7,12 @@
 	<parameters>
 		<size value="1"/>
 		<height value="2"/>
-		<max-hp value="100" regeneration="1"/>
+		<max-hp value="100" regeneration="2"/>
 		<max-ep value="30" regeneration="1"/>
 		<armor value="1"/>	
 		<armor-type value="infantry"/>				
 		<sight value="10"/>
-		<time value="10"/>	
+		<time value="3"/>	
 		<multi-selection value="true"/>	
 		<cellmap value="false"/>
 		<levels>
@@ -88,7 +88,7 @@
 
 			</sound>
 			<attack-strenght value="3"/>
-			<attack-var value="2"/>
+			<attack-var value="3"/>
 			<attack-range value="7"/>
 			<attack-type value="bullet"/>
 			<attack-start-time value="0.25"/>
@@ -112,7 +112,7 @@
 				<sound-file path="/sounds/bombbeep.wav"/>
 
 			</sound>
-			<attack-strenght value="20"/>
+			<attack-strenght value="30"/>
 			<attack-var value="0"/>
 			<attack-range value="1"/>
 			<attack-type value="explosive"/>
@@ -172,6 +172,15 @@
 			<fade value="false"/>
 		</skill>
 
+		<skill>												
+			<type value="morph"/>											
+			<name value="morph"/>											
+			<ep-cost value="0"/>											
+			<speed value="100"/>											
+			<anim-speed value="60"/>
+			<animation path="troop/troopbomb.g3d"/>
+			<sound enabled="false"/>								
+		</skill>
 
 		<skill>
 			<type value="harvest"/>
@@ -196,6 +205,15 @@
 			</sound>
 		</skill>
 
+		<skill>
+			<type value="produce"/>
+			<name value="produce_skill"/>	
+			<ep-cost value="0" />
+			<speed value="1000" />
+			<anim-speed value="100" />
+			<animation path="troop/troopbomb.g3d" />
+			<sound enabled="false" />
+		</skill>
 	</skills>
 
 	<!-- *** commands *** -->
@@ -258,7 +276,24 @@
 			<stop-skill value="stop_skill"/>
 			<attack-skill value="attack_skill"/>
 		</command>
-
+		<command>
+			<type value="produce"/>
+			<name value="smoke_screen" />
+			<image path="../grunt/images/troop.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="smoke_screen"/>
+		</command>	
+		<command>
+			<type value="attack"/>
+			<name value="attack"/>
+			<image path="/images/null.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+			<attack-skill value="bomb_skill"/>
+		</command>
 		<command>
 			<type value="repair"/>
 			<name value="repair_tank"/>
@@ -280,15 +315,6 @@
 		</command>
 
 		<command>
-			<type value="attack"/>
-			<name value="attack"/>
-			<image path="/images/null.bmp"/>
-			<unit-requirements/>
-			<upgrade-requirements/>
-			<move-skill value="move_skill"/>
-			<attack-skill value="bomb_skill"/>
-		</command>
-		<command>
 			<type value= "build"/>
 			<name value="build_defense"/>
 			<image path="images/null.bmp"/>
@@ -303,6 +329,17 @@
 			<start-sound enabled="false"/>
 			<built-sound enabled="true">							
 			</built-sound>	
+		</command>	
+		<command>												
+			<type value="morph"/>											
+			<name value="promote_officer"/>										
+			<image path="/images/null.bmp"/>	
+			<unit-requirements/>											
+			<upgrade-requirements>
+			</upgrade-requirements>						
+			<morph-skill value="morph"/>										
+			<morph-unit name= "field_officer"/>									
+			<discount value="0"/>											
 		</command>		
 	</commands>
 </unit>

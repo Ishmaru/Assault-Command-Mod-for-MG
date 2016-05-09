@@ -73,6 +73,9 @@
 			<speed value="100"/>
 			<anim-speed value="100"/>
 			<animation path="transport/transporthelidie.g3d"/>
+			<particles value="true">
+         		<particle-file path="dust.xml"/>  <particle-file path="expl_small.xml"/>
+			</particles>
 			<sound enabled="true" start-time="0">
 				<sound-file path="sounds/tank_destroy_2.wav"/>
 			</sound>				
@@ -106,6 +109,9 @@
 			<speed value="3000"/>											
 			<anim-speed value="50"/>
 			<animation path="transport/transporthelidrop.g3d"/>
+			<particles value="true">
+         		<particle-file path="dust.xml"/>
+			</particles>
 			<sound enabled="false"/>								
 		</skill>
 	</skills>

@@ -12,7 +12,7 @@
 		<armor value="0"/>	
 		<armor-type value="infantry"/>				
 		<sight value="10"/>
-		<time value="10"/>	
+		<time value="3"/>	
 		<multi-selection value="true"/>	
 		<cellmap value="false"/>
 		<levels>
@@ -317,6 +317,16 @@
 			<built-sound enabled="true">							
 			</built-sound>	
 		</command>
-		
+		<command>												
+			<type value="morph"/>											
+			<name value="promote_officer"/>										
+			<image path="/images/null.bmp"/>	
+			<unit-requirements/>											
+			<upgrade-requirements>
+			</upgrade-requirements>						
+			<morph-skill value="morph"/>										
+			<morph-unit name= "field_officer"/>									
+			<discount value="0"/>											
+		</command>	
 	</commands>
 </unit>

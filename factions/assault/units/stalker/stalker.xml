@@ -120,7 +120,7 @@
 			<speed value="60"/>
 			<anim-speed value="80"/>
 			<animation path="stalker/stalkerdie.g3d"/>       <particles value="true">
-         <particle-file path="smoke.xml"/>
+         <particle-file path="smoke.xml"/>  <particle-file path="expl_small.xml"/>
 			</particles>
 			<sound enabled="true" start-time="0">
 				<sound-file path="sounds/tank_destroy_2.wav"/>
@@ -136,6 +136,9 @@
 			<speed value="3000"/>											
 			<anim-speed value="50"/>
 			<animation path="stalker/transporthelipickup.g3d"/>
+			<particles value="true">
+         		<particle-file path="dust.xml"/>
+			</particles>
 			<sound enabled="false"/>								
 		</skill>
 

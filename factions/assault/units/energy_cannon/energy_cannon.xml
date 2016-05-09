@@ -5,6 +5,7 @@
 	<!-- *** parameters *** -->
 
 	<parameters>
+		<count-in-victory-conditions value="false"/>
 		<size value="2"/>
 		<height value="4"/>
 		<max-hp value="250" regeneration="0"/>
@@ -114,7 +115,7 @@
 			<speed value="60"/>
 			<anim-speed value="80"/>
 			<animation path="eml/emlturretdie.g3d"/>       <particles value="true">
-         <particle-file path="smoke.xml"/>
+         <particle-file path="smoke.xml"/>  <particle-file path="expl_small.xml"/>
 			</particles>
 			<sound enabled="true" start-time="0">
 				<sound-file path="sounds/tank_destroy_2.wav"/>
