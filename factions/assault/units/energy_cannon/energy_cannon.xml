@@ -133,7 +133,7 @@
 		<command>
 			<type value="attack_stopped"/>
 			<name value="on"/>
-			<image path="/images/null.bmp"/>
+			<image path="../../../../icons/expl.bmp"/>
 			<unit-requirements/>
 			<upgrade-requirements/>
 			<stop-skill value="stop_skill"/>
@@ -143,7 +143,7 @@
 		<command>
 			<type value= "stop"/>
 			<name value="off"/>
-			<image path="/images/null.bmp"/>
+			<image path="../../../../icons/stop.bmp"/>
 			<unit-requirements/>
 			<upgrade-requirements/>
 			<stop-skill value="stop_skill"/>

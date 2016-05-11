@@ -151,7 +151,7 @@
 		<command>
 			<type value= "stop"/>
 			<name value="stop"/>
-			<image path="/images/null.bmp"/>
+			<image path="../../../../icons/stop.bmp"/>
 			<unit-requirements/>
 			<upgrade-requirements/>
 			<stop-skill value="stop_skill"/>
@@ -160,7 +160,7 @@
 		<command>
 			<type value="move"/>
 			<name value="move"/>
-			<image path="/images/null.bmp"/>
+			<image path="../../../../icons/move.bmp"/>
 			<unit-requirements/>
 			<upgrade-requirements/>
 			<move-skill value="move_skill"/>
@@ -169,7 +169,7 @@
 		<command>
 			<type value="attack"/>
 			<name value="attack"/>
-			<image path="/images/null.bmp"/>
+			<image path="../../../../icons/rocket.bmp"/>
 			<unit-requirements/>
 			<upgrade-requirements/>
 			<move-skill value="move_skill"/>
@@ -179,7 +179,7 @@
 		<command>
 			<type value="attack_stopped"/>
 			<name value="hold_position"/>
-			<image path="/images/null.bmp"/>
+			<image path="../../../../icons/hold.bmp"/>
 			<unit-requirements/>
 			<upgrade-requirements/>
 			<stop-skill value="stop_skill"/>
@@ -188,8 +188,8 @@
 
 		<command>												
 			<type value="morph"/>											
-			<name value="airlift"/>										
-			<image path="/images/null.bmp"/>	
+			<name value="air_lift"/>										
+			<image path="../../../../icons/airlift.bmp"/>	
 			<unit-requirements/>											
 			<upgrade-requirements>
 			</upgrade-requirements>		

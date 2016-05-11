@@ -127,7 +127,7 @@
 		<command>
 			<type value= "stop"/>
 			<name value="stop"/>
-			<image path="/images/null.bmp"/>
+			<image path="../../../../icons/stop.bmp"/>
 			<unit-requirements/>
 			<upgrade-requirements/>
 			<stop-skill value="stop_skill"/>
@@ -136,7 +136,7 @@
 		<command>
 			<type value="move"/>
 			<name value="move"/>
-			<image path="/images/null.bmp"/>
+			<image path="../../../../icons/move.bmp"/>
 			<unit-requirements/>
 			<upgrade-requirements/>
 			<move-skill value="move_skill"/>
@@ -145,7 +145,7 @@
 		<command>
 			<type value="attack"/>
 			<name value="attack"/>
-			<image path="/images/null.bmp"/>
+			<image path="../../../../icons/expl.bmp"/>
 			<unit-requirements/>
 			<upgrade-requirements/>
 			<move-skill value="move_skill"/>
@@ -156,7 +156,7 @@
 		<command>
 			<type value="attack_stopped"/>
 			<name value="hold_position"/>
-			<image path="/images/null.bmp"/>
+			<image path="../../../../icons/hold.bmp"/>
 			<unit-requirements/>
 			<upgrade-requirements/>
 			<stop-skill value="stop_skill"/>

@@ -7,14 +7,14 @@
 	<parameters>
 		<size value="4"/>
 		<height value="2"/>
-		<max-hp value="15" regeneration="-1"/>
+		<max-hp value="600" regeneration="-40"/>
 		<max-ep value="0" regeneration="0"/>
 		<max-unit-count value="1"/>
 		<count-unit-death-in-stats value="false" />
 		<count-unit-production-in-stats value="false" />
 		<count-unit-kill-in-stats value="false" />
-		<armor value="4"/>	
-		<armor-type value="na"/>				
+		<armor value="2"/>	
+		<armor-type value="armor"/>				
 		<sight value="10"/>
 		<time value="1"/>	
 		<multi-selection value="true"/>	
@@ -138,7 +138,7 @@
 		<command>
 			<type value= "stop"/>
 			<name value="stop"/>
-			<image path="/images/null.bmp"/>
+			<image path="../../../../icons/stop.bmp"/>
 			<unit-requirements/>
 			<upgrade-requirements/>
 			<stop-skill value="stop_skill"/>
@@ -147,7 +147,7 @@
 		<command>
 			<type value="move"/>
 			<name value="move"/>
-			<image path="/images/null.bmp"/>
+			<image path="../../../../icons/move.bmp"/>
 			<unit-requirements/>
 			<upgrade-requirements/>
 			<move-skill value="move_skill"/>
@@ -157,7 +157,7 @@
 		<command>
 			<type value="attack"/>
 			<name value="bombing"/>
-			<image path="/images/null.bmp"/>
+			<image path="../../../../icons/expl.bmp"/>
 			<unit-requirements/>
 			<upgrade-requirements/>
 			<move-skill value="move_skill"/>
@@ -169,7 +169,7 @@
 		<command>
 			<type value="attack_stopped"/>
 			<name value="hold_position"/>
-			<image path="/images/null.bmp"/>
+			<image path="../../../../icons/hold.bmp"/>
 			<unit-requirements/>
 			<upgrade-requirements/>
 			<stop-skill value="stop_skill"/>

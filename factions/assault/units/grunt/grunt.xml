@@ -217,7 +217,7 @@
 		<command>
 			<type value= "stop"/>
 			<name value="stop"/>
-			<image path="/images/null.bmp"/>
+			<image path="../../../../icons/stop.bmp"/>
 			<unit-requirements/>
 			<upgrade-requirements/>
 			<stop-skill value="stop_skill"/>
@@ -226,7 +226,7 @@
 		<command>
 			<type value="move"/>
 			<name value="move"/>
-			<image path="/images/null.bmp"/>
+			<image path="../../../../icons/move.bmp"/>
 			<unit-requirements/>
 			<upgrade-requirements/>
 			<move-skill value="move_skill"/>
@@ -235,7 +235,7 @@
 		<command>
 			<type value="harvest"/>
 			<name value="pump"/>
-			<image path="images/null.bmp"/>
+			<image path="../../../../icons/oil.bmp"/>
 			<unit-requirements/>
 			<upgrade-requirements/>
 			<move-skill value="move_skill"/>
@@ -252,7 +252,7 @@
 		<command>
 			<type value="attack"/>
 			<name value="attack"/>
-			<image path="/images/null.bmp"/>
+			<image path="../../../../icons/bullet.bmp"/>
 			<unit-requirements/>
 			<upgrade-requirements/>
 			<move-skill value="move_skill"/>
@@ -264,7 +264,7 @@
 		<command>
 			<type value="attack_stopped"/>
 			<name value="hold_position"/>
-			<image path="/images/null.bmp"/>
+			<image path="../../../../icons/hold.bmp"/>
 			<unit-requirements/>
 			<upgrade-requirements/>
 			<stop-skill value="stop_skill"/>
@@ -274,7 +274,7 @@
 		<command>
 			<type value="repair"/>
 			<name value="repair_tank"/>
-			<image path="/images/null.bmp"/>
+			<image path="../../../../icons/repair.bmp"/>
 			<unit-requirements/>
 			<upgrade-requirements/>
 			<move-skill value="move_skill"/>
@@ -294,7 +294,7 @@
 		<command>
 			<type value= "build"/>
 			<name value="build_defense"/>
-			<image path="images/null.bmp"/>
+			<image path="../../../../icons/build.bmp"/>
 			<unit-requirements/>
 			<upgrade-requirements/>
 			<move-skill value="move_skill"/>
