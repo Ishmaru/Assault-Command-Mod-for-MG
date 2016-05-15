@@ -1,4 +1,4 @@
-﻿**********************************
+**********************************
 *Assault Command credits/license.*
 **********************************
 Data files are licensed mainly under CC-by-Sa (see "cc-by-sa-3.0-unported.txt"
@@ -18,7 +18,7 @@ even commercially.
 ******
 *Art:*
 ******
-All assets are © 2016 Adrian Delpha,
+All models + textures assets are © 2016 Adrian Delpha,
 under the terms of the Creative Commons Attribution-ShareAlike (CC-by-Sa)
 3.0 license, or any later version. In brief, this means you are free to share
 this work and modify it under the conditions that you provide proper credit to
@@ -31,6 +31,10 @@ You are free to use models as long as proper credit is given, and you abide by
 the rules of CC-by-Sa (refer to above), and please Include a link to Annex
 (www.desura.com/games/annex-conquer-the-world) or my portfolio
 (http://delphadesign.daportfolio.com/)
+
+Some additional particle effects were drawn using brushes by Obsidian Dawn: [http://www.obsidiandawn.com/]
+
+Illustrated 2D character model, edited from jews-s-free art: [http://www.jewel-s.jp/]
 
 ********
 *Sounds*
@@ -54,6 +58,6 @@ Songs used:
 **************
 *Installation*
 **************
-unzip and place assault_command into your megaglest user data directory
+unzip and place assault_command into your Megaglest user data directory
 start megaglest and select Assault Command from the Techs option (in custom game menu)on lower right
 

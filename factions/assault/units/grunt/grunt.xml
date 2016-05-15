@@ -8,7 +8,7 @@
 		<size value="1"/>
 		<height value="2"/>
 		<max-hp value="100" regeneration="1"/>
-		<max-ep value="30" regeneration="1"/>
+		<max-ep value="0" regeneration="0"/>
 		<armor value="0"/>	
 		<armor-type value="infantry"/>				
 		<sight value="10"/>
@@ -32,8 +32,8 @@
 					<resource name="oil" amount="50" />			
 		</resource-requirements>
 		<resources-stored/>
-		<image path="images/troop.bmp"/>
-		<image-cancel path="/images/null.bmp"/>"/>
+		<image path="../../../../icons/grunt.bmp"/>
+		<image-cancel path="../../../../icons/stop.bmp"/>
 		<meeting-point value="false"/>
 		<selection-sounds enabled="true">
 		</selection-sounds>
@@ -281,6 +281,7 @@
 			<repair-skill value="fix_skill"/>
 			<repaired-units>
 				<unit name="command_h_q"/>
+				<unit name="mobile_base"/>
 				<unit name="sentry_gun"/>
 				<unit name="energy_cannon"/>
 				<unit name="i_f_v"/>
@@ -311,7 +312,7 @@
 		<command>												
 			<type value="morph"/>											
 			<name value="promote_to_black_ops"/>										
-			<image path="/images/null.bmp"/>	
+			<image path="../../../../icons/blackops.bmp"/>	
 			<unit-requirements/>											
 			<upgrade-requirements>
 			</upgrade-requirements>						
@@ -322,7 +323,7 @@
 		<command>												
 			<type value="morph"/>											
 			<name value="promote_to_rocket_grunt"/>										
-			<image path="/images/null.bmp"/>	
+			<image path="../../../../icons/troop.bmp"/>	
 			<unit-requirements/>											
 			<upgrade-requirements>
 			</upgrade-requirements>						
@@ -333,7 +334,7 @@
 		<command>												
 			<type value="morph"/>											
 			<name value="promote_officer"/>										
-			<image path="/images/null.bmp"/>	
+			<image path="../../../../icons/officer.bmp"/>	
 			<unit-requirements/>											
 			<upgrade-requirements>
 			</upgrade-requirements>						

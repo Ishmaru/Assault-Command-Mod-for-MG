@@ -34,13 +34,16 @@
 			<resource name="oil" amount="200"/>				
 		</resource-requirements>
 		<resources-stored/>
-		<image path="images/troop.bmp"/>
-		<image-cancel path="/images/null.bmp"/>"/>
+		<image path="../../../../icons/recon.bmp"/>
+		<image-cancel path="../../../../icons/stop.bmp"/>
 		<meeting-point value="false"/>
 		<selection-sounds enabled="true">
 		</selection-sounds>
 		<command-sounds enabled="true">
 		</command-sounds>
+		<resources-death>
+            <resource name="oil" amount-value="50" />
+        </resources-death>
 	</parameters>
 
 
@@ -111,7 +114,15 @@
 			</sound>			
 			<fade value="false"/>
 		</skill>
-
+		<skill>
+			<type value="produce"/>
+			<name value="produce_skill"/>	
+			<ep-cost value="0" />
+			<speed value="1000" />
+			<anim-speed value="100" />
+			<animation path="ifv/ifvstand.g3d" />
+			<sound enabled="false" />
+		</skill>
 
 	</skills>
 
@@ -157,7 +168,15 @@
 			<attack-skill value="attack_skill"/>
 		</command>
 
-
+		<command>
+			<type value="produce"/>
+			<name value="e_m_p_burst"/>
+			<image path="../../../../icons/attack.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="e_m_p"/>
+		</command>	
 
 		
 	</commands>

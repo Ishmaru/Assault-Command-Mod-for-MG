@@ -32,13 +32,16 @@
 					<resource name="oil" amount="100" />			
 		</resource-requirements>
 		<resources-stored/>
-		<image path="images/troop.bmp"/>
-		<image-cancel path="/images/null.bmp"/>"/>
+		<image path="../../../../icons/troop.bmp"/>
+		<image-cancel path="../../../../icons/stop.bmp"/>
 		<meeting-point value="false"/>
 		<selection-sounds enabled="true">
 		</selection-sounds>
 		<command-sounds enabled="true">
 		</command-sounds>
+		<resources-death>
+            <resource name="oil" amount-value="25" />
+        </resources-death>
 	</parameters>
 
 
@@ -291,6 +294,7 @@
 			<repair-skill value="fix_skill"/>
 			<repaired-units>
 				<unit name="command_h_q"/>
+				<unit name="mobile_base"/>
 				<unit name="sentry_gun"/>
 				<unit name="energy_cannon"/>
 				<unit name="i_f_v"/>
@@ -320,7 +324,7 @@
 		<command>												
 			<type value="morph"/>											
 			<name value="promote_officer"/>										
-			<image path="/images/null.bmp"/>	
+			<image path="../../../../icons/officer.bmp"/>	
 			<unit-requirements/>											
 			<upgrade-requirements>
 			</upgrade-requirements>						

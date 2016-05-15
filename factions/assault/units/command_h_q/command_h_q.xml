@@ -38,15 +38,18 @@
 			<resource name="oil" amount="2000"/>
 			<resource name="housing" amount="2000"/>
 		</resources-stored>
-		<image path="/images/null.bmp"/>
-		<image-cancel path="/images/null.bmp"/>
-		<meeting-point value="true" image-path="/images/null.bmp"/>
+		<image path="../../../../icons/hq.bmp"/>
+		<image-cancel path="../../../../icons/stop.bmp"/>
+		<meeting-point value="true" image-path="../../../../icons/meet.bmp"/>
 		<selection-sounds enabled="true">
 			<sound path="sounds/steammach.wav" />
 		</selection-sounds>
 		<command-sounds enabled="true">
 			<sound path="sounds/steammach.wav" />
 		</command-sounds>
+		<resources-death>
+            <resource name="oil" amount-value="1500" />
+        </resources-death>
 	</parameters>
 	
 	<!-- *** skills *** -->
@@ -79,7 +82,7 @@
 			<type value="produce"/>
 			<name value="produce_skill"/>	
 			<ep-cost value="0" />
-			<speed value="100" />
+			<speed value="150" />
 			<anim-speed value="20" />
 			<animation path="fort/fort.g3d" />
 			<sound enabled="false" />
@@ -110,7 +113,7 @@
 		<command>
 			<type value="produce"/>
 			<name value="produce_grunt" />
-			<image path="../grunt/images/troop.bmp" />
+			<image path="../../../../icons/grunt.bmp" />
 			<unit-requirements />
 			<upgrade-requirements />
 			<produce-skill value="produce_skill"/>
@@ -120,7 +123,7 @@
 		<command>
 			<type value="produce"/>
 			<name value="produce_recon" />
-			<image path="../grunt/images/troop.bmp" />
+			<image path="../../../../icons/recon.bmp" />
 			<unit-requirements />
 			<upgrade-requirements />
 			<produce-skill value="produce_skill"/>
@@ -130,7 +133,7 @@
 		<command>
 			<type value="produce"/>
 			<name value="produce_i_f_v" />
-			<image path="../grunt/images/troop.bmp" />
+			<image path="../../../../icons/ifv.bmp" />
 			<unit-requirements />
 			<upgrade-requirements />
 			<produce-skill value="produce_skill"/>
@@ -140,7 +143,7 @@
 		<command>
 			<type value="produce"/>
 			<name value="produce_stalker" />
-			<image path="../grunt/images/troop.bmp" />
+			<image path="../../../../icons/stalker.bmp" />
 			<unit-requirements />
 			<upgrade-requirements />
 			<produce-skill value="produce_skill"/>
@@ -150,7 +153,7 @@
 		<command>
 			<type value="produce"/>
 			<name value="produce_battle_tank" />
-			<image path="../grunt/images/troop.bmp" />
+			<image path="../../../../icons/tank.bmp" />
 			<unit-requirements />
 			<upgrade-requirements />
 			<produce-skill value="produce_skill"/>
@@ -160,7 +163,7 @@
 		<command>
 			<type value="produce"/>
 			<name value="produce_cobra_m_r_l_s" />
-			<image path="../grunt/images/troop.bmp" />
+			<image path="../../../../icons/mrls.bmp" />
 			<unit-requirements />
 			<upgrade-requirements />
 			<produce-skill value="produce_skill"/>
@@ -169,7 +172,7 @@
 		<command>
 			<type value="produce"/>
 			<name value="produce_transport_heli" />
-			<image path="../grunt/images/troop.bmp" />
+			<image path="../../../../icons/transport.bmp" />
 			<unit-requirements />
 			<upgrade-requirements />
 			<produce-skill value="produce_skill"/>

@@ -31,16 +31,19 @@
 		</unit-requirements>
 		<upgrade-requirements/>
 		<resource-requirements>
-			<resource name="oil" amount="500"/>				
+			<resource name="oil" amount="400"/>				
 		</resource-requirements>
 		<resources-stored/>
-		<image path="images/troop.bmp"/>
-		<image-cancel path="/images/null.bmp"/>"/>
+		<image path="../../../../icons/stalker.bmp"/>
+		<image-cancel path="/../../../../icons/stop.bmp"/>
 		<meeting-point value="false"/>
 		<selection-sounds enabled="true">
 		</selection-sounds>
 		<command-sounds enabled="true">
 		</command-sounds>
+		<resources-death>
+            <resource name="oil" amount-value="100" />
+        </resources-death>
 	</parameters>
 
 
@@ -76,17 +79,17 @@
 			<name value="missle_skill"/>		
 			<ep-cost value="5"/>
 			<speed value="200"/>
-			<anim-speed value="200"/>
+			<anim-speed value="100"/>
 			<animation path="stalker/stalkershoot.g3d"/>
-			<sound enabled="true" start-time="0.25">
+			<sound enabled="true" start-time="0.02">
 				<sound-file path="/sounds/missle_.wav"/>
 			</sound>
-			<sound enabled="true" start-time="0.05">
+			<sound enabled="true" start-time="0.12">
 				<sound-file path="/sounds/missle_.wav"/>
 			</sound>
 			<attack-strenght value="4"/>
 			<attack-var value="4"/>
-			<attack-range value="5"/>
+			<attack-range value="6"/>
 			<attack-type value="explosive"/>
 			<attack-start-time value="0.0"/>
 			<attack-fields>
@@ -94,12 +97,12 @@
 				<field value="air"/>
 			</attack-fields>
 			<projectiles>
-			<projectile attack-start-time="0.5" damage-percentage="50">	
+			<projectile attack-start-time="0.2" damage-percentage="50">	
 				<particle value="true" path="particle_proj1.xml"/>
 				<hitsound enabled="false"/>
 			</projectile>
 			
-			<projectile attack-start-time="0.25" damage-percentage="50">	
+			<projectile attack-start-time="0.12" damage-percentage="50">	
 				<particle value="true" path="particle_proj2.xml"/>
 				<hitsound enabled="false"/>
 			</projectile>

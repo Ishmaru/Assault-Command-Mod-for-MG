@@ -19,7 +19,7 @@
 	<damage-multipliers>
 <damage-multiplier attack="bullet" armor="infantry" value="20.0"/>
 <damage-multiplier attack="bullet" armor="armor" value="1"/>
-<damage-multiplier attack="bullet" armor="building" value="15.0"/>
+<damage-multiplier attack="bullet" armor="building" value="10.0"/>
 
 <damage-multiplier attack="hmg" armor="infantry" value="30.0"/>
 <damage-multiplier attack="hmg" armor="armor" value="15.0"/>

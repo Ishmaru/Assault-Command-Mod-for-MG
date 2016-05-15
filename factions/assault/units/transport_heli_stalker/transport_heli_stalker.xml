@@ -8,7 +8,7 @@
 		<size value="2"/>
 		<height value="1"/>
 		<max-hp value="300" regeneration="0"/>
-		<max-ep value="0" regeneration="0"/>
+		<max-ep value="5" regeneration="1"/>
 		<armor value="1"/>	
 		<armor-type value="armor"/>				
 		<sight value="10"/>
@@ -26,13 +26,16 @@
 		<upgrade-requirements/>
 		<resource-requirements/>			
 		<resources-stored/>
-		<image path="images/troop.bmp"/>
-		<image-cancel path="/images/null.bmp"/>
+		<image path="../../../../icons/stalkert.bmp"/>
+		<image-cancel path="../../../../icons/stop.bmp"/>
 		<meeting-point value="false"/>
 		<selection-sounds enabled="true">
 		</selection-sounds>
 		<command-sounds enabled="true">
 		</command-sounds>
+		<resources-death>
+            <resource name="oil" amount-value="200" />
+        </resources-death>
 	</parameters>
 
 
