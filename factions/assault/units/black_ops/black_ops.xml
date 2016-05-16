@@ -86,6 +86,10 @@
 			<speed value="300"/>
 			<anim-speed value="60"/>
 			<animation path="troop/troopshoot2.g3d"/>
+			<particles value="true" start-time="0.2" end-time="0.45">
+				<particle-file path="gun_muzzle.xml"/>
+				<particle-file path="grunt_mflash.xml"/>
+			</particles>
 			<sound enabled="true" start-time="0.2">
 				<sound-file path="/sounds/shoot.wav"/>
 
@@ -100,7 +104,11 @@
 				<field value="air"/>
 			</attack-fields>
 			<projectile value="false"/>
-			<splash value="false"/>
+			<splash value="true">
+				<radius value="0"/>
+				<damage-all value="true"/>
+				<particle value="true" path="gun_hit.xml"/>
+			</splash>
 		</skill>
 
 

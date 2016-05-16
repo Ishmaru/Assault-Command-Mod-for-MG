@@ -74,7 +74,7 @@
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="1" />
-			<animation path="eml/emlturretbuilt.g3d" />
+			<animation path="eml/emlturretstand.g3d" />
 			<sound enabled="false" />
 		</skill>
 
@@ -85,6 +85,9 @@
 			<speed value="100"/>
 			<anim-speed value="100"/>
 			<animation path="eml/emlturretshoot.g3d"/>
+			 <particles value="true" start-time="0.10" end-time="0.20">
+        		<particle-file path="energyflash.xml"/>
+			</particles>
 			<sound enabled="true" start-time="0.10">
 				<sound-file path="/sounds/shoot.wav"/>
 

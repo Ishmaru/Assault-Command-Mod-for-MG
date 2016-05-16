@@ -82,6 +82,10 @@
 			<speed value="100"/>
 			<anim-speed value="100"/>
 			<animation path="ifv/ifvshoot.g3d"/>
+			<particles value="true" start-time="0.1" end-time="0.75">
+				<particle-file path="gun_muzzle.xml"/>
+				<particle-file path="grunt_mflash.xml"/>
+			</particles>
 			<sound enabled="true" start-time="0.20">
 				<sound-file path="/sounds/shoot.wav"/>
 
@@ -96,7 +100,11 @@
 				<field value="air"/>
 			</attack-fields>
 			<projectile value="false"/>
-			<splash value="false"/>
+			<splash value="true">
+				<radius value="0"/>
+				<damage-all value="true"/>
+				<particle value="true" path="gun_hit.xml"/>
+			</splash>
 		</skill>
 
 		

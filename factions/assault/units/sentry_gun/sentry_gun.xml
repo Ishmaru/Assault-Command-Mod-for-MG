@@ -7,7 +7,7 @@
 	<parameters>
 		<count-in-victory-conditions value="false"/>
 		<size value="2"/>
-		<height value="3"/>
+		<height value="2"/>
 		<max-hp value="75" regeneration="0"/>
 		<max-ep value="10" regeneration="1"/>
 		<armor value="0"/>	
@@ -85,6 +85,10 @@
 			<speed value="100"/>
 			<anim-speed value="100"/>
 			<animation path="sentry/gunturretshoot.g3d"/>
+			<particles value="true" start-time="0.0" end-time="0.99">
+				<particle-file path="gun_muzzle.xml"/>
+				<particle-file path="grunt_mflash.xml"/>
+			</particles>
 			<sound enabled="true" start-time="0.20">
 				<sound-file path="/sounds/shoot.wav"/>
 
@@ -99,7 +103,11 @@
 				<field value="air"/>
 			</attack-fields>
 			<projectile value="false"/>
-			<splash value="false"/>
+			<splash value="true">
+				<radius value="0"/>
+				<damage-all value="true"/>
+				<particle value="true" path="gun_hit.xml"/>
+			</splash>
 		</skill>
 
 		

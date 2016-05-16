@@ -82,7 +82,7 @@
 			<speed value="300"/>
 			<anim-speed value="160"/>
 			<animation path="tank/tankshoot.g3d"/>    <particles value="true">
-         <particle-file path="gunsmoke.xml"/>
+         <particle-file path="gunsmoke.xml"/> <particle-file path="grunt_mflash.xml"/> <particle-file path="dust.xml"/>
 			</particles>
 			<sound enabled="true" start-time="0.1">
 				<sound-file path="/sounds/tank_cannon.wav"/>
