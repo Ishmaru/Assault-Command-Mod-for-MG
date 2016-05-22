@@ -141,7 +141,16 @@
 			</splash>
 		</skill>
 
-		
+		<skill>												
+			<type value="morph"/>											
+			<name value="morph"/>											
+			<ep-cost value="0"/>											
+			<speed value="100"/>											
+			<anim-speed value="50"/>
+			<animation path="ifv/ifvmissle.g3d"/>
+			<sound enabled="false"/>								
+		</skill>
+
 		<skill>
 			<type value="die"/>
 			<name value="die_skill"/>		
@@ -212,7 +221,17 @@
 			<attack-skill value="attack_skill"/>
 		</command>
 
-
+		<command>												
+			<type value="morph"/>											
+			<name value="upgrade_equipment"/>										
+			<image path="../../../../icons/spartan.bmp"/>	
+			<unit-requirements/>											
+			<upgrade-requirements>
+			</upgrade-requirements>						
+			<morph-skill value="morph"/>										
+			<morph-unit name= "spartan_i_f_v"/>									
+			<discount value="0"/>											
+		</command>
 
 		
 	</commands>

@@ -13,7 +13,7 @@
 		<armor value="0"/>	
 		<armor-type value="armor"/>				
 		<sight value="10"/>
-		<time value="35"/>	
+		<time value="15"/>	
 		<multi-selection value="false"/>	
 		<cellmap value="false"/>
 		<levels>
@@ -85,7 +85,7 @@
 			<speed value="100"/>
 			<anim-speed value="100"/>
 			<animation path="sentry/gunturretshoot.g3d"/>
-			<particles value="true" start-time="0.0" end-time="0.99">
+			<particles value="true" start-time="0.1" end-time="0.95">
 				<particle-file path="gun_muzzle.xml"/>
 				<particle-file path="grunt_mflash.xml"/>
 			</particles>

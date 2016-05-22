@@ -13,7 +13,7 @@
 		<armor value="0"/>	
 		<armor-type value="armor"/>				
 		<sight value="10"/>
-		<time value="50"/>	
+		<time value="20"/>	
 		<multi-selection value="false"/>	
 		<cellmap value="false"/>
 		<levels>
@@ -27,7 +27,7 @@
 		</unit-requirements>
 		<upgrade-requirements/>
 		<resource-requirements>
-			<resource name="oil" amount="250"/>				
+			<resource name="oil" amount="200"/>				
 		</resource-requirements>
 		<resources-stored/>
 		<image path="../../../../icons/eml.bmp"/>
@@ -92,7 +92,7 @@
 				<sound-file path="/sounds/shoot.wav"/>
 
 			</sound>
-			<attack-strenght value="2"/>
+			<attack-strenght value="3"/>
 			<attack-var value="2"/>
 			<attack-range value="10"/>
 			<attack-type value="energy"/>

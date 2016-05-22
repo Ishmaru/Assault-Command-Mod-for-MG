@@ -1,0 +1,226 @@
+<?xml version="1.0" standalone="no"?>
+
+<unit>
+
+	<!-- *** parameters *** -->
+
+	<parameters>
+		<size value="2"/>
+		<height value="3"/>
+		<max-hp value="300" regeneration="0"/>
+		<max-ep value="10" regeneration="1"/>
+		<armor value="0"/>	
+		<armor-type value="armor"/>				
+		<sight value="10"/>
+		<time value="15"/>	
+		<multi-selection value="true"/>	
+		<cellmap value="false"/>
+		<levels>
+			<level name="rookie" kills="8"/>
+			<level name="experienced" kills="16"/>
+			<level name="veteran" kills="32"/>
+		</levels>
+		<fields>
+			<field value="land"/>
+		</fields>	
+		<properties>
+			<property value="rotated_climb"/>	
+		</properties>
+		<light enabled="false"/>
+		<unit-requirements>
+		</unit-requirements>
+		<upgrade-requirements/>
+		<resource-requirements>
+			<resource name="oil" amount="250"/>				
+		</resource-requirements>
+		<resources-stored/>
+		<image path="../../../../icons/spartan.bmp"/>
+		<image-cancel path="../../../../icons/stop.bmp"/>
+		<meeting-point value="false"/>
+		<selection-sounds enabled="true">
+		</selection-sounds>
+		<command-sounds enabled="true">
+		</command-sounds>
+		<resources-death>
+            <resource name="oil" amount-value="150" />
+        </resources-death>
+	</parameters>
+
+
+	<!-- *** skills *** -->
+
+	<skills>
+	
+		<skill>
+			<type value="stop"/>
+			<name value="stop_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="500"/>
+			<anim-speed value="10"/>
+			<animation path="ifv/spartanstand.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+		
+		<skill>
+			<type value="move"/>
+			<name value="move_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="450"/>
+			<anim-speed value="75"/>
+			<animation path="ifv/spartanrun.g3d"/>       <particles value="true">
+         <particle-file path="dust.xml"/>
+			</particles>
+			<sound enabled="false">
+			</sound>
+		</skill>
+
+
+		<skill>
+			<type value="attack"/>
+			<name value="attack_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="140"/>
+			<anim-speed value="140"/>
+			<animation path="ifv/spartanshoot.g3d"/>
+			<particles value="true" start-time="0.1" end-time="0.3">
+				<particle-file path="gun_muzzle.xml"/>
+				<particle-file path="grunt_mflash.xml"/>
+			</particles>
+			<sound enabled="true" start-time="0.03">
+				<sound-file path="/sounds/spartan.wav"/>
+
+			</sound>
+			<attack-strenght value="2"/>
+			<attack-var value="2"/>
+			<attack-range value="6"/>
+			<attack-type value="hmg"/>
+			<attack-start-time value="0.30"/>
+			<attack-fields>
+				<field value="land"/>
+				<field value="air"/>
+			</attack-fields>
+			<projectile value="false"/>
+			<splash value="true">
+				<radius value="0"/>
+				<damage-all value="true"/>
+				<particle value="true" path="gun_hit.xml"/>
+			</splash>
+		</skill>
+
+		<skill>
+			<type value="attack"/>
+			<name value="missle_skill"/>		
+			<ep-cost value="10"/>
+			<speed value="100"/>
+			<anim-speed value="100"/>
+			<animation path="ifv/spartanrocket.g3d"/>
+			<sound enabled="true" start-time="0.25">
+				<sound-file path="/sounds/missle_.wav"/>
+			</sound>
+			<sound enabled="true" start-time="0.75">
+				<sound-file path="/sounds/missle_.wav"/>
+			</sound>
+			<attack-strenght value="3"/>
+			<attack-var value="2"/>
+			<attack-range value="10"/>
+			<attack-type value="explosive"/>
+			<attack-start-time value="0.0"/>
+			<attack-fields>
+				<field value="land"/>
+				<field value="air"/>
+			</attack-fields>
+			<projectiles>
+			<projectile attack-start-time="0.25" damage-percentage="50">	
+				<particle value="true" path="particle_proj1.xml"/>
+				<hitsound enabled="false"/>
+			</projectile>
+			
+			<projectile attack-start-time="0.75" damage-percentage="50">	
+				<particle value="true" path="particle_proj2.xml"/>
+				<hitsound enabled="false"/>
+			</projectile>
+			</projectiles>
+			<splash value="true">
+				<radius value="0"/>
+				<damage-all value="true"/>
+				<particle value="true" path="particle_splash.xml"/>
+
+			</splash>
+		</skill>
+
+		
+		<skill>
+			<type value="die"/>
+			<name value="die_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="60"/>
+			<anim-speed value="80"/>
+			<animation path="ifv/ifvdie.g3d"/>       <particles value="true">
+         <particle-file path="smoke.xml"/>  <particle-file path="expl_small.xml"/>
+			</particles>
+			<sound enabled="true" start-time="0">
+				<sound-file path="sounds/tank_destroy_2.wav"/>
+			</sound>			
+			<fade value="false"/>
+		</skill>
+
+
+	</skills>
+
+	<!-- *** commands *** -->
+	
+	<commands>
+		
+		<command>
+			<type value= "stop"/>
+			<name value="stop"/>
+			<image path="../../../../icons/stop.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+		</command>
+
+		<command>
+			<type value="move"/>
+			<name value="move"/>
+			<image path="../../../../icons/move.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+		</command>
+
+		<command>
+			<type value="attack"/>
+			<name value="attack"/>
+			<image path="../../../../icons/bullet.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+			<attack-skill value="attack_skill"/>
+		</command>
+
+		<command>
+			<type value="attack"/>
+			<name value="attack"/>
+			<image path="../../../../icons/rocket.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+			<attack-skill value="missle_skill"/>
+		</command>		
+
+		<command>
+			<type value="attack_stopped"/>
+			<name value="hold_position"/>
+			<image path="../../../../icons/hold.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+			<attack-skill value="attack_skill"/>
+		</command>
+
+
+
+		
+	</commands>
+</unit>

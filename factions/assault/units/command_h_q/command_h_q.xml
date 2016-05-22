@@ -110,7 +110,7 @@
 
 		<command>
 			<type value="produce"/>
-			<name value="produce_grunt" />
+			<name value="recruit_grunt" />
 			<image path="../../../../icons/grunt.bmp" />
 			<unit-requirements />
 			<upgrade-requirements />
@@ -167,6 +167,7 @@
 			<produce-skill value="produce_skill"/>
 			<produced-unit name="cobra_m_r_l_s"/>
 		</command>
+
 		<command>
 			<type value="produce"/>
 			<name value="produce_transport_heli" />
@@ -175,6 +176,16 @@
 			<upgrade-requirements />
 			<produce-skill value="produce_skill"/>
 			<produced-unit name="transport_heli"/>
+		</command>
+
+		<command>
+			<type value="produce"/>
+			<name value="recruit_kestrel" />
+			<image path="../../../../icons/kestrel.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="kestrel"/>
 		</command>
 	</commands>
 </unit>

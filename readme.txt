@@ -34,8 +34,6 @@ the rules of CC-by-Sa (refer to above), and please Include a link to Annex
 
 Some additional particle effects were drawn using brushes by Obsidian Dawn: [http://www.obsidiandawn.com/]
 
-Illustrated 2D character model, edited from jews-s-free art: [http://www.jewel-s.jp/]
-
 ********
 *Sounds*
 ********

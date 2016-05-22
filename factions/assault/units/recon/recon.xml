@@ -179,7 +179,7 @@
 		<command>
 			<type value="produce"/>
 			<name value="e_m_p_burst"/>
-			<image path="../../../../icons/attack.bmp" />
+			<image path="../../../../icons/emp.bmp" />
 			<unit-requirements />
 			<upgrade-requirements />
 			<produce-skill value="produce_skill"/>

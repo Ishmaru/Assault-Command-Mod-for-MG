@@ -61,7 +61,7 @@
 		
 		<skill>
 			<type value="move"/>
-			<name value="move_skill"/>		
+			<name value="move_rocket_skill"/>		
 			<ep-cost value="0"/>
 			<speed value="220"/>
 			<anim-speed value="100"/>
@@ -71,17 +71,17 @@
 
 		<skill>
 			<type value="move"/>
-			<name value="run_skill"/>		
+			<name value="move_skill"/>		
 			<ep-cost value="0"/>
-			<speed value="300"/>
-			<anim-speed value="175"/>
-			<animation path="troop/trooprun.g3d"/>
+			<speed value="270"/>
+			<anim-speed value="150"/>
+			<animation path="troop/trooprun2.g3d"/>
 			<sound enabled="false"/>
 		</skill>
 
 		<skill>
 			<type value="attack"/>
-			<name value="attack_skill"/>		
+			<name value="rocket_skill"/>		
 			<ep-cost value="4"/>
 			<speed value="80"/>
 			<anim-speed value="80"/>
@@ -112,6 +112,36 @@
 			</splash>
 		</skill>
 
+		<skill>
+			<type value="attack"/>
+			<name value="attack_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="300"/>
+			<anim-speed value="60"/>
+			<animation path="troop/troopshoot2.g3d"/>
+			<particles value="true" start-time="0.2" end-time="0.45">
+				<particle-file path="gun_muzzle.xml"/>
+				<particle-file path="grunt_mflash.xml"/>
+			</particles>
+			<sound enabled="true" start-time="0.2">
+				<sound-file path="/sounds/shoot.wav"/>
+			</sound>
+			<attack-strenght value="2"/>
+			<attack-var value="2"/>
+			<attack-range value="6"/>
+			<attack-type value="bullet"/>
+			<attack-start-time value="0.25"/>
+			<attack-fields>
+				<field value="land"/>
+				<field value="air"/>
+			</attack-fields>
+			<projectile value="false"/>
+			<splash value="true">
+				<radius value="0"/>
+				<damage-all value="true"/>
+				<particle value="true" path="gun_hit.xml"/>
+			</splash>
+		</skill>
 
 		<skill>
 			<type value="attack"/>
@@ -168,7 +198,7 @@
 			<ep-cost value="0"/>
 			<speed value="270"/>
 			<anim-speed value="150"/>
-			<animation path="/troop/trooprun.g3d"/>
+			<animation path="/troop/trooprun2.g3d"/>
 			<sound enabled="false"/>
 		</skill>
 
@@ -242,7 +272,7 @@
 			<image path="../../../../icons/move.bmp"/>
 			<unit-requirements/>
 			<upgrade-requirements/>
-			<move-skill value="move_skill"/>
+			<move-skill value="move_rocket_skill"/>
 		</command>
 
 		<command>
@@ -264,15 +294,23 @@
 
 		<command>
 			<type value="attack"/>
-			<name value="attack"/>
+			<name value="rocket_attack"/>
 			<image path="../../../../icons/rocket.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_rocket_skill"/>
+			<attack-skill value="rocket_skill"/>
+		</command>
+
+		<command>
+			<type value="attack"/>
+			<name value="gun_attack"/>
+			<image path="../../../../icons/bullet.bmp"/>
 			<unit-requirements/>
 			<upgrade-requirements/>
 			<move-skill value="move_skill"/>
 			<attack-skill value="attack_skill"/>
 		</command>
-
-
 		
 		<command>
 			<type value="attack_stopped"/>
@@ -298,6 +336,7 @@
 				<unit name="sentry_gun"/>
 				<unit name="energy_cannon"/>
 				<unit name="i_f_v"/>
+				<unit name="spartan_i_f_v"/>
 				<unit name="stalker"/>
 				<unit name="recon"/>
 				<unit name="battle_tank"/>	

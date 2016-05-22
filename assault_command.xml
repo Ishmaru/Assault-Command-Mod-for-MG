@@ -30,7 +30,7 @@
 <damage-multiplier attack="explosive" armor="building" value="30.0"/>
 
 <damage-multiplier attack="energy" armor="infantry" value="20.0"/>
-<damage-multiplier attack="energy" armor="armor" value="70.0"/>
+<damage-multiplier attack="energy" armor="armor" value="90.0"/>
 <damage-multiplier attack="energy" armor="building" value="10.0"/>
 	</damage-multipliers>
 </tech-tree>

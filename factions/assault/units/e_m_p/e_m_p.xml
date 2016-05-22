@@ -56,23 +56,22 @@
          		<particle-file path="shock.xml"/>  <particle-file path="expl_small.xml"/>
 			</particles>
 			<sound enabled="false"/>
-			<attack-boost>
+			<attack-boost name="stun">
 				<allow-multiple-boosts value="false" />
-				<radius value="6"/>
-                        	<target value="foe" include-self="false">
-				</target>
-				<max-hp value="0"/>
-				<max-ep value="0"/>
-				<sight value="0"/>
-				<attack-strenght value="0"/>
-				<attack-range value="-100" value-percent-multipler="true"/>
-				<armor value="-1"/>
-				<move-speed value="-100" value-percent-multipler="true"/>
-				<production-speed value="-100" value-percent-multipler="true"/>
-				<particles value="true">
-				<affected-particle-file path="emp.xml"/>
-				</particles>
-            </attack-boost>
+				<radius value="5" />
+				<target value="foe"/>
+				<max-hp value="0" />
+				<max-ep value="0" />
+				<sight value="0" />
+				<attack-strenght value="-100" value-percent-multiplier="true"/>
+				<attack-range value="-100" value-percent-multiplier="true"/>
+				<armor value="0" />
+				<move-speed value="-100" value-percent-multiplier="true"/>
+				<production-speed value="-100" value-percent-multiplier="true"/>
+					<particles value="true">
+						<affected-particle-file path="emp.xml"/>
+					</particles>
+			</attack-boost>
 		</skill>
 
             <skill>

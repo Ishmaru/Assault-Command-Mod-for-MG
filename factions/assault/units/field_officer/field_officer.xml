@@ -9,7 +9,7 @@
 		<height value="2"/>
 		<max-hp value="100" regeneration="2"/>
 		<max-ep value="30" regeneration="1"/>
-		<armor value="2"/>	
+		<armor value="1"/>	
 		<armor-type value="infantry"/>				
 		<sight value="10"/>
 		<time value="3"/>	

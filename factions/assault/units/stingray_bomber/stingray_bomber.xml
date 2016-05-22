@@ -82,8 +82,8 @@
 			<type value="attack"/>
 			<name value="missile_skill"/>
 			<ep-cost value="0"/>
-			<speed value="30"/>
-			<anim-speed value="90"/>
+			<speed value="50"/>
+			<anim-speed value="100"/>
 			<animation path="stingray/stingray.g3d"/>       
 			<particles value="true">
 			<particle-file path="dust2.xml"/>
