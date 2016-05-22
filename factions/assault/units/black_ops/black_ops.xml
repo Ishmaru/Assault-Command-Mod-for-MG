@@ -123,7 +123,7 @@
 				<sound-file path="/sounds/bombbeep.wav"/>
 
 			</sound>
-			<attack-strenght value="30"/>
+			<attack-strenght value="40"/>
 			<attack-var value="0"/>
 			<attack-range value="1"/>
 			<attack-type value="explosive"/>

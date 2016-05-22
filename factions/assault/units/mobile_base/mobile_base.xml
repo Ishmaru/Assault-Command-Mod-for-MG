@@ -5,6 +5,7 @@
 	<!-- *** parameters *** -->
 
 	<parameters>
+		<count-in-victory-conditions value="true"/>
 		<size value="4"/>
 		<height value="3"/>
 		<max-hp value="3000" regeneration="0"/>
