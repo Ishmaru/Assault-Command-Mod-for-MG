@@ -4,6 +4,9 @@
 
 ### current version = 0.9 Beta
 
+![alt text](https://raw.githubusercontent.com/Ishmaru/Assault-Command-Mod-for-MG/master/screen.jpg "Screenshot")
+
+
 ### Adds a new Techtree (Assault Command) & faction (Assault)
 
 Assault Command is a fast paced RTS experience. With some unique features:
@@ -17,6 +20,16 @@ Assault Command is a fast paced RTS experience. With some unique features:
 * Fast paced combat. New method to calculate damage gives better random calculations. Units can seem to be able to avoid damage.
 * Unique special abilities, such as smoke grenades, EMP blasts, Decoy Tanks, Paradrop Infantry, Airlift Vehicles, and many more.
 
+###Contents:
+* 1 Techtree	- Assault Command
+* 1 Resource	- Oil
+* 1 Faction	- Assault
+* 2 Structures	- Command HQ & Mobile Base
+* 14 Units
+* 1 Hero Unit		-Kestrel
+* No Upgrades	(Coming Soon!)
+* No Tilesets or maps.
+
 ###Installation:
 place assault_command into your .megaglest/techs data directory
 
@@ -26,6 +39,12 @@ start Megaglest and select Assault Command from the Techs option (in custom game
 * Missing some sounds (Voice, EMP, Smoke Grenades, Helicopter,FX)
 * Good Blood Particle Fx
 * Unit documentation.
+
+###Unit Build Tree:
+![alt text](https://raw.githubusercontent.com/Ishmaru/Assault-Command-Mod-for-MG/master/assault_command_techtree.png "Build Tree Diagram")
+
+###Recomended Tilesets:
+Mediterran, Scrub Land, Birch Forest, Dark Forest
 
 ##Assault Command credits/license.
 
