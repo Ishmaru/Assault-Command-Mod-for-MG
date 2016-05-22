@@ -1,8 +1,7 @@
 # ASSAULT COMMAND MOD
 ###FOR MEGAGLEST
-<http://www.megaglest.org>
 
-### current version = 0.9 Beta
+### current version = 1.0
 
 ![alt text](https://raw.githubusercontent.com/Ishmaru/Assault-Command-Mod-for-MG/master/screen.jpg "Screenshot")
 
@@ -31,9 +30,11 @@ Assault Command is a fast paced RTS experience. With some unique features:
 * No Tilesets or maps.
 
 ###Installation:
-place assault_command into your .megaglest/techs data directory
+__REQUIRES:__  Megaglest, download it here: <http://www.megaglest.org>
 
-start Megaglest and select Assault Command from the Techs option (in custom game menu)on lower right
+Unzip and Place assault_command into your .megaglest/techs data directory
+
+Start Megaglest and select Assault Command from the Techs option (in custom game menu) on lower right
 
 ###Known Issues:
 * Missing some sounds (Voice, EMP, Smoke Grenades, Helicopter,FX)
