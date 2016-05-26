@@ -1,7 +1,7 @@
 # ASSAULT COMMAND MOD
 ###FOR MEGAGLEST
 
-### current version = 1.0
+### current version = 1.2
 
 ![alt text](https://raw.githubusercontent.com/Ishmaru/Assault-Command-Mod-for-MG/master/screen.jpg "Screenshot")
 
@@ -37,8 +37,7 @@ Unzip and Place assault_command into your .megaglest/techs data directory
 Start Megaglest and select Assault Command from the Techs option (in custom game menu) on lower right
 
 ###Known Issues:
-* Missing some sounds (Voice, EMP, Smoke Grenades, Helicopter,FX)
-* Good Blood Particle Fx
+* Missing some sounds (Voice, Helicopter,FX)
 * Unit documentation.
 
 ###Unit Build Tree:
@@ -89,3 +88,4 @@ CC-0 License
 * "Undercover Operative" <http://opengameart.org/content/undercover-operative>
 * "200% Production" <http://opengameart.org/content/200-production>
 * "Sentry" <http://opengameart.org/content/sentry>
+* "Grime of the City" <http://opengameart.org/content/grime-of-the-city>
