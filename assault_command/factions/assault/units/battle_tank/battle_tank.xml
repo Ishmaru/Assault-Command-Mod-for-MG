@@ -7,12 +7,12 @@
 	<parameters>
 		<size value="2"/>
 		<height value="3"/>
-		<max-hp value="600" regeneration="0"/>
+		<max-hp value="750" regeneration="0"/>
 		<max-ep value="4" regeneration="1"/>
 		<armor value="0"/>	
 		<armor-type value="armor"/>				
 		<sight value="10"/>
-		<time value="50"/>	
+		<time value="45"/>	
 		<multi-selection value="true"/>	
 		<cellmap value="false"/>
 		<levels>

@@ -6,7 +6,7 @@
 
 	<parameters>
 		<count-in-victory-conditions value="true"/>
-		<size value="4"/>
+		<size value="3"/>
 		<height value="3"/>
 		<max-hp value="3000" regeneration="0"/>
 		<max-ep value="10" regeneration="1"/>
@@ -14,7 +14,7 @@
 		<armor-type value="building"/>				
 		<sight value="15"/>
 		<time value="25"/>	
-		<multi-selection value="true"/>	
+		<multi-selection value="false"/>	
 		<cellmap value="false"/>
 		<levels>
 			<level name="rookie" kills="3"/>

@@ -49,13 +49,15 @@
 			<type value="stop"/>
 			<name value="stop_skill"/>		
 			<ep-cost value="0"/>
-			<speed value="1000"/>
-			<anim-speed value="135"/>
+			<speed value="1"/>
+			<anim-speed value="1"/>
 			<animation path="models/none.g3d"/>
 			<particles value="true">
          		<particle-file path="shock.xml"/>  <particle-file path="expl_small.xml"/>
 			</particles>
-			<sound enabled="false"/>
+			<sound enabled="true" start-time="0">
+				<sound-file path="/sounds/emp.wav"/>
+			</sound>
 			<attack-boost name="stun">
 				<allow-multiple-boosts value="false" />
 				<radius value="5" />

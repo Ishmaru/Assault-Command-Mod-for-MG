@@ -209,6 +209,9 @@
 			<speed value="60"/>
 			<anim-speed value="70"/>
 			<animation path="troop/troopdie2.g3d"/>
+			<particles value="true">
+				<particle-file path="blood.xml"/>
+			</particles>
 			<sound enabled="true" start-time="0">
 			</sound>			
 			<fade value="false"/>

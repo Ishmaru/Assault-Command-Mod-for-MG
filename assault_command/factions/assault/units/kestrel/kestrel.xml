@@ -95,7 +95,7 @@
 				<sound-file path="/sounds/shoot.wav"/>
 
 			</sound>
-			<attack-strenght value="4"/>
+			<attack-strenght value="5"/>
 			<attack-var value="3"/>
 			<attack-range value="7"/>
 			<attack-type value="bullet"/>
@@ -116,8 +116,8 @@
 			<type value="attack"/>
 			<name value="lucky_skill"/>		
 			<ep-cost value="5"/>
-			<speed value="40"/>
-			<anim-speed value="40"/>
+			<speed value="50"/>
+			<anim-speed value="50"/>
 			<animation path="troop/troopshoot2.g3d"/>
 			<particles value="true" start-time="0.35" end-time="0.45">
 				<particle-file path="lucky_muzzle.xml"/>
@@ -129,7 +129,7 @@
 			</sound>
 			<attack-strenght value="10"/>
 			<attack-var value="0"/>
-			<attack-range value="10"/>
+			<attack-range value="12"/>
 			<attack-type value="hmg"/>
 			<attack-start-time value="0.4"/>
 			<attack-fields>
@@ -209,6 +209,9 @@
 			<speed value="60"/>
 			<anim-speed value="70"/>
 			<animation path="troop/troopdie2.g3d"/>
+			<particles value="true">
+				<particle-file path="blood.xml"/>
+			</particles>
 			<sound enabled="true" start-time="0">
 			</sound>			
 			<fade value="false"/>

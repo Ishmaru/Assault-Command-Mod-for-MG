@@ -7,7 +7,7 @@
 	<parameters>
 		<size value="2"/>
 		<height value="3"/>
-		<max-hp value="100" regeneration="0"/>
+		<max-hp value="150" regeneration="0"/>
 		<max-ep value="30" regeneration="1"/>
 		<armor value="0"/>	
 		<armor-type value="armor"/>				
