@@ -1,7 +1,7 @@
 # ASSAULT COMMAND MOD
 ###FOR MEGAGLEST
 
-### current version = 1.2
+### current version = 1.3
 
 ![alt text](https://raw.githubusercontent.com/Ishmaru/Assault-Command-Mod-for-MG/master/screen.jpg "Screenshot")
 

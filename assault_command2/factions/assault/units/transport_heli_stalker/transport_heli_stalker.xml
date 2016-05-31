@@ -1,0 +1,162 @@
+<?xml version="1.0" standalone="no"?>
+
+<unit>
+
+	<!-- *** parameters *** -->
+
+	<parameters>
+		<size value="2"/>
+		<height value="1"/>
+		<max-hp value="300" regeneration="0"/>
+		<max-ep value="5" regeneration="1"/>
+		<armor value="1"/>	
+		<armor-type value="armor"/>				
+		<sight value="10"/>
+		<time value="35"/>	
+		<multi-selection value="true"/>	
+		<cellmap value="false"/>
+		<levels>
+		</levels>
+		<fields>
+			<field value="air"/>
+		</fields>	
+		<properties/>
+		<light enabled="false"/>
+		<unit-requirements/>
+		<upgrade-requirements/>
+		<resource-requirements/>			
+		<resources-stored/>
+		<image path="../../../../icons/stalkert.bmp"/>
+		<image-cancel path="../../../../icons/stop.bmp"/>
+		<meeting-point value="false"/>
+		<selection-sounds enabled="true">
+		</selection-sounds>
+		<command-sounds enabled="true">
+		</command-sounds>
+		<resources-death>
+            <resource name="oil" amount-value="200" />
+        </resources-death>
+	</parameters>
+
+
+	<!-- *** skills *** -->
+
+	<skills>
+	
+		<skill>
+			<type value="stop"/>
+			<name value="stop_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="1000"/>
+			<anim-speed value="100"/>
+			<animation path="transport/transporthelistand.g3d"/>
+			<particles value="true">
+         		<particle-file path="dust.xml"/>
+			</particles>
+			<sound enabled="false"/>
+		</skill>
+		
+		<skill>
+			<type value="move"/>
+			<name value="move_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="500"/>
+			<anim-speed value="100"/>
+			<animation path="transport/transporthelirun.g3d"/>
+			<particles value="true">
+         		<particle-file path="dust.xml"/>
+			</particles>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="die"/>
+			<name value="die_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="100"/>
+			<anim-speed value="100"/>
+			<animation path="transport/transporthelidie.g3d"/>
+			<particles value="true">
+         		<particle-file path="dust.xml"/>  <particle-file path="expl_small.xml"/>
+			</particles>
+			<sound enabled="true" start-time="0">
+				<sound-file path="sounds/tank_destroy_2.wav"/>
+			</sound>				
+			<fade value="false"/>
+			<shake enabled="true" intensity="200" duration="50" start-time="0.0">
+				<self enabled="true" visible="true" in-camera-view="false" camera-distance-affected="true"/>
+				<team enabled="true" visible="true" in-camera-view="false" camera-distance-affected="true"/>
+				<enemy enabled="true" visible="true" in-camera-view="false" camera-distance-affected="true"/>
+			</shake>
+		</skill>
+
+		<skill>
+			<type value="attack"/>
+			<name value="attack"/>		
+			<ep-cost value="0"/>
+			<speed value="0"/>
+			<anim-speed value="0"/>
+			<animation path="transport/transporthelistand.g3d"/>
+			<attack-strenght value="0"/>
+			<attack-var value="0"/>
+			<attack-range value="10"/>
+			<attack-type value="explosive"/>
+			<attack-start-time value="0.0"/>
+			<attack-fields>
+				<field value="land"/>
+				<field value="air"/>
+			</attack-fields>
+			<projectile value="false"/>
+			<splash value="false"/>
+		</skill>
+
+		<skill>												
+			<type value="morph"/>											
+			<name value="morph"/>											
+			<ep-cost value="0"/>											
+			<speed value="1000"/>											
+			<anim-speed value="50"/>
+			<animation path="transport/transporthelidrop.g3d"/>
+			<particles value="true">
+         		<particle-file path="dust.xml"/>
+			</particles>
+			<sound enabled="false"/>								
+		</skill>
+	</skills>
+
+	<!-- *** commands *** -->
+	
+	<commands>
+		
+		<command>
+			<type value= "stop"/>
+			<name value="stop"/>
+			<image path="../../../../icons/stop.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+		</command>
+
+		<command>
+			<type value="move"/>
+			<name value="move"/>
+			<image path="../../../../icons/move.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+		</command>
+	
+		<command>												
+			<type value="morph"/>											
+			<name value="drop_stalker"/>										
+			<image path="../../../../icons/airlift.bmp"/>	
+			<unit-requirements/>											
+			<upgrade-requirements>
+			</upgrade-requirements>
+			<ignore-resource-requirements value="true" />						
+			<morph-skill value="morph"/>										
+			<morph-unit name= "stalker"/>									
+			<discount value="0"/>											
+		</command>	
+	</commands>
+</unit>
