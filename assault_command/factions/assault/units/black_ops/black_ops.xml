@@ -205,7 +205,7 @@
 			<type value="harvest"/>
 			<name value="oil_skill"/>		
 			<ep-cost value="0"/>
-			<speed value="225"/>
+			<speed value="150"/>
 			<anim-speed value="90"/>
 			<animation path="troop/troopbomb.g3d"/>
 			<sound enabled="false"/>
@@ -343,10 +343,14 @@
 				<unit name="sentry_gun"/>
 				<unit name="energy_cannon"/>
 				<unit name="i_f_v"/>
+				<unit name="spartan_i_f_v"/>
 				<unit name="stalker"/>
 				<unit name="recon"/>
 				<unit name="battle_tank"/>	
-				<unit name="cobra_m_r_l_s"/>		
+				<unit name="cobra_m_r_l_s"/>
+				<unit name="scorpion_assault"/>
+				<unit name="scorpion_siege"/>
+				<unit name="prototype_tank"/>		
 			</repaired-units>		
 		</command>
 

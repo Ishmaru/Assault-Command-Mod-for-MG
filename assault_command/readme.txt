@@ -1,10 +1,29 @@
-﻿Changelog:
+Changelog:
 -----------------
+
+
+
+Version 1.4
+-----------------
+Whats Added:
+New Unit Scorpion SPG Assault
+New Unit Scorpion SPG Siege
+New Unit Prototype Tank
+New Revised Mobile Base, produces all vehicle types! Also wth a new 3D model.
+
+Balance Changes:
+Fixed Railguns using standard rifles when holding position.
+Removed one Command HQ from start. You now start with one Mobile Base, and one Command HQ.
+Spartan IFV Hp reduced.
+Mobile Base, no longer flees from enemy units.
+Increased amount of oil per oil derrick.
+Increased “Overtime” boost to significantly increase build times.
+Fixed issue with Black Ops not repairing Spartan IFVs.
 
 Version 1.3
 -----------------
 Whats Added:
-Added camra shake effects, on building and vehicle destruction.
+Added caemra shake effects, on building and vehicle destruction.
 
 Balance Changes:
 Faster vehicle build times.

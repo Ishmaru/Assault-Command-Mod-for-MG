@@ -6,8 +6,8 @@
 
 	<parameters>
 		<count-in-victory-conditions value="true"/>
-		<size value="3"/>
-		<height value="3"/>
+		<size value="4"/>
+		<height value="4"/>
 		<max-hp value="3000" regeneration="0"/>
 		<max-ep value="10" regeneration="1"/>
 		<armor value="0"/>	
@@ -38,7 +38,7 @@
 		<resources-stored>
 			<resource name="oil" amount="2000"/>
 		</resources-stored>
-		<image path="../../../../icons/rig.bmp"/>
+		<image path="../../../../icons/mobilefactory.bmp"/>
 		<image-cancel path="../../../../icons/stop.bmp"/>
 		<meeting-point value="false"/>
 		<selection-sounds enabled="true">
@@ -77,6 +77,26 @@
 			</particles>
 			<sound enabled="false">
 			</sound>
+		</skill>
+
+		<skill>
+			<type value="attack"/>
+			<name value="attack_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="300"/>
+			<anim-speed value="300"/>
+			<animation path="rig/rigrun.g3d"/>
+			<sound enabled="false"/>
+			<attack-strenght value="0"/>
+			<attack-var value="0"/>
+			<attack-range value="10"/>
+			<attack-type value="explosive"/>
+			<attack-start-time value="0.3"/>
+			<attack-fields>
+			<field value="land"/>
+			</attack-fields>
+			<projectile value="false"/>
+			<splash value="false"/>
 		</skill>
 
 		
@@ -141,11 +161,12 @@
 			<type value="produce"/>
 			<name value="produce_skill"/>	
 			<ep-cost value="0" />
-			<speed value="100" />
-			<anim-speed value="100" />
+			<speed value="150" />
+			<anim-speed value="150" />
 			<animation path="rig/rigstand.g3d" />
 			<sound enabled="false" />
 		</skill>
+
 	</skills>
 
 	<!-- *** commands *** -->
@@ -186,7 +207,8 @@
 			<max-load value="999999999"/>
 			<hits-per-unit value="1"/>				
 		</command>
-			<command>
+
+		<command>
 			<type value="produce"/>
 			<name value="deploy_grunt" />
 			<image path="../../../../icons/grunt.bmp" />
@@ -195,5 +217,95 @@
 			<produce-skill value="produce_skill"/>
 			<produced-unit name="grunt"/>
 		</command>	
+
+		<command>
+			<type value="produce"/>
+			<name value="produce_recon" />
+			<image path="../../../../icons/recon.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="recon"/>
+		</command>
+
+		<command>
+			<type value="produce"/>
+			<name value="produce_i_f_v" />
+			<image path="../../../../icons/ifv.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="i_f_v"/>
+		</command>
+
+		<command>
+			<type value="produce"/>
+			<name value="produce_stalker" />
+			<image path="../../../../icons/stalker.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="stalker"/>
+		</command>
+
+		<command>
+			<type value="produce"/>
+			<name value="produce_scorpion_s_p_g" />
+			<image path="../../../../icons/scorpiona.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="scorpion_assault"/>
+		</command>
+
+		<command>
+			<type value="produce"/>
+			<name value="produce_battle_tank" />
+			<image path="../../../../icons/tank.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="battle_tank"/>
+		</command>
+
+		<command>
+			<type value="produce"/>
+			<name value="produce_cobra_m_r_l_s" />
+			<image path="../../../../icons/mrls.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="cobra_m_r_l_s"/>
+		</command>
+
+		<command>
+			<type value="produce"/>
+			<name value="produce_prototype_tank" />
+			<image path="../../../../icons/prototype.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="prototype_tank"/>
+		</command>
+
+		<command>
+			<type value="produce"/>
+			<name value="produce_transport_heli" />
+			<image path="../../../../icons/transport.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="transport_heli"/>
+		</command>
+
+		<command>
+			<type value="produce"/>
+			<name value="recruit_kestrel" />
+			<image path="../../../../icons/kestrel.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="kestrel"/>
+		</command>
 	</commands>
 </unit>

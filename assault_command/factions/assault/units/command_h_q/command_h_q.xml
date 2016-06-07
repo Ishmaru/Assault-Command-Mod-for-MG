@@ -34,7 +34,6 @@
 		</resource-requirements>
 		<resources-stored>
 			<resource name="oil" amount="2000"/>
-			<resource name="housing" amount="2000"/>
 		</resources-stored>
 		<image path="../../../../icons/hq.bmp"/>
 		<image-cancel path="../../../../icons/stop.bmp"/>
@@ -155,6 +154,16 @@
 
 		<command>
 			<type value="produce"/>
+			<name value="produce_scorpion_s_p_g" />
+			<image path="../../../../icons/scorpiona.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="scorpion_assault"/>
+		</command>
+
+		<command>
+			<type value="produce"/>
 			<name value="produce_battle_tank" />
 			<image path="../../../../icons/tank.bmp" />
 			<unit-requirements />
@@ -171,6 +180,16 @@
 			<upgrade-requirements />
 			<produce-skill value="produce_skill"/>
 			<produced-unit name="cobra_m_r_l_s"/>
+		</command>
+
+		<command>
+			<type value="produce"/>
+			<name value="produce_prototype_tank" />
+			<image path="../../../../icons/prototype.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="prototype_tank"/>
 		</command>
 
 		<command>

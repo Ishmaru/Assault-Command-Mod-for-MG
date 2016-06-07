@@ -144,34 +144,6 @@
 		</skill>
 
 		<skill>
-			<type value="attack"/>
-			<name value="bomb_skill"/>		
-			<ep-cost value="30"/>
-			<speed value="30"/>
-			<anim-speed value="30"/>
-			<animation path="troop/troopbomb.g3d"/>
-			<sound enabled="true" start-time="0.99">
-				<sound-file path="/sounds/bombbeep.wav"/>
-
-			</sound>
-			<attack-strenght value="1500"/>
-			<attack-var value="0"/>
-			<attack-range value="1"/>
-			<attack-type value="bullet"/>
-			<attack-start-time value="0.99"/>
-			<attack-fields>
-				<field value="land"/>
-			</attack-fields>
-			<projectile value="false"/>
-			<splash value="true">
-				<radius value="0"/>
-				<damage-all value="true"/>
-				<particle value="true" path="particle_splash.xml"/>
-
-			</splash>
-		</skill>
-
-		<skill>
 			<type value="repair"/>
 			<name value="fix_skill"/>		
 			<ep-cost value="0"/>
@@ -222,7 +194,7 @@
 			<type value="harvest"/>
 			<name value="oil_skill"/>		
 			<ep-cost value="0"/>
-			<speed value="225"/>
+			<speed value="150"/>
 			<anim-speed value="90"/>
 			<animation path="troop/troopbomb.g3d"/>
 			<sound enabled="false"/>
@@ -343,7 +315,10 @@
 				<unit name="stalker"/>
 				<unit name="recon"/>
 				<unit name="battle_tank"/>	
-				<unit name="cobra_m_r_l_s"/>		
+				<unit name="cobra_m_r_l_s"/>
+				<unit name="scorpion_assault"/>
+				<unit name="scorpion_siege"/>
+				<unit name="prototype_tank"/>				
 			</repaired-units>		
 		</command>
 

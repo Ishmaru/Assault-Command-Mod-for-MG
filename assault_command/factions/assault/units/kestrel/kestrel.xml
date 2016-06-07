@@ -95,7 +95,7 @@
 				<sound-file path="/sounds/shoot.wav"/>
 
 			</sound>
-			<attack-strenght value="5"/>
+			<attack-strenght value="6"/>
 			<attack-var value="3"/>
 			<attack-range value="7"/>
 			<attack-type value="bullet"/>
@@ -127,7 +127,7 @@
 				<sound-file path="/sounds/sniper.wav"/>
 
 			</sound>
-			<attack-strenght value="10"/>
+			<attack-strenght value="12"/>
 			<attack-var value="0"/>
 			<attack-range value="12"/>
 			<attack-type value="hmg"/>
@@ -305,7 +305,10 @@
 				<unit name="stalker"/>
 				<unit name="recon"/>
 				<unit name="battle_tank"/>	
-				<unit name="cobra_m_r_l_s"/>		
+				<unit name="cobra_m_r_l_s"/>
+				<unit name="scorpion_assault"/>
+				<unit name="scorpion_siege"/>	
+				<unit name="prototype_tank"/>			
 			</repaired-units>		
 		</command>
 

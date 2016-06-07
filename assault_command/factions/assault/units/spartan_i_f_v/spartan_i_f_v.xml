@@ -7,7 +7,7 @@
 	<parameters>
 		<size value="2"/>
 		<height value="3"/>
-		<max-hp value="450" regeneration="0"/>
+		<max-hp value="400" regeneration="0"/>
 		<max-ep value="12" regeneration="1"/>
 		<armor value="0"/>	
 		<armor-type value="armor"/>				
@@ -31,7 +31,7 @@
 		</unit-requirements>
 		<upgrade-requirements/>
 		<resource-requirements>
-			<resource name="oil" amount="200"/>				
+			<resource name="oil" amount="250"/>				
 		</resource-requirements>
 		<resources-stored/>
 		<image path="../../../../icons/spartan.bmp"/>

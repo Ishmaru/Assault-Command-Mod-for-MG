@@ -5,9 +5,9 @@
 				<resource name="oil" amount="500"/>
 	</starting-resources>
 	<starting-units>
-		<unit name="command_h_q" amount="2"/>
-		<unit name="grunt" amount="10"/>
+		<unit name="command_h_q" amount="1"/>
 		<unit name="mobile_base" amount="1"/>
+		<unit name="grunt" amount="10"/>
 	</starting-units>	
 	
 	<healthbar>
