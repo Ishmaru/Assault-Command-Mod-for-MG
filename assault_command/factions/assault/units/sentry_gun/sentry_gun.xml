@@ -8,7 +8,7 @@
 		<count-in-victory-conditions value="false"/>
 		<size value="2"/>
 		<height value="2"/>
-		<max-hp value="100" regeneration="0"/>
+		<max-hp value="125" regeneration="0"/>
 		<max-ep value="10" regeneration="1"/>
 		<armor value="0"/>	
 		<armor-type value="armor"/>				

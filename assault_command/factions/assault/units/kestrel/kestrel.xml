@@ -297,9 +297,11 @@
 			<repair-skill value="fix_skill"/>
 			<repaired-units>
 				<unit name="command_h_q"/>
+				<unit name="battle_lab"/>
 				<unit name="mobile_base"/>
 				<unit name="sentry_gun"/>
 				<unit name="energy_cannon"/>
+				<unit name="motorcycle"/>
 				<unit name="i_f_v"/>
 				<unit name="spartan_i_f_v"/>			
 				<unit name="stalker"/>

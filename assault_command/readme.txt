@@ -1,7 +1,34 @@
 Changelog:
 -----------------
+Version 1.5
+-----------------
+Whats Added:
+New Unit Motorcycle
+New Building Battle Lab
 
+New Upgrades:
+Scanners
+Body Armor
+Turbines
+Incendiary Grenades
+High Explosive Shells
+Rocket Capacity
+Magnetic Armor
+Ap Bullets
+Calibrated Scopes
+Reflective Mirrors
+Composite Armor
+Long Range Tracking
+More camera shake effects, on cannons firing.
 
+Balance Changes:
+Decrease EP cost to attack for Scorpion Assault + Scorpion Siege
+Decreased Cost for Scorpion
+Lowered Hp for Transport Heli + Transport Heli Stalker
+Slight Hp increase for Sentry Guns
+Decrease EP cost to attack for Stalker
+Slight Range Increase for Stalker
+Motorcycles can harvest distant resources with faster movement. However they cannot repair or build structures.
 
 Version 1.4
 -----------------
@@ -23,7 +50,7 @@ Fixed issue with Black Ops not repairing Spartan IFVs.
 Version 1.3
 -----------------
 Whats Added:
-Added caemra shake effects, on building and vehicle destruction.
+Added camera shake effects, on building and vehicle destruction.
 
 Balance Changes:
 Faster vehicle build times.

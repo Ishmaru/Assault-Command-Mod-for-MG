@@ -8,7 +8,7 @@
 		<size value="2"/>
 		<height value="3"/>
 		<max-hp value="300" regeneration="0"/>
-		<max-ep value="7" regeneration="1"/>
+		<max-ep value="5" regeneration="1"/>
 		<armor value="0"/>	
 		<armor-type value="armor"/>				
 		<sight value="10"/>
@@ -32,7 +32,7 @@
 		<upgrade-requirements>
 		</upgrade-requirements>
 		<resource-requirements>
-			<resource name="oil" amount="600"/>			
+			<resource name="oil" amount="500"/>			
 		</resource-requirements>
 		<resources-stored/>
 		<image path="../../../../icons/scorpiona.bmp"/>
@@ -79,7 +79,7 @@
 		<skill>
 			<type value="attack"/>
 			<name value="attack_skill"/>		
-			<ep-cost value="7"/>
+			<ep-cost value="5"/>
 			<speed value="300"/>
 			<anim-speed value="160"/>
 			<animation path="scorpion/scorpionshoot.g3d"/>
@@ -103,6 +103,11 @@
 				<damage-all value="true"/>
 				<particle value="true" path="particle_splash.xml"/>
 			</splash>
+			<shake enabled="true" intensity="100" duration="30" start-time="0.0">
+				<self enabled="true" visible="true" in-camera-view="false" camera-distance-affected="true"/>
+				<team enabled="true" visible="true" in-camera-view="false" camera-distance-affected="true"/>
+				<enemy enabled="true" visible="true" in-camera-view="false" camera-distance-affected="true"/>
+			</shake>
 		</skill>
 		
 		<skill>												

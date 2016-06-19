@@ -172,41 +172,6 @@
 	<!-- *** commands *** -->
 	
 	<commands>
-		
-		<command>
-			<type value= "stop"/>
-			<name value="stop"/>
-			<image path="../../../../icons/stop.bmp"/>
-			<unit-requirements/>
-			<upgrade-requirements/>
-			<stop-skill value="stop_skill"/>
-		</command>
-
-		<command>
-			<type value="move"/>
-			<name value="move"/>
-			<image path="../../../../icons/move.bmp"/>
-			<unit-requirements/>
-			<upgrade-requirements/>
-			<move-skill value="move_skill"/>
-		</command>
-
-		<command>
-			<type value="harvest"/>
-			<name value="move_to_oil"/>
-			<image path="../../../../icons/oil.bmp"/>
-			<unit-requirements/>
-			<upgrade-requirements/>
-			<move-skill value="move_skill"/>
-			<harvest-skill value="oil_skill"/>
-			<stop-loaded-skill value="stop_oil_skill"/>
-			<move-loaded-skill value="move_oil_skill"/>
-			<harvested-resources>
-				<resource name="oil"/>										
-			</harvested-resources>
-			<max-load value="999999999"/>
-			<hits-per-unit value="1"/>				
-		</command>
 
 		<command>
 			<type value="produce"/>
@@ -306,6 +271,41 @@
 			<upgrade-requirements />
 			<produce-skill value="produce_skill"/>
 			<produced-unit name="kestrel"/>
+		</command>
+
+		<command>
+			<type value= "stop"/>
+			<name value="stop"/>
+			<image path="../../../../icons/stop.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+		</command>
+
+		<command>
+			<type value="move"/>
+			<name value="move"/>
+			<image path="../../../../icons/move.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+		</command>
+
+		<command>
+			<type value="harvest"/>
+			<name value="move_to_oil"/>
+			<image path="../../../../icons/oil.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+			<harvest-skill value="oil_skill"/>
+			<stop-loaded-skill value="stop_oil_skill"/>
+			<move-loaded-skill value="move_oil_skill"/>
+			<harvested-resources>
+				<resource name="oil"/>										
+			</harvested-resources>
+			<max-load value="999999999"/>
+			<hits-per-unit value="1"/>				
 		</command>
 	</commands>
 </unit>

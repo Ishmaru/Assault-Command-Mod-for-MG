@@ -144,8 +144,12 @@
 				<radius value="0"/>
 				<damage-all value="true"/>
 				<particle value="true" path="particle_splash.xml"/>
-
 			</splash>
+			<shake enabled="true" intensity="50" duration="30" start-time="0.0">
+				<self enabled="true" visible="true" in-camera-view="false" camera-distance-affected="true"/>
+				<team enabled="true" visible="true" in-camera-view="false" camera-distance-affected="true"/>
+				<enemy enabled="true" visible="true" in-camera-view="false" camera-distance-affected="true"/>
+			</shake>
 		</skill>
 
 		
