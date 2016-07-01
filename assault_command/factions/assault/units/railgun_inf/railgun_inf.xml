@@ -29,7 +29,7 @@
 		</unit-requirements>
 		<upgrade-requirements/>
 		<resource-requirements>	
-			<resource name="oil" amount="100" />			
+			<resource name="oil" amount="125" />			
 		</resource-requirements>
 		<resources-stored/>
 		<image path="../../../../icons/railgun.bmp"/>
@@ -347,5 +347,16 @@
 			<morph-unit name= "field_officer"/>									
 			<discount value="0"/>											
 		</command>	
+		<command>												
+			<type value="morph"/>											
+			<name value="promote_commando"/>										
+			<image path="../../../../icons/kestrel.bmp"/>	
+			<unit-requirements/>											
+			<upgrade-requirements>
+			</upgrade-requirements>						
+			<morph-skill value="morph"/>										
+			<morph-unit name= "commando"/>									
+			<discount value="0"/>											
+		</command>
 	</commands>
 </unit>

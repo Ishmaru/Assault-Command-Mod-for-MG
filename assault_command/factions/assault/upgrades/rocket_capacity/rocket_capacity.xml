@@ -11,10 +11,9 @@
 	</resource-requirements>
 	<effects>
 		<unit name="cobra_m_r_l_s"/>
-			<unit name="spartan_i_f_v"/>
 	</effects>
 	<max-hp value="0"/>
-	<max-ep value="0" regeneration="1"/>
+	<max-ep value="30"/>
 	<sight value="0"/>
 	<attack-strenght value="0"/>
 	<attack-range value="0"/>

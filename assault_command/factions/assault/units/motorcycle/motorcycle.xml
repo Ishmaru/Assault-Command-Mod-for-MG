@@ -12,7 +12,7 @@
 		<armor value="0"/>	
 		<armor-type value="infantry"/>				
 		<sight value="15"/>
-		<time value="10"/>	
+		<time value="5"/>	
 		<multi-selection value="true"/>	
 		<cellmap value="false"/>
 		<levels>
@@ -159,7 +159,7 @@
 			<name value="oil_skill"/>		
 			<ep-cost value="0"/>
 			<speed value="150"/>
-			<anim-speed value="90"/>
+			<anim-speed value="50"/>
 			<animation path="biker/bikerstand.g3d"/>
 			<sound enabled="false"/>
 		</skill>
@@ -178,7 +178,6 @@
 	<!-- *** commands *** -->
 	
 	<commands>
-		
 		<command>
 			<type value= "stop"/>
 			<name value="stop"/>
@@ -187,7 +186,6 @@
 			<upgrade-requirements/>
 			<stop-skill value="stop_skill"/>
 		</command>
-
 		<command>
 			<type value="move"/>
 			<name value="move"/>
@@ -196,7 +194,6 @@
 			<upgrade-requirements/>
 			<move-skill value="move_skill"/>
 		</command>
-
 		<command>
 			<type value="attack"/>
 			<name value="attack"/>
@@ -206,7 +203,6 @@
 			<move-skill value="move_skill"/>
 			<attack-skill value="attack_skill"/>
 		</command>
-
 		<command>
 			<type value="attack_stopped"/>
 			<name value="hold_position"/>
@@ -216,7 +212,6 @@
 			<stop-skill value="stop_skill"/>
 			<attack-skill value="attack_skill"/>
 		</command>
-
 		<command>
 			<type value="harvest"/>
 			<name value="pump"/>
@@ -230,10 +225,9 @@
 			<harvested-resources>
 				<resource name="oil"/>										
 			</harvested-resources>
-			<max-load value="15"/>
+			<max-load value="30"/>
 			<hits-per-unit value="1"/>				
 		</command>
-
 		<command>												
 			<type value="morph"/>											
 			<name value="promote_officer"/>										
@@ -244,6 +238,17 @@
 			<morph-skill value="morph"/>										
 			<morph-unit name= "field_officer"/>									
 			<discount value="0"/>											
-		</command>				
+		</command>	
+		<command>												
+			<type value="morph"/>											
+			<name value="promote_commando"/>										
+			<image path="../../../../icons/kestrel.bmp"/>	
+			<unit-requirements/>											
+			<upgrade-requirements>
+			</upgrade-requirements>						
+			<morph-skill value="morph"/>										
+			<morph-unit name= "commando"/>									
+			<discount value="0"/>											
+		</command>			
 	</commands>
 </unit>

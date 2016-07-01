@@ -7,7 +7,7 @@
 	<parameters>
 		<size value="2"/>
 		<height value="3"/>
-		<max-hp value="200" regeneration="0"/>
+		<max-hp value="250" regeneration="0"/>
 		<max-ep value="4" regeneration="1"/>
 		<armor value="0"/>	
 		<armor-type value="armor"/>				
@@ -31,7 +31,7 @@
 		</unit-requirements>
 		<upgrade-requirements/>
 		<resource-requirements>
-			<resource name="oil" amount="450"/>				
+			<resource name="oil" amount="400"/>				
 		</resource-requirements>
 		<resources-stored/>
 		<image path="../../../../icons/stalker.bmp"/>

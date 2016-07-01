@@ -162,7 +162,6 @@
 			<anim-speed value="90"/>
 			<animation path="troop/troopbomb.g3d"/>
 			<sound enabled="false"/>
-
 		</skill>
 
 		<skill>												
@@ -239,8 +238,6 @@
 			<move-skill value="move_skill"/>
 			<attack-skill value="attack_skill"/>
 		</command>
-
-
 		
 		<command>
 			<type value="attack_stopped"/>
@@ -328,17 +325,6 @@
 			<morph-skill value="morph"/>										
 			<morph-unit name= "railgun_inf"/>									
 			<discount value="0"/>											
-		</command>
-		<command>												
-			<type value="morph"/>											
-			<name value="promote_officer"/>										
-			<image path="../../../../icons/officer.bmp"/>	
-			<unit-requirements/>											
-			<upgrade-requirements>
-			</upgrade-requirements>						
-			<morph-skill value="morph"/>										
-			<morph-unit name= "field_officer"/>									
-			<discount value="0"/>											
 		</command>	
 		<command>												
 			<type value="morph"/>											
@@ -349,6 +335,17 @@
 			</upgrade-requirements>						
 			<morph-skill value="morph"/>										
 			<morph-unit name= "motorcycle"/>									
+			<discount value="0"/>											
+		</command>
+		<command>												
+			<type value="morph"/>											
+			<name value="promote_w_a_s_p"/>										
+			<image path="../../../../icons/wasp.bmp"/>	
+			<unit-requirements/>											
+			<upgrade-requirements>
+			</upgrade-requirements>						
+			<morph-skill value="morph"/>										
+			<morph-unit name= "w_a_s_p"/>									
 			<discount value="0"/>											
 		</command>
 	</commands>

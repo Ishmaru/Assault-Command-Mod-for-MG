@@ -264,16 +264,6 @@
 		</command>
 
 		<command>
-			<type value="produce"/>
-			<name value="recruit_kestrel" />
-			<image path="../../../../icons/kestrel.bmp" />
-			<unit-requirements />
-			<upgrade-requirements />
-			<produce-skill value="produce_skill"/>
-			<produced-unit name="kestrel"/>
-		</command>
-
-		<command>
 			<type value= "stop"/>
 			<name value="stop"/>
 			<image path="../../../../icons/stop.bmp"/>

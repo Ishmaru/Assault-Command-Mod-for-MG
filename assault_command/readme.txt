@@ -1,5 +1,25 @@
 Changelog:
 -----------------
+Version 1.6
+-----------------
+Whats Added:
+New Flying Infantry Unit WASP
+
+Balance Changes:
+Stalker has more HP.
+Rocket Capacity Doubles Max EP for MRLS
+Rocket Capacity no longer affects Spartan IFVs
+Reflective Mirrors now only adds +1 to attack for Energy Cannons.
+Player Starts with 2 Command HQ’s, a Mobile Base, & Battle Lab
+Kestrel renamed to Commando
+Commandos are no longer trained from Mobile Base or Command HQ.
+Commandos are upgraded from  Black ops, Rocket Grunts, Motorcycle, WASPs, or Railgun Infantry
+Field Officers cannot be upgraded from a basic Grunt
+Field Officers are upgraded from a Black ops, Rocket Grunts, Motorcycles, WASPs, or Railgun Infantry
+Motorcycles are upgraded faster.
+
+Changelog:
+-----------------
 Version 1.5
 -----------------
 Whats Added:

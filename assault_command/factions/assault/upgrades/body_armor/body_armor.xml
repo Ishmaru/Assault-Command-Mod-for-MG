@@ -16,7 +16,8 @@
 		<unit name="railgun_inf"/>
 		<unit name="motorcycle"/>
 		<unit name="field_officer"/>
-		<unit name="kestrel"/>
+		<unit name="commando"/>
+		<unit name="w_a_s_p"/>
 	</effects>
 	<max-hp value="25"/>
 	<max-ep value="0"/>

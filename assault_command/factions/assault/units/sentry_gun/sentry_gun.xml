@@ -82,10 +82,10 @@
 			<type value="attack"/>
 			<name value="attack_skill"/>		
 			<ep-cost value="0"/>
-			<speed value="100"/>
-			<anim-speed value="100"/>
+			<speed value="150"/>
+			<anim-speed value="150"/>
 			<animation path="sentry/gunturretshoot.g3d"/>
-			<particles value="true" start-time="0.1" end-time="0.95">
+			<particles value="true">
 				<particle-file path="gun_muzzle.xml"/>
 				<particle-file path="grunt_mflash.xml"/>
 			</particles>
