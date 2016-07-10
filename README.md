@@ -1,9 +1,10 @@
-# ASSAULT COMMAND MOD
-###FOR MEGAGLEST
+![Assault Command](https://raw.githubusercontent.com/Ishmaru/Assault-Command-Mod-for-MG/master/command_assault.png)
+
+###MOD FOR MEGAGLEST
 
 ### Current version = 1.7
 
-![alt text](https://raw.githubusercontent.com/Ishmaru/Assault-Command-Mod-for-MG/master/screen.jpg "Screenshot")
+![Screenshot](https://raw.githubusercontent.com/Ishmaru/Assault-Command-Mod-for-MG/master/screen2.png)
 
 
 ### Adds a new Techtree (Assault Command) & faction (Assault)
@@ -26,6 +27,9 @@ Assault Command is a fast paced RTS experience. With some unique features:
 * 3 Structures	- Command HQ, Battle Lab, & Mobile Base
 * 18 Units
 * No Tilesets or maps.
+
+![Screenshot](https://raw.githubusercontent.com/Ishmaru/Assault-Command-Mod-for-MG/master/screen1.png)
+
 
 ###Installation:
 __REQUIRES:__  Megaglest, download it here: <http://www.megaglest.org>
@@ -87,3 +91,5 @@ CC-0 License
 * "200% Production" <http://opengameart.org/content/200-production>
 * "Sentry" <http://opengameart.org/content/sentry>
 * "Grime of the City" <http://opengameart.org/content/grime-of-the-city>
+
+![Screenshot](https://raw.githubusercontent.com/Ishmaru/Assault-Command-Mod-for-MG/master/screen3.png)
