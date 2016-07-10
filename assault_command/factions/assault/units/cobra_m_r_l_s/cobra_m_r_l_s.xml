@@ -10,7 +10,7 @@
 		<max-hp value="150" regeneration="0"/>
 		<max-ep value="30" regeneration="1"/>
 		<armor value="0"/>	
-		<armor-type value="armor"/>				
+		<armor-type value="armor_light"/>				
 		<sight value="10"/>
 		<time value="15"/>	
 		<multi-selection value="true"/>	
@@ -31,7 +31,7 @@
 		</unit-requirements>
 		<upgrade-requirements/>
 		<resource-requirements>
-			<resource name="oil" amount="800"/>				
+			<resource name="oil" amount="600"/>				
 		</resource-requirements>
 		<resources-stored/>
 		<image path="../../../../icons/mrls.bmp"/>

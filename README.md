@@ -1,7 +1,7 @@
 # ASSAULT COMMAND MOD
 ###FOR MEGAGLEST
 
-### Current version = 1.5
+### Current version = 1.7
 
 ![alt text](https://raw.githubusercontent.com/Ishmaru/Assault-Command-Mod-for-MG/master/screen.jpg "Screenshot")
 
@@ -24,9 +24,7 @@ Assault Command is a fast paced RTS experience. With some unique features:
 * 1 Resource	- Oil
 * 1 Faction	- Assault
 * 3 Structures	- Command HQ, Battle Lab, & Mobile Base
-* 16 Units
-* 1 Hero Unit		-Kestrel
-* No Upgrades	(Coming Soon!)
+* 18 Units
 * No Tilesets or maps.
 
 ###Installation:

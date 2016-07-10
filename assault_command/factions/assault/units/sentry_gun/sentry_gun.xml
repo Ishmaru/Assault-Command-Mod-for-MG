@@ -11,7 +11,7 @@
 		<max-hp value="125" regeneration="0"/>
 		<max-ep value="10" regeneration="1"/>
 		<armor value="0"/>	
-		<armor-type value="armor"/>				
+		<armor-type value="armor_light"/>				
 		<sight value="10"/>
 		<time value="10"/>	
 		<multi-selection value="false"/>	

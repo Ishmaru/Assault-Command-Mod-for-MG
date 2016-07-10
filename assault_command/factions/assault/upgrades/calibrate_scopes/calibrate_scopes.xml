@@ -7,10 +7,11 @@
 	<unit-requirements/>
 	<upgrade-requirements/>
 	<resource-requirements>
-		<resource name="oil" amount="1000"/>
+		<resource name="oil" amount="1500"/>
 	</resource-requirements>
 	<effects>
 		<unit name="railgun_inf"/>
+		<unit name="w_a_s_p"/>
 	</effects>
 	<max-hp value="0"/>
 	<max-ep value="0"/>

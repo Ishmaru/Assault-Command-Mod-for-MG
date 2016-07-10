@@ -339,6 +339,17 @@
 		</command>
 		<command>												
 			<type value="morph"/>											
+			<name value="promote_to_medic"/>										
+			<image path="../../../../icons/medic.bmp"/>	
+			<unit-requirements/>											
+			<upgrade-requirements>
+			</upgrade-requirements>						
+			<morph-skill value="morph"/>										
+			<morph-unit name= "medic"/>									
+			<discount value="0"/>											
+		</command>
+		<command>												
+			<type value="morph"/>											
 			<name value="promote_w_a_s_p"/>										
 			<image path="../../../../icons/wasp.bmp"/>	
 			<unit-requirements/>											

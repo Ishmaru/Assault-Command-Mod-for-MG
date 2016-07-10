@@ -12,7 +12,7 @@
 		<armor value="1"/>	
 		<armor-type value="infantry"/>				
 		<sight value="10"/>
-		<time value="2"/>	
+		<time value="6"/>	
 		<multi-selection value="true"/>	
 		<cellmap value="false"/>
 		<levels>

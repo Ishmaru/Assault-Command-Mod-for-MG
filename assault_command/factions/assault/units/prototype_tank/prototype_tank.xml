@@ -7,10 +7,10 @@
 	<parameters>
 		<size value="2"/>
 		<height value="3"/>
-		<max-hp value="600" regeneration="0"/>
+		<max-hp value="250" regeneration="0"/>
 		<max-ep value="3" regeneration="1"/>
 		<armor value="0"/>	
-		<armor-type value="armor"/>				
+		<armor-type value="armor_heavy"/>				
 		<sight value="10"/>
 		<time value="20"/>	
 		<multi-selection value="true"/>	
@@ -31,7 +31,7 @@
 		</unit-requirements>
 		<upgrade-requirements/>
 		<resource-requirements>
-			<resource name="oil" amount="1200"/>				
+			<resource name="oil" amount="800"/>				
 		</resource-requirements>
 		<resources-stored/>
 		<image path="../../../../icons/prototype.bmp"/>

@@ -14,7 +14,7 @@
 		<unit name="i_f_v"/>
 		<unit name="spartan_i_f_v"/>
 	</effects>
-	<max-hp value="100"/>
+	<max-hp value="50"/>
 	<max-ep value="0"/>
 	<sight value="0"/>
 	<attack-strenght value="0"/>

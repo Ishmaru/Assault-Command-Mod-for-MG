@@ -7,15 +7,11 @@
 	<unit-requirements/>
 	<upgrade-requirements/>
 	<resource-requirements>
-		<resource name="oil" amount="1000"/>
+		<resource name="oil" amount="1500"/>
 	</resource-requirements>
 	<effects>
-		<unit name="grunt"/>
 		<unit name="rocket_grunt"/>
 		<unit name="black_ops"/>
-		<unit name="railgun_inf"/>
-		<unit name="motorcycle"/>
-		<unit name="field_officer"/>
 		<unit name="commando"/>
 		<unit name="w_a_s_p"/>
 	</effects>

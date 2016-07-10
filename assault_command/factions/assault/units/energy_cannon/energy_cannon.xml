@@ -8,10 +8,10 @@
 		<count-in-victory-conditions value="false"/>
 		<size value="2"/>
 		<height value="4"/>
-		<max-hp value="300" regeneration="0"/>
+		<max-hp value="150" regeneration="0"/>
 		<max-ep value="2" regeneration="1"/>
 		<armor value="0"/>	
-		<armor-type value="armor"/>				
+		<armor-type value="armor_medium"/>				
 		<sight value="10"/>
 		<time value="15"/>	
 		<multi-selection value="false"/>	

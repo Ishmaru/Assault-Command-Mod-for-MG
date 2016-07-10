@@ -13,13 +13,13 @@
 		<armor value="1"/>	
 		<armor-type value="infantry"/>				
 		<sight value="15"/>
-		<time value="15"/>	
+		<time value="6"/>	
 		<multi-selection value="true"/>	
 		<cellmap value="false"/>
 		<levels>
-			<level name="rookie" kills="15"/>
-			<level name="experienced" kills="30"/>
-			<level name="veteran" kills="60"/>
+			<level name="rookie" kills="12"/>
+			<level name="experienced" kills="24"/>
+			<level name="veteran" kills="48"/>
 		</levels>
 		<fields>
 			<field value="land"/>
@@ -127,13 +127,15 @@
 				<sound-file path="/sounds/sniper.wav"/>
 
 			</sound>
-			<attack-strenght value="12"/>
+			<attack-strenght value="15"/>
 			<attack-var value="0"/>
-			<attack-range value="12"/>
+			<attack-range value="15"/>
 			<attack-type value="hmg"/>
 			<attack-start-time value="0.4"/>
 			<attack-fields>
 				<field value="land"/>
+				<field value="air"/>
+
 			</attack-fields>
 			<projectile value="false"/>
 			<splash value="true">

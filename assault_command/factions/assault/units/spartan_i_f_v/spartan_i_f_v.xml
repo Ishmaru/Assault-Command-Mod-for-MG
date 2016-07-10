@@ -7,10 +7,10 @@
 	<parameters>
 		<size value="2"/>
 		<height value="3"/>
-		<max-hp value="500" regeneration="0"/>
-		<max-ep value="12" regeneration="1"/>
+		<max-hp value="250" regeneration="0"/>
+		<max-ep value="18" regeneration="1"/>
 		<armor value="0"/>	
-		<armor-type value="armor"/>				
+		<armor-type value="armor_medium"/>				
 		<sight value="10"/>
 		<time value="6"/>	
 		<multi-selection value="true"/>	
@@ -31,7 +31,7 @@
 		</unit-requirements>
 		<upgrade-requirements/>
 		<resource-requirements>
-			<resource name="oil" amount="250"/>				
+			<resource name="oil" amount="150"/>				
 		</resource-requirements>
 		<resources-stored/>
 		<image path="../../../../icons/spartan.bmp"/>

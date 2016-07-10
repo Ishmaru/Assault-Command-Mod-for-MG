@@ -4,7 +4,7 @@
 	<parameters>
 		<size value="0"/>
 		<height value="1"/>
-		<max-hp value="12" regeneration="-1"/>
+		<max-hp value="20" regeneration="-1"/>
 		<max-ep value="0"/>
 		<count-unit-death-in-stats value="false" />
 		<count-unit-production-in-stats value="false" />
@@ -60,7 +60,7 @@
 			</sound>
 			<attack-boost name="stun">
 				<allow-multiple-boosts value="false" />
-				<radius value="5" />
+				<radius value="6" />
 				<target value="foe"/>
 				<max-hp value="0" />
 				<max-ep value="0" />

@@ -174,6 +174,41 @@
 	<commands>
 
 		<command>
+			<type value= "stop"/>
+			<name value="stop"/>
+			<image path="../../../../icons/stop.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+		</command>
+
+		<command>
+			<type value="move"/>
+			<name value="move"/>
+			<image path="../../../../icons/move.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+		</command>
+
+		<command>
+			<type value="harvest"/>
+			<name value="move_to_oil"/>
+			<image path="../../../../icons/oil.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+			<harvest-skill value="oil_skill"/>
+			<stop-loaded-skill value="stop_oil_skill"/>
+			<move-loaded-skill value="move_oil_skill"/>
+			<harvested-resources>
+				<resource name="oil"/>										
+			</harvested-resources>
+			<max-load value="999999999"/>
+			<hits-per-unit value="1"/>				
+		</command>
+
+		<command>
 			<type value="produce"/>
 			<name value="deploy_grunt" />
 			<image path="../../../../icons/grunt.bmp" />
@@ -225,36 +260,6 @@
 
 		<command>
 			<type value="produce"/>
-			<name value="produce_battle_tank" />
-			<image path="../../../../icons/tank.bmp" />
-			<unit-requirements />
-			<upgrade-requirements />
-			<produce-skill value="produce_skill"/>
-			<produced-unit name="battle_tank"/>
-		</command>
-
-		<command>
-			<type value="produce"/>
-			<name value="produce_cobra_m_r_l_s" />
-			<image path="../../../../icons/mrls.bmp" />
-			<unit-requirements />
-			<upgrade-requirements />
-			<produce-skill value="produce_skill"/>
-			<produced-unit name="cobra_m_r_l_s"/>
-		</command>
-
-		<command>
-			<type value="produce"/>
-			<name value="produce_prototype_tank" />
-			<image path="../../../../icons/prototype.bmp" />
-			<unit-requirements />
-			<upgrade-requirements />
-			<produce-skill value="produce_skill"/>
-			<produced-unit name="prototype_tank"/>
-		</command>
-
-		<command>
-			<type value="produce"/>
 			<name value="produce_transport_heli" />
 			<image path="../../../../icons/transport.bmp" />
 			<unit-requirements />
@@ -263,39 +268,6 @@
 			<produced-unit name="transport_heli"/>
 		</command>
 
-		<command>
-			<type value= "stop"/>
-			<name value="stop"/>
-			<image path="../../../../icons/stop.bmp"/>
-			<unit-requirements/>
-			<upgrade-requirements/>
-			<stop-skill value="stop_skill"/>
-		</command>
 
-		<command>
-			<type value="move"/>
-			<name value="move"/>
-			<image path="../../../../icons/move.bmp"/>
-			<unit-requirements/>
-			<upgrade-requirements/>
-			<move-skill value="move_skill"/>
-		</command>
-
-		<command>
-			<type value="harvest"/>
-			<name value="move_to_oil"/>
-			<image path="../../../../icons/oil.bmp"/>
-			<unit-requirements/>
-			<upgrade-requirements/>
-			<move-skill value="move_skill"/>
-			<harvest-skill value="oil_skill"/>
-			<stop-loaded-skill value="stop_oil_skill"/>
-			<move-loaded-skill value="move_oil_skill"/>
-			<harvested-resources>
-				<resource name="oil"/>										
-			</harvested-resources>
-			<max-load value="999999999"/>
-			<hits-per-unit value="1"/>				
-		</command>
 	</commands>
 </unit>

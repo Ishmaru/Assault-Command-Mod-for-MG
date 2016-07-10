@@ -7,12 +7,11 @@
 	<unit-requirements/>
 	<upgrade-requirements/>
 	<resource-requirements>
-		<resource name="oil" amount="1500"/>
+		<resource name="oil" amount="1000"/>
 	</resource-requirements>
 	<effects>
 		<unit name="i_f_v"/>
 		<unit name="spartan_i_f_v"/>
-		<unit name="sentry_gun"/>
 	</effects>
 	<max-hp value="0"/>
 	<max-ep value="0"/>

@@ -7,10 +7,10 @@
 	<parameters>
 		<size value="2"/>
 		<height value="3"/>
-		<max-hp value="300" regeneration="0"/>
+		<max-hp value="200" regeneration="0"/>
 		<max-ep value="5" regeneration="1"/>
 		<armor value="0"/>	
-		<armor-type value="armor"/>				
+		<armor-type value="armor_medium"/>				
 		<sight value="10"/>
 		<time value="15"/>	
 		<multi-selection value="true"/>	

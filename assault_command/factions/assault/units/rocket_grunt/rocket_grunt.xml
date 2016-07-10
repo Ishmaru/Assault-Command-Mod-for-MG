@@ -294,7 +294,7 @@
 			<unit-requirements/>
 			<upgrade-requirements/>
 			<stop-skill value="stop_skill"/>
-			<attack-skill value="attack_skill"/>
+			<attack-skill value="rocket_skill"/>
 		</command>
 
 		<command>

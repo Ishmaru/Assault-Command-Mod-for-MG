@@ -48,6 +48,24 @@
             <resource name="oil" amount-value="1500" />
         </resources-death>
 	</parameters>
+	<attack-boosts>
+		<attack-boost name="repair">
+			<allow-multiple-boosts value="false" />
+			<radius value="10" />
+			<target value="ally"/>
+			<max-hp value="0" regeneration="2"/>
+			<max-ep value="0"/>
+			<sight value="0" />
+			<attack-strenght value="0"/>
+			<attack-range value="0" />
+			<armor value="0" />
+			<move-speed value="0"/>
+			<production-speed value="0" />
+				<particles value="true">
+					<affected-particle-file path="re.xml"/>
+				</particles>
+		</attack-boost>
+	</attack-boosts>
 	
 	<!-- *** skills *** -->
 	<skills>
@@ -60,6 +78,8 @@
 			<anim-speed value="100" />
 			<animation path="fort/fort.g3d" />
 			<sound enabled="false" />
+			<attack-boost name="repair" />
+
 		</skill>
 		
 		<!-- *** skill 1 *** -->
@@ -83,6 +103,7 @@
 			<anim-speed value="100" />
 			<animation path="fort/fort.g3d" />
 			<sound enabled="false" />
+			<attack-boost name="repair" />
 		</skill>	
 
 	

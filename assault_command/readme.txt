@@ -1,5 +1,27 @@
 Changelog:
 -----------------
+Version 1.7
+-----------------
+Whats Added:
+New Infantry Unit Medic
+
+Balance Changes:
+Armor type Armor replaced with new armor types: Armor Light, Armor Medium, and Armor Heavy.
+Vehicles reballanced to use new armor types.
+Vehicles now share similar hp with infantry.
+Vehicles are significantly cheaper. For EX Battle Tank 800 => 600.
+Command HQ now heals near by units!
+Fixed bug where rocket grunts only use rifles in when given a Hold Position comand.
+Motorcycles have more hp!
+
+Upgrade changes:
+Body armor only effects: Black Ops, Rocket Grunts, WASPs and Commandos
+Improved scopes now also improves WASP attack strength.
+Composite armor does not effect Stalkers anymore.
+
+
+
+-----------------
 Version 1.6
 -----------------
 Whats Added:
@@ -18,7 +40,6 @@ Field Officers cannot be upgraded from a basic Grunt
 Field Officers are upgraded from a Black ops, Rocket Grunts, Motorcycles, WASPs, or Railgun Infantry
 Motorcycles are upgraded faster.
 
-Changelog:
 -----------------
 Version 1.5
 -----------------

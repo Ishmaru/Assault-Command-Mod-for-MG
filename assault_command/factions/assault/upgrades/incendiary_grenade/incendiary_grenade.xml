@@ -7,7 +7,7 @@
 	<unit-requirements/>
 	<upgrade-requirements/>
 	<resource-requirements>
-		<resource name="oil" amount="1000"/>
+		<resource name="oil" amount="500"/>
 	</resource-requirements>
 	<effects>
 		<unit name="motorcycle"/>

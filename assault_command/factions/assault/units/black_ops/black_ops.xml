@@ -29,7 +29,7 @@
 		</unit-requirements>
 		<upgrade-requirements/>
 		<resource-requirements>	
-					<resource name="oil" amount="100" />			
+					<resource name="oil" amount="150" />			
 		</resource-requirements>
 		<resources-stored/>
 		<image path="../../../../icons/blackops.bmp"/>
@@ -40,7 +40,7 @@
 		<command-sounds enabled="true">
 		</command-sounds>
 		<resources-death>
-            <resource name="oil" amount-value="25" />
+            <resource name="oil" amount-value="50" />
         </resources-death>
 	</parameters>
 
@@ -306,7 +306,7 @@
 		</command>	
 		<command>
 			<type value="attack"/>
-			<name value="attack"/>
+			<name value="c-4_attack"/>
 			<image path="../../../../icons/expl.bmp"/>
 			<unit-requirements/>
 			<upgrade-requirements/>

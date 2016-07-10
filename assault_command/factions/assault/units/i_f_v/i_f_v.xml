@@ -7,10 +7,10 @@
 	<parameters>
 		<size value="2"/>
 		<height value="3"/>
-		<max-hp value="350" regeneration="0"/>
-		<max-ep value="10" regeneration="1"/>
+		<max-hp value="200" regeneration="0"/>
+		<max-ep value="6" regeneration="1"/>
 		<armor value="0"/>	
-		<armor-type value="armor"/>				
+		<armor-type value="armor_medium"/>				
 		<sight value="10"/>
 		<time value="15"/>	
 		<multi-selection value="true"/>	
@@ -31,7 +31,7 @@
 		</unit-requirements>
 		<upgrade-requirements/>
 		<resource-requirements>
-			<resource name="oil" amount="400"/>				
+			<resource name="oil" amount="300"/>				
 		</resource-requirements>
 		<resources-stored/>
 		<image path="../../../../icons/ifv.bmp"/>
@@ -110,7 +110,7 @@
 		<skill>
 			<type value="attack"/>
 			<name value="missle_skill"/>		
-			<ep-cost value="10"/>
+			<ep-cost value="6"/>
 			<speed value="100"/>
 			<anim-speed value="100"/>
 			<animation path="ifv/ifvmissle.g3d"/>
