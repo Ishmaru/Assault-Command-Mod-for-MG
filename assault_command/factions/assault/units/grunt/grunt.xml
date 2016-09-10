@@ -306,17 +306,6 @@
 		</command>
 		<command>												
 			<type value="morph"/>											
-			<name value="promote_to_rocket_grunt"/>										
-			<image path="../../../../icons/troop.bmp"/>	
-			<unit-requirements/>											
-			<upgrade-requirements>
-			</upgrade-requirements>						
-			<morph-skill value="morph"/>										
-			<morph-unit name= "rocket_grunt"/>									
-			<discount value="0"/>											
-		</command>
-		<command>												
-			<type value="morph"/>											
 			<name value="promote_railgun_inf"/>										
 			<image path="../../../../icons/railgun.bmp"/>	
 			<unit-requirements/>											
@@ -326,17 +315,6 @@
 			<morph-unit name= "railgun_inf"/>									
 			<discount value="0"/>											
 		</command>	
-		<command>												
-			<type value="morph"/>											
-			<name value="promote_motorcycle"/>										
-			<image path="../../../../icons/motorcycle.bmp"/>	
-			<unit-requirements/>											
-			<upgrade-requirements>
-			</upgrade-requirements>						
-			<morph-skill value="morph"/>										
-			<morph-unit name= "motorcycle"/>									
-			<discount value="0"/>											
-		</command>
 		<command>												
 			<type value="morph"/>											
 			<name value="promote_to_medic"/>										

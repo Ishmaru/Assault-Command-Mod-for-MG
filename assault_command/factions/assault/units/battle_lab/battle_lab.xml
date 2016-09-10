@@ -140,15 +140,6 @@
 		</command>
 		<command>				
 			<type value="upgrade"/>			
-			<name value="develope_incendiary_grenade"/>			
-			<image path="../../../../icons/incgrenade.bmp" />			
-			<unit-requirements />			
-			<upgrade-requirements />			
-			<upgrade-skill value="upgrade_skill"/>			
-			<produced-upgrade name="incendiary_grenade"/>			
-		</command>
-		<command>				
-			<type value="upgrade"/>			
 			<name value="develope_calibrated_scopes"/>			
 			<image path="../../../../icons/scope.bmp" />			
 			<unit-requirements />			

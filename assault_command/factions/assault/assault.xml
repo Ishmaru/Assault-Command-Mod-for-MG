@@ -19,7 +19,7 @@
 	<ai-behavior>
 		<warrior-units>
 			<unit name="grunt" minimum="20"/>
-			<unit name="rocket_grunt" minimum="5"/>
+			<unit name="railgun_inf" minimum="5"/>
 			<unit name="black_ops" minimum="5"/>
 			<unit name="transport_heli" minimum="1"/>
 			<unit name="battle_tank" minimum="1"/>

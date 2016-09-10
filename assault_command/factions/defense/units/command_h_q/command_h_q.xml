@@ -1,0 +1,217 @@
+<?xml version="1.0" standalone="no" ?>
+<unit>
+	<!-- *** parameters *** -->
+	<parameters>
+		<size value="5" />
+		<height value="6" />
+		<max-hp value="3000" regeneration="0"/>
+		<max-ep value="0" />
+		<armor value="0" />
+		<armor-type value="building"/>
+		<sight value="10" />
+		<time value="100" />
+		<multi-selection value="false" />
+		<cellmap value="true">
+			<row value="11111"/>
+			<row value="11111"/>
+			<row value="11111"/>
+			<row value="11111"/>
+			<row value="11001"/>
+		</cellmap>
+		<levels/>
+		<fields>
+			<field value="land" />
+		</fields>
+		<properties>
+			<property value="burnable"/>
+		</properties>
+		<light enabled="false" />
+		<unit-requirements>
+		</unit-requirements>
+		<upgrade-requirements />
+		<resource-requirements>
+			<resource name="oil" amount="2000" />
+		</resource-requirements>
+		<resources-stored>
+			<resource name="oil" amount="2000"/>
+		</resources-stored>
+		<image path="../../../../icons/hq.bmp"/>
+		<image-cancel path="../../../../icons/stop.bmp"/>
+		<meeting-point value="true" image-path="../../../../icons/meet.bmp"/>
+		<selection-sounds enabled="true">
+			<sound path="sounds/steammach.wav" />
+		</selection-sounds>
+		<command-sounds enabled="true">
+			<sound path="sounds/steammach.wav" />
+		</command-sounds>
+		<resources-death>
+            <resource name="oil" amount-value="1500" />
+        </resources-death>
+	</parameters>
+	<attack-boosts>
+		<attack-boost name="repair">
+			<allow-multiple-boosts value="false" />
+			<radius value="10" />
+			<target value="ally"/>
+			<max-hp value="0" regeneration="2"/>
+			<max-ep value="0"/>
+			<sight value="0" />
+			<attack-strenght value="0"/>
+			<attack-range value="0" />
+			<armor value="0" />
+			<move-speed value="0"/>
+			<production-speed value="0" />
+				<particles value="true">
+					<affected-particle-file path="re.xml"/>
+				</particles>
+		</attack-boost>
+	</attack-boosts>
+	
+	<!-- *** skills *** -->
+	<skills>
+		<!-- *** skill 0 *** -->
+		<skill>
+			<type value="stop"/>	
+			<name value="stop_skill"/>
+			<ep-cost value="0" />
+			<speed value="50" />
+			<anim-speed value="100" />
+			<animation path="fort/fort.g3d" />
+			<sound enabled="false" />
+			<attack-boost name="repair" />
+
+		</skill>
+		
+		<!-- *** skill 1 *** -->
+		<skill>
+			<type value="be_built" />	
+			<name value="be_built_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="fort/fort.g3d" />
+			<sound enabled="false" />
+		</skill>	
+		
+		
+		<!-- *** skill 3 *** -->
+		<skill>
+			<type value="produce"/>
+			<name value="produce_skill"/>	
+			<ep-cost value="0" />
+			<speed value="150" />
+			<anim-speed value="100" />
+			<animation path="fort/fort.g3d" />
+			<sound enabled="false" />
+			<attack-boost name="repair" />
+		</skill>	
+
+	
+		<!-- *** skill 4 *** -->
+		<skill>
+			<type value="die" />	
+			<name value="die_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="30" />
+			<animation path="fort/fortdie.g3d" />    <particles value="true">
+         <particle-file path="smoke.xml"/>
+			</particles>
+			<sound enabled="true" start-time="0">
+				<sound-file path="/sounds/tech_building_fall4.wav"/>
+			</sound>			
+			<fade value="false"/>
+			<shake enabled="true" intensity="1000" duration="150" start-time="0.0">
+				<self enabled="true" visible="true" in-camera-view="false" camera-distance-affected="true"/>
+				<team enabled="true" visible="true" in-camera-view="false" camera-distance-affected="true"/>
+				<enemy enabled="true" visible="true" in-camera-view="false" camera-distance-affected="true"/>
+			</shake>
+		</skill>
+
+	</skills>
+	
+	<!-- *** commands *** -->
+	<commands>
+
+		<command>
+			<type value="produce"/>
+			<name value="recruit_grunt" />
+			<image path="../../../../icons/grunt.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="grunt"/>
+		</command>
+
+		<command>
+			<type value="produce"/>
+			<name value="produce_recon" />
+			<image path="../../../../icons/recon.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="recon"/>
+		</command>
+
+		<command>
+			<type value="produce"/>
+			<name value="produce_dragon_tank" />
+			<image path="../../../../icons/ifv.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="dragon_tank"/>
+		</command>
+
+			<command>
+			<type value="produce"/>
+			<name value="produce_panther_tank" />
+			<image path="../../../../icons/tank.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="panther_tank"/>
+		</command>
+
+		<command>
+			<type value="produce"/>
+			<name value="titan_rocket" />
+			<image path="../../../../icons/prototype.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="titan_rocket"/>
+		</command>
+		
+		<command>
+			<type value="produce"/>
+			<name value="produce_goliath_tank" />
+			<image path="../../../../icons/tank.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="goliath_tank"/>
+		</command>
+
+		<command>
+			<type value="produce"/>
+			<name value="produce_viper_gunship" />
+			<image path="../../../../icons/mrls.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="viper_gunship"/>
+		</command>
+
+		<command>
+			<type value="produce"/>
+			<name value="gatherer" />
+			<image path="../../../../icons/prototype.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="gatherer"/>
+		</command>
+
+	</commands>
+</unit>
