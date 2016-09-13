@@ -210,14 +210,5 @@
 			<upgrade-skill value="upgrade_skill"/>			
 			<produced-upgrade name="rocket_capacity"/>			
 		</command>
-		<command>				
-			<type value="upgrade"/>			
-			<name value="develope_magnetic_armor"/>			
-			<image path="../../../../icons/mshield.bmp" />			
-			<unit-requirements />			
-			<upgrade-requirements />			
-			<upgrade-skill value="upgrade_skill"/>			
-			<produced-upgrade name="magnetic_armor"/>			
-		</command>
 	</commands>
 </unit>

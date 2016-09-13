@@ -32,7 +32,7 @@
 					<resource name="oil" amount="100" />			
 		</resource-requirements>
 		<resources-stored/>
-		<image path="../../../../icons/grunt.bmp"/>
+		<image path="../../../../icons/guard.bmp"/>
 		<image-cancel path="../../../../icons/stop.bmp"/>
 		<meeting-point value="false"/>
 		<selection-sounds enabled="true">
@@ -228,7 +228,7 @@
 		<command>
 			<type value="attack"/>
 			<name value="attack"/>
-			<image path="../../../../icons/bullet.bmp"/>
+			<image path="../../../../icons/bash.bmp"/>
 			<unit-requirements/>
 			<upgrade-requirements/>
 			<move-skill value="move_skill"/>
@@ -257,14 +257,15 @@
 				<unit name="command_h_q"/>
 				<unit name="battle_lab"/>
 				<unit name="flame_turret"/>
-				<unit name="energy_cannon"/>
 				<unit name="motorcycle"/>
 				<unit name="recon"/>
 				<unit name="titan_rocket"/>
 				<unit name="dragon_tank"/>
 				<unit name="goliath_tank"/>	
 				<unit name="panther_tank"/>						
-				<unit name="gatherer"/>						
+				<unit name="gatherer"/>	
+				<unit name="destroyer"/>											
+				<unit name="s_a_m"/>											
 			</repaired-units>		
 		</command>
 
@@ -278,7 +279,7 @@
 			<build-skill value="build_skill"/>
 			<buildings>	
 				<building name="flame_turret"/>
-				<building name="energy_cannon"/>
+				<building name="s_a_m"/>
 			</buildings>
 			<start-sound enabled="false"/>
 			<built-sound enabled="true">							
@@ -288,7 +289,7 @@
 		<command>												
 			<type value="morph"/>											
 			<name value="promote_officer"/>										
-			<image path="../../../../icons/officer.bmp"/>	
+			<image path="../../../../icons/officer2.bmp"/>	
 			<unit-requirements/>											
 			<upgrade-requirements>
 			</upgrade-requirements>						

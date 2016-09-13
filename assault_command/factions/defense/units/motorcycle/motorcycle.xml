@@ -31,10 +31,10 @@
 		</unit-requirements>
 		<upgrade-requirements/>
 		<resource-requirements>
-			<resource name="oil" amount="150"/>				
+			<resource name="oil" amount="125"/>				
 		</resource-requirements>
 		<resources-stored/>
-		<image path="../../../../icons/motorcycle.bmp"/>
+		<image path="../../../../icons/motorcycle2.bmp"/>
 		<image-cancel path="../../../../icons/stop.bmp"/>
 		<meeting-point value="false"/>
 		<selection-sounds enabled="true">
@@ -237,7 +237,7 @@
 		<command>												
 			<type value="morph"/>											
 			<name value="promote_officer"/>										
-			<image path="../../../../icons/officer.bmp"/>	
+			<image path="../../../../icons/officer2.bmp"/>	
 			<unit-requirements/>											
 			<upgrade-requirements>
 			</upgrade-requirements>						

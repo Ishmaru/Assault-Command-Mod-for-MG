@@ -23,8 +23,7 @@
 		<fields>
 			<field value="air"/>
 		</fields>	
-		<properties>
-			<property value="rotated_climb"/>	
+		<properties>	
 		</properties>
 		<light enabled="false"/>
 		<unit-requirements>
@@ -34,7 +33,7 @@
 			<resource name="oil" amount="750"/>				
 		</resource-requirements>
 		<resources-stored/>
-		<image path="../../../../icons/ifv.bmp"/>
+		<image path="../../../../icons/viper.bmp"/>
 		<image-cancel path="../../../../icons/stop.bmp"/>
 		<meeting-point value="false"/>
 		<selection-sounds enabled="true">
@@ -220,13 +219,22 @@
 
 		<command>
 			<type value="attack_stopped"/>
-			<name value="hold_position"/>
+			<name value="hold_position_gun"/>
 			<image path="../../../../icons/hold.bmp"/>
 			<unit-requirements/>
 			<upgrade-requirements/>
 			<stop-skill value="stop_skill"/>
 			<attack-skill value="attack_skill"/>
 		</command>
-		
+
+		<command>
+			<type value="attack_stopped"/>
+			<name value="hold_position_missle"/>
+			<image path="../../../../icons/hold.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+			<attack-skill value="missle_skill"/>
+		</command>		
 	</commands>
 </unit>

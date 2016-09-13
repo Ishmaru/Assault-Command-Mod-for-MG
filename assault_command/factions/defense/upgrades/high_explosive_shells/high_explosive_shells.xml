@@ -7,10 +7,11 @@
 	<unit-requirements/>
 	<upgrade-requirements/>
 	<resource-requirements>
-		<resource name="oil" amount="1000"/>
+		<resource name="oil" amount="1500"/>
 	</resource-requirements>
 	<effects>
 		<unit name="goliath_tank"/>
+		<unit name="panther_tank"/>
 	</effects>
 	<max-hp value="0"/>
 	<max-ep value="0"/>

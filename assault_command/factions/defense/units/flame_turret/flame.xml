@@ -2,7 +2,7 @@
 <unit-particle-system>
     	<texture value="true" path="../command_h_q/images/fire.bmp" luminance="true"/>
 	<primitive value="quad"/>
-	<offset x="-0.24" y="0.0" z="0.95"/>
+	<offset x="0" y="0.0" z="0.95"/>
 	<direction x="0.0" y="0.0" z="6"/>
 	<color red="1" green="0.5" blue="0" alpha="1" />
 	<color-no-energy red="0.1" green="0.1" blue="0.1" alpha="0.3" />

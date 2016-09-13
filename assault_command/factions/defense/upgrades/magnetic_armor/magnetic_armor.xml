@@ -11,6 +11,8 @@
 	</resource-requirements>
 	<effects>
 		<unit name="goliath_tank"/>
+		<unit name="panther_tank"/>
+		<unit name="destroyer"/>
 	</effects>
 	<max-hp value="100"/>
 	<max-ep value="0"/>

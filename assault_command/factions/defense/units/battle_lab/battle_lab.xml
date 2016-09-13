@@ -35,7 +35,7 @@
 		<resources-stored>
 			<resource name="oil" amount="2000"/>
 		</resources-stored>
-		<image path="../../../../icons/lab.bmp"/>
+		<image path="../../../../icons/lab2.bmp"/>
 		<image-cancel path="../../../../icons/stop.bmp"/>
 		<meeting-point value="false"/>
 		<selection-sounds enabled="true">
@@ -149,12 +149,12 @@
 		</command>
 		<command>				
 			<type value="upgrade"/>			
-			<name value="develope_a_p_bullets"/>			
-			<image path="../../../../icons/apbullet.bmp" />			
+			<name value="develope_inferno"/>			
+			<image path="../../../../icons/flame.bmp" />			
 			<unit-requirements />			
 			<upgrade-requirements />			
 			<upgrade-skill value="upgrade_skill"/>			
-			<produced-upgrade name="a_p_bullets"/>			
+			<produced-upgrade name="inferno"/>			
 		</command>
 		<command>				
 			<type value="upgrade"/>			

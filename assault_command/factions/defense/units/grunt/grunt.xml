@@ -32,7 +32,7 @@
 					<resource name="oil" amount="25" />			
 		</resource-requirements>
 		<resources-stored/>
-		<image path="../../../../icons/grunt.bmp"/>
+		<image path="../../../../icons/grunt2.bmp"/>
 		<image-cancel path="../../../../icons/stop.bmp"/>
 		<meeting-point value="false"/>
 		<selection-sounds enabled="true">
@@ -264,14 +264,15 @@
 				<unit name="command_h_q"/>
 				<unit name="battle_lab"/>
 				<unit name="flame_turret"/>
-				<unit name="energy_cannon"/>
 				<unit name="motorcycle"/>
 				<unit name="recon"/>
 				<unit name="titan_rocket"/>
 				<unit name="dragon_tank"/>
 				<unit name="goliath_tank"/>	
 				<unit name="panther_tank"/>						
-				<unit name="gatherer"/>						
+				<unit name="gatherer"/>	
+				<unit name="destroyer"/>
+				<unit name="s_a_m"/>												
 			</repaired-units>		
 		</command>
 
@@ -285,7 +286,7 @@
 			<build-skill value="build_skill"/>
 			<buildings>	
 				<building name="flame_turret"/>
-				<building name="energy_cannon"/>
+				<building name="s_a_m"/>
 			</buildings>
 			<start-sound enabled="false"/>
 			<built-sound enabled="true">							
@@ -295,7 +296,7 @@
 		<command>												
 			<type value="morph"/>											
 			<name value="promote_to_flamethrower"/>										
-			<image path="../../../../icons/blackops.bmp"/>	
+			<image path="../../../../icons/fgrunt.bmp"/>	
 			<unit-requirements/>											
 			<upgrade-requirements>
 			</upgrade-requirements>						
@@ -306,7 +307,7 @@
 		<command>												
 			<type value="morph"/>											
 			<name value="promote_to_rocket_grunt"/>										
-			<image path="../../../../icons/troop.bmp"/>	
+			<image path="../../../../icons/rgrunt.bmp"/>	
 			<unit-requirements/>											
 			<upgrade-requirements>
 			</upgrade-requirements>						
@@ -317,7 +318,7 @@
 		<command>												
 			<type value="morph"/>											
 			<name value="promote_guard"/>										
-			<image path="../../../../icons/railgun.bmp"/>	
+			<image path="../../../../icons/guard.bmp"/>	
 			<unit-requirements/>											
 			<upgrade-requirements>
 			</upgrade-requirements>						
@@ -328,7 +329,7 @@
 		<command>												
 			<type value="morph"/>											
 			<name value="promote_motorcycle"/>										
-			<image path="../../../../icons/motorcycle.bmp"/>	
+			<image path="../../../../icons/motorcycle2.bmp"/>	
 			<unit-requirements/>											
 			<upgrade-requirements>
 			</upgrade-requirements>						

@@ -31,10 +31,10 @@
 		</unit-requirements>
 		<upgrade-requirements/>
 		<resource-requirements>
-			<resource name="oil" amount="400"/>				
+			<resource name="oil" amount="350"/>				
 		</resource-requirements>
 		<resources-stored/>
-		<image path="../../../../icons/spartan.bmp"/>
+		<image path="../../../../icons/dragon.bmp"/>
 		<image-cancel path="../../../../icons/stop.bmp"/>
 		<meeting-point value="false"/>
 		<selection-sounds enabled="true">
@@ -79,19 +79,17 @@
 			<type value="attack"/>
 			<name value="attack_skill"/>		
 			<ep-cost value="0"/>
-			<speed value="140"/>
-			<anim-speed value="200"/>
+			<speed value="300"/>
+			<anim-speed value="300"/>
 			<animation path="flametank/flametankstand.g3d"/>
 			<particles value="true">
 				<particle-file path="flame_tank.xml"/>
 			</particles>
 			<sound enabled="true" start-time="0.03">
-				<sound-file path="/sounds/spartan.wav"/>
-
 			</sound>
 			<attack-strenght value="1"/>
 			<attack-var value="1"/>
-			<attack-range value="5"/>
+			<attack-range value="6"/>
 			<attack-type value="flame"/>
 			<attack-start-time value="0.1"/>
 			<attack-fields>
@@ -101,7 +99,7 @@
 			<splash value="true">
 				<radius value="1"/>
 				<damage-all value="true"/>
-				<particle value="true" path="particle_splash.xml"/>
+				<particle value="false"/>
 			</splash>
 		</skill>
 
@@ -111,7 +109,7 @@
 			<ep-cost value="0"/>
 			<speed value="60"/>
 			<anim-speed value="80"/>
-			<animation path="ifv/ifvdie.g3d"/>       <particles value="true">
+			<animation path="flametank/flametankdie.g3d"/>       <particles value="true">
          <particle-file path="smoke.xml"/>  <particle-file path="expl_small.xml"/>
 			</particles>
 			<sound enabled="true" start-time="0">
@@ -153,7 +151,7 @@
 		<command>
 			<type value="attack"/>
 			<name value="attack"/>
-			<image path="../../../../icons/bullet.bmp"/>
+			<image path="../../../../icons/flame.bmp"/>
 			<unit-requirements/>
 			<upgrade-requirements/>
 			<move-skill value="move_skill"/>

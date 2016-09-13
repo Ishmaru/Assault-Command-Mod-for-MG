@@ -16,6 +16,7 @@
 <armor-type name="armor_light"/>
 <armor-type name="armor_medium"/>
 <armor-type name="armor_heavy"/>
+<armor-type name="armor_titan"/>
 <armor-type name="building"/>
 <armor-type name="na"/>
 	</armor-types>
@@ -25,36 +26,42 @@
 <damage-multiplier attack="bullet" armor="armor_light" value="3"/>
 <damage-multiplier attack="bullet" armor="armor_medium" value="1"/>
 <damage-multiplier attack="bullet" armor="armor_heavy" value="0"/>
+<damage-multiplier attack="bullet" armor="armor_titan" value="0"/>
 <damage-multiplier attack="bullet" armor="building" value="10.0"/>
 
 <damage-multiplier attack="hmg" armor="infantry" value="35.0"/>
 <damage-multiplier attack="hmg" armor="armor_light" value="10.0"/>
 <damage-multiplier attack="hmg" armor="armor_medium" value="7.0"/>
 <damage-multiplier attack="hmg" armor="armor_heavy" value="5.0"/>
+<damage-multiplier attack="hmg" armor="armor_titan" value="0.0"/>
 <damage-multiplier attack="hmg" armor="building" value="25.0"/>
 
 <damage-multiplier attack="flame" armor="infantry" value="20.0"/>
-<damage-multiplier attack="flame" armor="armor_light" value="5.0"/>
+<damage-multiplier attack="flame" armor="armor_light" value="7.0"/>
 <damage-multiplier attack="flame" armor="armor_medium" value="5.0"/>
 <damage-multiplier attack="flame" armor="armor_heavy" value="2.0"/>
-<damage-multiplier attack="flame" armor="building" value="10.0"/>
+<damage-multiplier attack="flame" armor="armor_titan" value="0"/>
+<damage-multiplier attack="flame" armor="building" value="15.0"/>
 
 <damage-multiplier attack="explosive" armor="infantry" value="25.0"/>
 <damage-multiplier attack="explosive" armor="armor_light" value="45.0"/>
 <damage-multiplier attack="explosive" armor="armor_medium" value="35.0"/>
 <damage-multiplier attack="explosive" armor="armor_heavy" value="25.0"/>
+<damage-multiplier attack="explosive" armor="armor_titan" value="15.0"/>
 <damage-multiplier attack="explosive" armor="building" value="40.0"/>
 
 <damage-multiplier attack="explosive_" armor="infantry" value="25.0"/>
 <damage-multiplier attack="explosive_" armor="armor_light" value="45.0"/>
 <damage-multiplier attack="explosive_" armor="armor_medium" value="35.0"/>
 <damage-multiplier attack="explosive_" armor="armor_heavy" value="25.0"/>
+<damage-multiplier attack="explosive_" armor="armor_titan" value="15.0"/>
 <damage-multiplier attack="explosive_" armor="building" value="15.0"/>
 
 <damage-multiplier attack="energy" armor="infantry" value="25.0"/>
 <damage-multiplier attack="energy" armor="armor_light" value="60.0"/>
 <damage-multiplier attack="energy" armor="armor_medium" value="50.0"/>
 <damage-multiplier attack="energy" armor="armor_heavy" value="50.0"/>
+<damage-multiplier attack="energy" armor="armor_titan" value="20.0"/>
 <damage-multiplier attack="energy" armor="building" value="10.0"/>
 	</damage-multipliers>
 </tech-tree>

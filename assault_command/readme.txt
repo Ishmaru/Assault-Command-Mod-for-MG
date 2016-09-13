@@ -1,5 +1,51 @@
 Changelog:
 -----------------
+Version 2.0b2
+-----------------
+Whats Added:
+New Faction Defense (Name WIP)
+While much less tactical choices, this faction has some of the most powerful units in Command Assault. Its main weakness is the extreme cost of its units, and lack of long range support units. Its economy is really slow to start, but can really pick up steam over time.
+
+
+New Units:
+- Command HQ
+- Battle Lab
+- Flame Turret
+- SAM
+- Grunt
+- Flame Grunt
+- Rocket Grunt
+- Guard
+- Motor Cycle
+- Officer
+- Recon
+- Panther Tank
+- Dragon Tank
+- Goliath Tank
+- Viper Gunship
+- Titan Rocket
+- Destroyer
+- Gatherer
+
+New Upgrades:
+- Incendiary Grenades
+- Magnetic Armor
+- High Explosive Shells
+- Blast Armor
+- Inferno
+
+
+Balance Changes:
+Motorcycle removed from Assault Faction
+Rocket Grunt removed from Assault Faction
+Incendiary Grenades removed from Assault Faction
+Magnetic Armor removed from Assault Faction
+High Explosive Shells removed from Assault Faction
+New Weapon Type: Flame - Good DPS vs infantry and buildings. Bonus splash damage.
+
+
+
+-----------------
 Version 1.7
 -----------------
 Whats Added:

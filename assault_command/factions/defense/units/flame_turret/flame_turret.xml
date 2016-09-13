@@ -11,7 +11,7 @@
 		<max-hp value="125" regeneration="0"/>
 		<max-ep value="10" regeneration="1"/>
 		<armor value="0"/>	
-		<armor-type value="armor_light"/>				
+		<armor-type value="armor_medium"/>				
 		<sight value="10"/>
 		<time value="10"/>	
 		<multi-selection value="false"/>	
@@ -30,7 +30,7 @@
 			<resource name="oil" amount="150"/>				
 		</resource-requirements>
 		<resources-stored/>
-		<image path="../../../../icons/sentry.bmp"/>
+		<image path="../../../../icons/fturret.bmp"/>
 		<image-cancel path="../../../../icons/stop.bmp"/>
 		<meeting-point value="false"/>
 		<selection-sounds enabled="true">
@@ -83,14 +83,12 @@
 			<name value="attack_skill"/>		
 			<ep-cost value="0"/>
 			<speed value="300"/>
-			<anim-speed value="150"/>
+			<anim-speed value="300"/>
 			<animation path="fturret/fturretshoot.g3d"/>
 			<particles value="true">
 				<particle-file path="flame.xml"/>
 			</particles>
 			<sound enabled="true" start-time="0.20">
-				<sound-file path="/sounds/shoot.wav"/>
-
 			</sound>
 			<attack-strenght value="1"/>
 			<attack-var value="1"/>
@@ -139,7 +137,7 @@
 		<command>
 			<type value="attack_stopped"/>
 			<name value="on"/>
-			<image path="../../../../icons/bullet.bmp"/>
+			<image path="../../../../icons/flame.bmp"/>
 			<unit-requirements/>
 			<upgrade-requirements/>
 			<stop-skill value="stop_skill"/>
