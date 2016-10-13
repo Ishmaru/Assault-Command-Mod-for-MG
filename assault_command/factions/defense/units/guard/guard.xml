@@ -7,7 +7,7 @@
 	<parameters>
 		<size value="1"/>
 		<height value="2"/>
-		<max-hp value="125" regeneration="1"/>
+		<max-hp value="125" regeneration="2"/>
 		<max-ep value="0" regeneration="0"/>
 		<armor value="2"/>	
 		<armor-type value="infantry"/>				
@@ -17,8 +17,8 @@
 		<cellmap value="false"/>
 		<levels>
 			<level name="rookie" kills="2"/>
-			<level name="experienced" kills="4"/>
-			<level name="veteran" kills="8"/>
+			<level name="experienced" kills="5"/>
+			<level name="veteran" kills="10"/>
 		</levels>
 		<fields>
 			<field value="land"/>
@@ -60,8 +60,8 @@
 			<type value="move"/>
 			<name value="move_skill"/>		
 			<ep-cost value="0"/>
-			<speed value="270"/>
-			<anim-speed value="150"/>
+			<speed value="300"/>
+			<anim-speed value="170"/>
 			<animation path="troop/trooprun.g3d"/>
 			<sound enabled="false"/>
 		</skill>
@@ -71,7 +71,7 @@
 			<name value="run_skill"/>		
 			<ep-cost value="0"/>
 			<speed value="300"/>
-			<anim-speed value="175"/>
+			<anim-speed value="170"/>
 			<animation path="troop/trooprun.g3d"/>
 			<sound enabled="false"/>
 		</skill>
@@ -265,7 +265,8 @@
 				<unit name="panther_tank"/>						
 				<unit name="gatherer"/>	
 				<unit name="destroyer"/>											
-				<unit name="s_a_m"/>											
+				<unit name="s_a_m"/>
+				<unit name="bunker_crusher"/>												
 			</repaired-units>		
 		</command>
 
@@ -285,6 +286,18 @@
 			<built-sound enabled="true">							
 			</built-sound>	
 		</command>
+		
+		<command>												
+			<type value="morph"/>											
+			<name value="promote_commando"/>										
+			<image path="../../../../icons/karina.bmp"/>	
+			<unit-requirements/>											
+			<upgrade-requirements>
+			</upgrade-requirements>						
+			<morph-skill value="morph"/>										
+			<morph-unit name= "commando"/>									
+			<discount value="0"/>											
+		</command>	
 
 		<command>												
 			<type value="morph"/>											

@@ -8,7 +8,7 @@
 		<size value="2"/>
 		<height value="3"/>
 		<max-hp value="200" regeneration="0"/>
-		<max-ep value="3" regeneration="1"/>
+		<max-ep value="4" regeneration="1"/>
 		<armor value="0"/>	
 		<armor-type value="armor_medium"/>				
 		<sight value="10"/>
@@ -16,9 +16,6 @@
 		<multi-selection value="false"/>	
 		<cellmap value="false"/>
 		<levels>
-			<level name="rookie" kills="6"/>
-			<level name="experienced" kills="12"/>
-			<level name="veteran" kills="24"/>
 		</levels>
 		<fields>
 			<field value="land"/>
@@ -85,7 +82,7 @@
 		<skill>
 			<type value="attack"/>
 			<name value="missle_skill"/>		
-			<ep-cost value="3"/>
+			<ep-cost value="2"/>
 			<speed value="150"/>
 			<anim-speed value="150"/>
 			<animation path="rturret/rturretshoot.g3d"/>

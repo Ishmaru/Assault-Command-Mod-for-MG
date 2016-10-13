@@ -20,8 +20,10 @@
 			<unit name="grunt" minimum="20"/>
 			<unit name="rocket_grunt" minimum="5"/>
 			<unit name="guard" minimum="5"/>
-			<unit name="goliath_tank" minimum="1"/>
-			<unit name="dragon_tank" minimum="2"/>
+			<unit name="gatherer" minimum="1"/>
+			<unit name="panther_tank" minimum="1"/>
+<!-- 			<unit name="goliath_tank" minimum="1"/>
+			<unit name="dragon_tank" minimum="2"/> -->
 		</warrior-units>
 		<static-values>
 			<static type-name="MinStaticResourceCount" value="-10"/>

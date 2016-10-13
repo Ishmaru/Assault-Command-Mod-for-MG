@@ -1,5 +1,13 @@
 Changelog:
 -----------------
+Version 2.0b3
+-----------------
+New units:
+Bunker Crusher
+Commando
+
+
+-----------------
 Version 2.0b2
 -----------------
 Whats Added:

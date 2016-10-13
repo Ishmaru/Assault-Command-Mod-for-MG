@@ -1,0 +1,23 @@
+<?xml version="1.0" standalone="no"?>
+
+<upgrade>
+	<image path="../../../../icons/rocketcap.bmp"/>
+	<image-cancel path="../../../../icons/stop.bmp"/>
+	<time value="100"/>
+	<unit-requirements/>
+	<upgrade-requirements/>
+	<resource-requirements>
+		<resource name="oil" amount="500"/>
+	</resource-requirements>
+	<effects>
+		<unit name="s_a_m"/>
+	</effects>
+	<max-hp value="0"/>
+	<max-ep value="0"/>
+	<sight value="0"/>
+	<attack-strenght value="0"/>
+	<attack-range value="2"/>
+	<armor value="0"/>
+	<move-speed value="0"/>
+	<production-speed value="0"/>
+</upgrade>

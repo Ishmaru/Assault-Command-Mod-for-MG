@@ -7,10 +7,11 @@
 	<unit-requirements/>
 	<upgrade-requirements/>
 	<resource-requirements>
-		<resource name="oil" amount="500"/>
+		<resource name="oil" amount="1000"/>
 	</resource-requirements>
 	<effects>
 		<unit name="rocket_grunt"/>
+		<unit name="motorcycle"/>
 	</effects>
 	<max-hp value="0"/>
 	<max-ep value="0"/>

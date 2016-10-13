@@ -23,7 +23,10 @@
 			<unit name="black_ops" minimum="5"/>
 			<unit name="transport_heli" minimum="1"/>
 			<unit name="battle_tank" minimum="1"/>
+<!-- 			<unit name="battle_tank" minimum="2"/>
 			<unit name="i_f_v" minimum="2"/>
+			<unit name="cobra_m_r_l_s" minimum="1"/> -->
+
 		</warrior-units>
 		<static-values>
 			<static type-name="MinStaticResourceCount" value="-10"/>

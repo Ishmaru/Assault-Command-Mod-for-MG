@@ -333,12 +333,12 @@
 		</command>	
 		<command>
 			<type value="produce"/>
-			<name value="air_strike" />
+			<name value="orbital_strike" />
 			<image path="../../../../icons/airstrike.bmp" />
 			<unit-requirements />
 			<upgrade-requirements />
 			<produce-skill value="produce_skill"/>
-			<produced-unit name="stingray_bomber"/>
+			<produced-unit name="orbital_strike"/>
 		</command>
 	</commands>
 </unit>

@@ -31,7 +31,7 @@
 		</unit-requirements>
 		<upgrade-requirements/>
 		<resource-requirements>
-			<resource name="oil" amount="125"/>				
+			<resource name="oil" amount="150"/>				
 		</resource-requirements>
 		<resources-stored/>
 		<image path="../../../../icons/motorcycle2.bmp"/>
@@ -233,6 +233,18 @@
 			<max-load value="30"/>
 			<hits-per-unit value="1"/>				
 		</command>
+
+		<command>												
+			<type value="morph"/>											
+			<name value="promote_commando"/>										
+			<image path="../../../../icons/karina.bmp"/>	
+			<unit-requirements/>											
+			<upgrade-requirements>
+			</upgrade-requirements>						
+			<morph-skill value="morph"/>										
+			<morph-unit name= "commando"/>									
+			<discount value="0"/>											
+		</command>	
 
 		<command>												
 			<type value="morph"/>											

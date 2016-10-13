@@ -171,6 +171,7 @@
 				<particle-file path="flame.xml"/>
 			</particles>
 			<sound enabled="true" start-time="0.2">
+				<sound-file path="../flame_turret/sounds/burn.wav"/>
 			</sound>
 			<attack-strenght value="1"/>
 			<attack-var value="1"/>
@@ -183,7 +184,7 @@
 			<projectile value="false"/>
 			<splash value="true">
 				<radius value="1"/>
-				<damage-all value="true"/>
+				<damage-all value="false"/>
 				<particle value="true" path="gun_hit.xml"/>
 			</splash>
 		</skill>
@@ -294,7 +295,8 @@
 				<unit name="panther_tank"/>	
 				<unit name="gatherer"/>											
 				<unit name="destroyer"/>						
-				<unit name="s_a_m"/>						
+				<unit name="s_a_m"/>	
+				<unit name="bunker_crusher"/>						
 			</repaired-units>		
 		</command>
 
@@ -317,6 +319,18 @@
 
 		<command>												
 			<type value="morph"/>											
+			<name value="promote_commando"/>										
+			<image path="../../../../icons/karina.bmp"/>	
+			<unit-requirements/>											
+			<upgrade-requirements>
+			</upgrade-requirements>						
+			<morph-skill value="morph"/>										
+			<morph-unit name= "commando"/>									
+			<discount value="0"/>											
+		</command>	
+
+		<command>												
+			<type value="morph"/>											
 			<name value="promote_officer"/>										
 			<image path="../../../../icons/officer2.bmp"/>	
 			<unit-requirements/>											
@@ -326,6 +340,5 @@
 			<morph-unit name= "field_officer"/>									
 			<discount value="0"/>											
 		</command>	
-
 	</commands>
 </unit>

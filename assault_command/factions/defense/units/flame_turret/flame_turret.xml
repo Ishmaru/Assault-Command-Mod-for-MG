@@ -27,7 +27,7 @@
 		</unit-requirements>
 		<upgrade-requirements/>
 		<resource-requirements>
-			<resource name="oil" amount="150"/>				
+			<resource name="oil" amount="100"/>				
 		</resource-requirements>
 		<resources-stored/>
 		<image path="../../../../icons/fturret.bmp"/>
@@ -89,10 +89,11 @@
 				<particle-file path="flame.xml"/>
 			</particles>
 			<sound enabled="true" start-time="0.20">
+				<sound-file path="sounds/burn.wav"/>
 			</sound>
 			<attack-strenght value="1"/>
 			<attack-var value="1"/>
-			<attack-range value="8"/>
+			<attack-range value="9"/>
 			<attack-type value="flame"/>
 			<attack-start-time value="0.2"/>
 			<attack-fields>
@@ -101,7 +102,7 @@
 			<projectile value="false"/>
 			<splash value="true">
 				<radius value="1"/>
-				<damage-all value="true"/>
+				<damage-all value="false"/>
 				<particle value="false"/>
 			</splash>
 		</skill>

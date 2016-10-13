@@ -7,7 +7,7 @@
 	<parameters>
 		<size value="2"/>
 		<height value="3"/>
-		<max-hp value="20" regeneration="-1"/>
+		<max-hp value="30" regeneration="-1"/>
 		<max-ep value="4" regeneration="1"/>
 		<count-unit-death-in-stats value="false" />
 		<count-unit-production-in-stats value="false" />
@@ -31,7 +31,7 @@
 		</unit-requirements>
 		<upgrade-requirements/>
 		<resource-requirements>
-			<resource name="oil" amount="50"/>				
+			<resource name="oil" amount="25"/>				
 		</resource-requirements>
 		<resources-stored/>
 		<image path="../../../../icons/decoy.bmp"/>

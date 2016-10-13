@@ -33,7 +33,7 @@
 			<resource name="oil" amount="2000" />
 		</resource-requirements>
 		<resources-stored>
-			<resource name="oil" amount="3000"/>
+			<resource name="oil" amount="2500"/>
 		</resources-stored>
 		<image path="../../../../icons/hq2.bmp"/>
 		<image-cancel path="../../../../icons/stop.bmp"/>
@@ -163,7 +163,17 @@
 			<produced-unit name="dragon_tank"/>
 		</command>
 
-			<command>
+		<command>
+			<type value="produce"/>
+			<name value="produce_bunker_crusher" />
+			<image path="../../../../icons/crusher.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="bunker_crusher"/>
+		</command>
+
+		<command>
 			<type value="produce"/>
 			<name value="produce_panther_tank" />
 			<image path="../../../../icons/panther.bmp" />
@@ -172,7 +182,7 @@
 			<produce-skill value="produce_skill"/>
 			<produced-unit name="panther_tank"/>
 		</command>
-
+		
 		<command>
 			<type value="produce"/>
 			<name value="titan_rocket" />

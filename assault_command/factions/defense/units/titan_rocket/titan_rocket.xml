@@ -7,8 +7,8 @@
 	<parameters>
 		<size value="2"/>
 		<height value="3"/>
-		<max-hp value="200" regeneration="0"/>
-		<max-ep value="10" regeneration="1"/>
+		<max-hp value="150" regeneration="0"/>
+		<max-ep value="12" regeneration="1"/>
 		<armor value="0"/>	
 		<armor-type value="armor_light"/>				
 		<sight value="15"/>
@@ -16,9 +16,9 @@
 		<multi-selection value="true"/>	
 		<cellmap value="false"/>
 		<levels>
-			<level name="rookie" kills="4"/>
-			<level name="experienced" kills="8"/>
-			<level name="veteran" kills="16"/>
+			<level name="rookie" kills="8"/>
+			<level name="experienced" kills="16"/>
+			<level name="veteran" kills="32"/>
 		</levels>
 		<fields>
 			<field value="land"/>
@@ -31,7 +31,7 @@
 		</unit-requirements>
 		<upgrade-requirements/>
 		<resource-requirements>
-			<resource name="oil" amount="500"/>				
+			<resource name="oil" amount="650"/>				
 		</resource-requirements>
 		<resources-stored/>
 		<image path="../../../../icons/titan.bmp"/>
@@ -77,7 +77,7 @@
 		<skill>
 			<type value="attack"/>
 			<name value="missle_skill"/>		
-			<ep-cost value="10"/>
+			<ep-cost value="12"/>
 			<speed value="30"/>
 			<anim-speed value="30"/>
 			<animation path="titan/titanshoot.g3d"/>

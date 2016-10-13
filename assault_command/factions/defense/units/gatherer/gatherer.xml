@@ -29,7 +29,7 @@
 					<resource name="oil" amount="900" />			
 		</resource-requirements>
 		<resources-stored>
-			<resource name="oil" amount="100"/>
+			<resource name="oil" amount="300"/>
 		</resources-stored>
 		<image path="../../../../icons/gatherer.bmp"/>
 		<image-cancel path="../../../../icons/stop.bmp"/>
@@ -42,7 +42,24 @@
             <resource name="oil" amount-value="500" />
         </resources-death>
 	</parameters>
-
+	<attack-boosts>
+		<attack-boost name="repair">
+			<allow-multiple-boosts value="false" />
+			<radius value="10" />
+			<target value="ally"/>
+			<max-hp value="0" regeneration="2"/>
+			<max-ep value="0"/>
+			<sight value="0" />
+			<attack-strenght value="0"/>
+			<attack-range value="0" />
+			<armor value="0" />
+			<move-speed value="0"/>
+			<production-speed value="0" />
+				<particles value="true">
+					<affected-particle-file path="re.xml"/>
+				</particles>
+		</attack-boost>
+	</attack-boosts>
 
 	<!-- *** skills *** -->
 
@@ -59,6 +76,7 @@
          		<particle-file path="dust.xml"/>
 			</particles>
 			<sound enabled="false"/>
+			<attack-boost name="repair" />
 		</skill>
 		
 		<skill>
@@ -72,6 +90,7 @@
          		<particle-file path="dust.xml"/>
 			</particles>
 			<sound enabled="false"/>
+			<attack-boost name="repair" />
 		</skill>
 
 		<skill>
@@ -85,6 +104,7 @@
          		<particle-file path="dust.xml"/>
 			</particles>
 			<sound enabled="false"/>
+			<attack-boost name="repair" />
 		</skill>
 		
 		<skill>
@@ -98,6 +118,7 @@
          		<particle-file path="dust.xml"/>
 			</particles>
 			<sound enabled="false"/>
+			<attack-boost name="repair" />
 		</skill>
 
 		<skill>
@@ -114,7 +135,7 @@
 				<sound-file path="sounds/tank_destroy_2.wav"/>
 			</sound>				
 			<fade value="false"/>
-			<shake enabled="true" intensity="7500" duration="100" start-time="0.0">
+			<shake enabled="true" intensity="1000" duration="150" start-time="0.0">
 				<self enabled="true" visible="true" in-camera-view="false" camera-distance-affected="true"/>
 				<team enabled="true" visible="true" in-camera-view="false" camera-distance-affected="true"/>
 				<enemy enabled="true" visible="true" in-camera-view="false" camera-distance-affected="true"/>
@@ -132,7 +153,7 @@
          		<particle-file path="dust.xml"/>
 			</particles>
 			<sound enabled="false"/>
-
+			<attack-boost name="repair" />
 		</skill>
 		<skill>
 			<type value="produce"/>
@@ -142,6 +163,7 @@
 			<anim-speed value="100" />
 			<animation path="transport/transportstand.g3d" />
 			<sound enabled="false" />
+			<attack-boost name="repair" />
 		</skill>
 	</skills>
 

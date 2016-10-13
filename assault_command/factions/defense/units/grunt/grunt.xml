@@ -272,7 +272,8 @@
 				<unit name="panther_tank"/>						
 				<unit name="gatherer"/>	
 				<unit name="destroyer"/>
-				<unit name="s_a_m"/>												
+				<unit name="s_a_m"/>
+				<unit name="bunker_crusher"/>													
 			</repaired-units>		
 		</command>
 

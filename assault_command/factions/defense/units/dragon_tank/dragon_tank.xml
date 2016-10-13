@@ -7,7 +7,7 @@
 	<parameters>
 		<size value="2"/>
 		<height value="3"/>
-		<max-hp value="250" regeneration="0"/>
+		<max-hp value="300" regeneration="0"/>
 		<max-ep value="18" regeneration="1"/>
 		<armor value="0"/>	
 		<armor-type value="armor_medium"/>				
@@ -31,7 +31,7 @@
 		</unit-requirements>
 		<upgrade-requirements/>
 		<resource-requirements>
-			<resource name="oil" amount="350"/>				
+			<resource name="oil" amount="400"/>				
 		</resource-requirements>
 		<resources-stored/>
 		<image path="../../../../icons/dragon.bmp"/>
@@ -85,7 +85,8 @@
 			<particles value="true">
 				<particle-file path="flame_tank.xml"/>
 			</particles>
-			<sound enabled="true" start-time="0.03">
+			<sound enabled="true" start-time="0.01">
+				<sound-file path="../flame_turret/sounds/burn.wav"/>
 			</sound>
 			<attack-strenght value="1"/>
 			<attack-var value="1"/>
@@ -98,7 +99,7 @@
 			<projectile value="false"/>
 			<splash value="true">
 				<radius value="1"/>
-				<damage-all value="true"/>
+				<damage-all value="false"/>
 				<particle value="false"/>
 			</splash>
 		</skill>
@@ -123,6 +124,70 @@
 			</shake>
 		</skill>
 
+		<skill>
+			<type value="produce"/>
+			<name value="produce_skill"/>	
+			<ep-cost value="0" />
+			<speed value="1000" />
+			<anim-speed value="1000" />
+			<animation path="flametank/flametankstand.g3d" />
+			<sound enabled="false" />
+	<!-- 		<attack-boost>
+				<allow-multiple-boosts value="true" />
+				<target value="all" include-self="true">
+				</target>
+				<radius value="1"/>
+				<max-hp value="0"  regeneration="-500"/>
+				<max-ep value="0"/>
+				<sight value="0"/>
+				<attack-strenght value="0"/>
+				<attack-range value="0"/>
+				<armor value="0"/>
+				<move-speed value="0"/>
+				<production-speed value="0"/>
+				<particles value="false"/>
+			</attack-boost> -->
+		</skill>
+
+		<skill>
+			<type value="attack"/>
+			<name value="bomb_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="300"/>
+			<anim-speed value="300"/>
+			<animation path="flametank/flametankstand.g3d"/>
+			<particles value="true">
+				<particle-file path="flame_tank.xml"/>
+			</particles>
+			<sound enabled="true" start-time="0.01">
+			</sound>
+			<unit value="fire_bomb" amount="1" />
+			<attack-strenght value="8"/>
+			<attack-var value="0"/>
+			<attack-range value="1"/>
+			<attack-type value="explosive"/>
+			<attack-start-time value="0.01"/>
+			<attack-fields>
+				<field value="land"/>
+			</attack-fields>
+			<projectile value="false"/>
+			<splash value="false"/>
+<!-- 			<attack-boost>
+				<allow-multiple-boosts value="true" />
+				<target value="all" include-self="true">
+				</target>
+				<radius value="1"/>
+				<max-hp value="0"  regeneration="-500"/>
+				<max-ep value="0"/>
+				<sight value="0"/>
+				<attack-strenght value="0"/>
+				<attack-range value="0"/>
+				<armor value="0"/>
+				<move-speed value="0"/>
+				<production-speed value="0"/>
+				<particles value="false"/>
+			</attack-boost> -->
+		</skill>
 
 	</skills>
 
@@ -168,8 +233,25 @@
 			<attack-skill value="attack_skill"/>
 		</command>
 
+		<command>
+			<type value="attack"/>
+			<name value="fire_bomb_target"/>
+			<image path="../../../../icons/expl.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+			<attack-skill value="bomb_skill"/>
+		</command>
 
-
+		<command>
+			<type value="produce"/>
+			<name value="self_destruct" />
+			<image path="../../../../icons/expl.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="fire_bomb"/>
+		</command>
 		
 	</commands>
 </unit>

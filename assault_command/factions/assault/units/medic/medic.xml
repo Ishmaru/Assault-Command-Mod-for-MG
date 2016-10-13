@@ -29,7 +29,7 @@
 		</unit-requirements>
 		<upgrade-requirements/>
 		<resource-requirements>	
-					<resource name="oil" amount="225" />			
+					<resource name="oil" amount="175" />			
 		</resource-requirements>
 		<resources-stored/>
 		<image path="../../../../icons/medic.bmp"/>
@@ -44,7 +44,7 @@
 	<attack-boosts>
 		<attack-boost name="heal">
 			<allow-multiple-boosts value="true" />
-			<radius value="3" />
+			<radius value="4" />
 			<target value="ally"/>
 			<max-hp value="0" regeneration="1"/>
 			<max-ep value="0"/>
