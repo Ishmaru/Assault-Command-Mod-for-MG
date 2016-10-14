@@ -1,14 +1,7 @@
 Changelog:
------------------
-Version 2.0b3
------------------
-New units:
-Bunker Crusher
-Commando
-
 
 -----------------
-Version 2.0b2
+Version 2.1
 -----------------
 Whats Added:
 New Faction Defense (Name WIP)
@@ -34,6 +27,8 @@ New Units:
 - Titan Rocket
 - Destroyer
 - Gatherer
+- Bunker Crusher
+- Commando
 
 New Upgrades:
 - Incendiary Grenades

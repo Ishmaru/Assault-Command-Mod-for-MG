@@ -2,12 +2,12 @@
 
 ###MOD FOR MEGAGLEST
 
-### Current version = 1.7
+### Current version = 2.1
 
-![Screenshot](https://raw.githubusercontent.com/Ishmaru/Assault-Command-Mod-for-MG/master/screen2.png)
+![Screenshot](https://raw.githubusercontent.com/Ishmaru/Assault-Command-Mod-for-MG/master/screen4.png)
 
 
-### Adds a new Techtree (Assault Command) & faction (Assault)
+### Adds a new Techtree (Assault Command) & 2 new factions Assault (Name WIP) & Defense (Name WIP)
 
 Assault Command is a fast paced RTS experience. With some unique features:
 
@@ -15,6 +15,7 @@ Assault Command is a fast paced RTS experience. With some unique features:
 * Most infantry can perform "worker" commands such as building, repairing and harvesting. (Field Officers, and Kestrel are the exception).
 * Standard Grunts are promoted to other classes.
 * Transport Heli's can harvest over long distances.
+* Gatherers can Harvest indefinitely without returning to base.
 * Mobile Base, Large transport truck, can deploy Grunts, and act as a drop off point for resources. 
 * High variable damage. Units can do devastating damage or even miss entirely.
 * Fast paced combat. New method to calculate damage gives better random calculations. Units can seem to be able to avoid damage.
@@ -23,9 +24,8 @@ Assault Command is a fast paced RTS experience. With some unique features:
 ###Contents:
 * 1 Techtree	- Assault Command
 * 1 Resource	- Oil
-* 1 Faction	- Assault
-* 3 Structures	- Command HQ, Battle Lab, & Mobile Base
-* 18 Units
+* 2 Factions	- Assault, Defense
+* 30 + Units
 * No Tilesets or maps.
 
 ![Screenshot](https://raw.githubusercontent.com/Ishmaru/Assault-Command-Mod-for-MG/master/screen1.png)
@@ -42,7 +42,7 @@ Start Megaglest and select Assault Command from the Techs option (in custom game
 * Missing some sounds (Voice, Helicopter,FX)
 * Unit documentation.
 
-###Unit Build Tree:
+###Unit Build Tree: (Outdated as of v2.1)
 ![alt text](https://raw.githubusercontent.com/Ishmaru/Assault-Command-Mod-for-MG/master/assault_command_techtree.png "Build Tree Diagram")
 
 ###Recomended Tilesets:
