@@ -10,11 +10,11 @@
 		<height value="4"/>
 		<max-hp value="3000" regeneration="0"/>
 		<max-ep value="10" regeneration="1"/>
-		<armor value="0"/>	
-		<armor-type value="building"/>				
+		<armor value="0"/>
+		<armor-type value="building"/>
 		<sight value="15"/>
-		<time value="25"/>	
-		<multi-selection value="false"/>	
+		<time value="25"/>
+		<multi-selection value="false"/>
 		<cellmap value="false"/>
 		<levels>
 			<level name="rookie" kills="3"/>
@@ -23,24 +23,24 @@
 		</levels>
 		<fields>
 			<field value="land"/>
-		</fields>	
+		</fields>
 		<properties>
 			<property value="rotated_climb"/>
-			<property value="burnable"/>	
+			<property value="burnable"/>
 		</properties>
 		<light enabled="false"/>
 		<unit-requirements>
 		</unit-requirements>
 		<upgrade-requirements/>
 		<resource-requirements>
-			<resource name="oil" amount="2000"/>				
+			<resource name="oil" amount="2000"/>
 		</resource-requirements>
 		<resources-stored>
 			<resource name="oil" amount="2000"/>
 		</resources-stored>
 		<image path="../../../../icons/mobilefactory.bmp"/>
 		<image-cancel path="../../../../icons/stop.bmp"/>
-		<meeting-point value="false"/>
+		<meeting-point value="true" image-path="../../../../icons/meet.bmp"/>
 		<selection-sounds enabled="true">
 		</selection-sounds>
 		<command-sounds enabled="true">
@@ -54,20 +54,20 @@
 	<!-- *** skills *** -->
 
 	<skills>
-	
+
 		<skill>
 			<type value="stop"/>
-			<name value="stop_skill"/>		
+			<name value="stop_skill"/>
 			<ep-cost value="0"/>
 			<speed value="500"/>
 			<anim-speed value="10"/>
 			<animation path="rig/rigstand.g3d"/>
 			<sound enabled="false"/>
 		</skill>
-		
+
 		<skill>
 			<type value="move"/>
-			<name value="move_skill"/>		
+			<name value="move_skill"/>
 			<ep-cost value="0"/>
 			<speed value="200"/>
 			<anim-speed value="50"/>
@@ -81,7 +81,7 @@
 
 		<skill>
 			<type value="attack"/>
-			<name value="attack_skill"/>		
+			<name value="attack_skill"/>
 			<ep-cost value="0"/>
 			<speed value="300"/>
 			<anim-speed value="300"/>
@@ -99,10 +99,10 @@
 			<splash value="false"/>
 		</skill>
 
-		
+
 		<skill>
 			<type value="die"/>
-			<name value="die_skill"/>		
+			<name value="die_skill"/>
 			<ep-cost value="0"/>
 			<speed value="60"/>
 			<anim-speed value="80"/>
@@ -111,7 +111,7 @@
 			</particles>
 			<sound enabled="true" start-time="0">
 				<sound-file path="sounds/tank_destroy_2.wav"/>
-			</sound>			
+			</sound>
 			<fade value="false"/>
 			<shake enabled="true" intensity="1000" duration="150" start-time="0.0">
 				<self enabled="true" visible="true" in-camera-view="false" camera-distance-affected="true"/>
@@ -121,7 +121,7 @@
 		</skill>
 		<skill>
 			<type value="stop"/>
-			<name value="stop_oil_skill"/>		
+			<name value="stop_oil_skill"/>
 			<ep-cost value="0"/>
 			<speed value="300"/>
 			<anim-speed value="50"/>
@@ -130,10 +130,10 @@
 			</particles>
 			<sound enabled="false"/>
 		</skill>
-		
+
 		<skill>
 			<type value="move"/>
-			<name value="move_oil_skill"/>		
+			<name value="move_oil_skill"/>
 			<ep-cost value="0"/>
 			<speed value="200"/>
 			<anim-speed value="50"/>
@@ -147,7 +147,7 @@
 
 		<skill>
 			<type value="harvest"/>
-			<name value="oil_skill"/>		
+			<name value="oil_skill"/>
 			<ep-cost value="0"/>
 			<speed value="50"/>
 			<anim-speed value="100"/>
@@ -159,7 +159,7 @@
 		</skill>
 		<skill>
 			<type value="produce"/>
-			<name value="produce_skill"/>	
+			<name value="produce_skill"/>
 			<ep-cost value="0" />
 			<speed value="150" />
 			<anim-speed value="150" />
@@ -170,7 +170,7 @@
 	</skills>
 
 	<!-- *** commands *** -->
-	
+
 	<commands>
 
 		<command>
@@ -202,10 +202,10 @@
 			<stop-loaded-skill value="stop_oil_skill"/>
 			<move-loaded-skill value="move_oil_skill"/>
 			<harvested-resources>
-				<resource name="oil"/>										
+				<resource name="oil"/>
 			</harvested-resources>
 			<max-load value="999999999"/>
-			<hits-per-unit value="1"/>				
+			<hits-per-unit value="1"/>
 		</command>
 
 		<command>
@@ -216,7 +216,7 @@
 			<upgrade-requirements />
 			<produce-skill value="produce_skill"/>
 			<produced-unit name="grunt"/>
-		</command>	
+		</command>
 
 		<command>
 			<type value="produce"/>
