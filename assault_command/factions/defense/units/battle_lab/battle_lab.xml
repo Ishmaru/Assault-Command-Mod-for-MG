@@ -122,7 +122,7 @@
 	<commands>
 		<command>				
 			<type value="upgrade"/>			
-			<name value="develope_incendiary_grenade"/>			
+			<name value="develop_incendiary_grenade"/>			
 			<image path="../../../../icons/incgrenade.bmp" />			
 			<unit-requirements />			
 			<upgrade-requirements />			
@@ -131,7 +131,7 @@
 		</command>
 		<command>				
 			<type value="upgrade"/>			
-			<name value="develope_blast_armor"/>			
+			<name value="develop_blast_armor"/>			
 			<image path="../../../../icons/bodyarmor.bmp" />			
 			<unit-requirements />			
 			<upgrade-requirements />			
@@ -140,7 +140,7 @@
 		</command>
 		<command>				
 			<type value="upgrade"/>			
-			<name value="develope_missle_guidance"/>			
+			<name value="develop_missle_guidance"/>			
 			<image path="../../../../icons/rocketcap.bmp" />			
 			<unit-requirements />			
 			<upgrade-requirements />			
@@ -149,7 +149,7 @@
 		</command>
 		<command>				
 			<type value="upgrade"/>			
-			<name value="develope_high_explosive_shells"/>			
+			<name value="develop_high_explosive_shells"/>			
 			<image path="../../../../icons/explosiveshell.bmp" />			
 			<unit-requirements />			
 			<upgrade-requirements />			
@@ -158,7 +158,7 @@
 		</command>
 		<command>				
 			<type value="upgrade"/>			
-			<name value="develope_inferno"/>			
+			<name value="develop_inferno"/>			
 			<image path="../../../../icons/flame.bmp" />			
 			<unit-requirements />			
 			<upgrade-requirements />			
@@ -167,7 +167,7 @@
 		</command>
 		<command>				
 			<type value="upgrade"/>			
-			<name value="develope_defense_armor"/>			
+			<name value="develop_defense_armor"/>			
 			<image path="../../../../icons/armor.bmp" />			
 			<unit-requirements />			
 			<upgrade-requirements />			
@@ -176,7 +176,7 @@
 		</command>
 		<command>				
 			<type value="upgrade"/>			
-			<name value="develope_nano_bots"/>			
+			<name value="develop_nano_bots"/>			
 			<image path="../../../../icons/bots.bmp" />			
 			<unit-requirements />			
 			<upgrade-requirements />			
@@ -185,7 +185,7 @@
 		</command>
 		<command>				
 			<type value="upgrade"/>			
-			<name value="develope_magnetic_armor"/>			
+			<name value="develop_magnetic_armor"/>			
 			<image path="../../../../icons/mshield.bmp" />			
 			<unit-requirements />			
 			<upgrade-requirements />			
