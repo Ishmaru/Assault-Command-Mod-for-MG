@@ -1,0 +1,196 @@
+<?xml version="1.0" standalone="no"?>
+
+<unit>
+
+	<!-- *** parameters *** -->
+
+	<parameters>
+		<size value="2"/>
+		<height value="1"/>
+		<max-hp value="150" regeneration="0"/>
+		<max-ep value="0" regeneration="0"/>
+		<armor value="1"/>	
+		<armor-type value="armor_light"/>				
+		<sight value="15"/>
+		<time value="10"/>	
+		<multi-selection value="true"/>	
+		<cellmap value="false"/>
+		<levels>
+		</levels>
+		<fields>
+			<field value="air"/>
+		</fields>	
+		<properties/>
+		<light enabled="false"/>
+		<unit-requirements>
+		</unit-requirements>
+		<upgrade-requirements/>
+		<resource-requirements>	
+					<resource name="oil" amount="450" />			
+		</resource-requirements>
+		<resources-stored/>
+		<image path="../../../../icons/transport.bmp"/>
+		<image-cancel path="../../../../icons/stop.bmp"/>
+		<meeting-point value="false"/>
+		<selection-sounds enabled="true">
+		</selection-sounds>
+		<command-sounds enabled="true">
+		</command-sounds>
+		<resources-death>
+            <resource name="oil" amount-value="200" />
+        </resources-death>
+	</parameters>
+
+
+	<!-- *** skills *** -->
+
+	<skills>
+	
+		<skill>
+			<type value="stop"/>
+			<name value="stop_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="1000"/>
+			<anim-speed value="100"/>
+			<animation path="transport/transportstand.g3d"/>
+			<particles value="true">
+         		<particle-file path="dust.xml"/>
+			</particles>
+			<sound enabled="false"/>
+		</skill>
+		
+		<skill>
+			<type value="move"/>
+			<name value="move_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="500"/>
+			<anim-speed value="100"/>
+			<animation path="transport/transportrun.g3d"/>
+			<particles value="true">
+         		<particle-file path="dust.xml"/>
+			</particles>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="stop"/>
+			<name value="stop_oil_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="105"/>
+			<anim-speed value="100"/>
+			<animation path="transport/transportstand.g3d"/>
+			<particles value="true">
+         		<particle-file path="dust.xml"/>
+			</particles>
+			<sound enabled="false"/>
+		</skill>
+		
+		<skill>
+			<type value="move"/>
+			<name value="move_oil_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="500"/>
+			<anim-speed value="100"/>
+			<animation path="transport/transportrun.g3d"/>
+			<particles value="true">
+         		<particle-file path="dust.xml"/>
+			</particles>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="die"/>
+			<name value="die_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="100"/>
+			<anim-speed value="100"/>
+			<animation path="transport/transportdie.g3d"/>
+			<particles value="true">
+         		<particle-file path="dust.xml"/>  <particle-file path="expl_small.xml"/>
+			</particles>
+			<sound enabled="true" start-time="0">
+				<sound-file path="sounds/tank_destroy_2.wav"/>
+			</sound>				
+			<fade value="false"/>
+			<shake enabled="true" intensity="200" duration="50" start-time="0.0">
+				<self enabled="true" visible="true" in-camera-view="false" camera-distance-affected="true"/>
+				<team enabled="true" visible="true" in-camera-view="false" camera-distance-affected="true"/>
+				<enemy enabled="true" visible="true" in-camera-view="false" camera-distance-affected="true"/>
+			</shake>
+		</skill>
+
+		<skill>
+			<type value="harvest"/>
+			<name value="oil_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="350"/>
+			<anim-speed value="100"/>
+			<animation path="transport/transportstand.g3d"/>
+			<particles value="true">
+         		<particle-file path="dust.xml"/>
+			</particles>
+			<sound enabled="false"/>
+
+		</skill>
+		<skill>
+			<type value="produce"/>
+			<name value="produce_skill"/>	
+			<ep-cost value="0" />
+			<speed value="200" />
+			<anim-speed value="100" />
+			<animation path="transport/transportstand.g3d" />
+			<sound enabled="false" />
+		</skill>
+	</skills>
+
+
+
+	<!-- *** commands *** -->
+	
+	<commands>
+		
+		<command>
+			<type value= "stop"/>
+			<name value="stop"/>
+			<image path="../../../../icons/stop.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+		</command>
+
+		<command>
+			<type value="move"/>
+			<name value="move"/>
+			<image path="../../../../icons/move.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+		</command>
+
+		<command>
+			<type value="harvest"/>
+			<name value="pump"/>
+			<image path="../../../../icons/oil.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+			<harvest-skill value="oil_skill"/>
+			<stop-loaded-skill value="stop_oil_skill"/>
+			<move-loaded-skill value="move_oil_skill"/>
+			<harvested-resources>
+				<resource name="oil"/>										
+			</harvested-resources>
+			<max-load value="300"/>
+			<hits-per-unit value="1"/>				
+		</command>
+		<command>
+			<type value="produce"/>
+			<name value="paradrop" />
+			<image path="../../../../icons/paradrop.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="grunt"/>
+		</command>
+	</commands>
+</unit>

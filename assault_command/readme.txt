@@ -1,6 +1,24 @@
 Changelog:
 
 -----------------
+Version 2.7
+-----------------
+Whats changed:
+- New Faction names Atlus (Tan Colored) and Visor (Green Colored)
+- New Models For Visor tanks: Panther Tank, Bunker Crusher, and Goliath Tank
+- Bunker Crusher now fires a visible slow moving/high arc projectile, at a higher rate of fire.
+- Atlus Battle Tank renamed to Sabre Tank
+
+Balance changes:
+- Prototype tank hp increased by 100
+- Wasps are cheaper with higher evasion + more HP
+- Railguns have slightly faster rate of fire
+- Falamethrower infantry have higher HP
+- Visor starting credits is 750
+- Atlus Transport heli cost droped to 450
+- Spartan IFV have a higher fire rate.
+
+-----------------
 Version 2.1
 -----------------
 Whats Added:

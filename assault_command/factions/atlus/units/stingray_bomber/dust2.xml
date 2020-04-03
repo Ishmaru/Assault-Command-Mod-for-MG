@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="yes"?>
+<unit-particle-system>
+    	<texture value="true" path="../command_h_q/images/particle_2.bmp" luminance="true"/>
+    	<mode value="black"/>
+	<primitive value="quad"/>
+	<offset x="-1.5" y="-5.5" z="-2"/>
+	<direction x="0" y="1" z="0"/>
+	<color red="0.6" green="0.3" blue="0.1" alpha="0.5" />
+	<color-no-energy red="0.3" green="0.2" blue="0.1" alpha="0.1" />
+    	<radius value="1.8" />
+    	<size value="3" />
+    	<size-no-energy value="5" />
+    	<speed value="0.5" />
+	<gravity value="-0.01"/>
+    	<emission-rate value="0.5" />
+    	<energy-max value="120" />
+    	<energy-var value="0" />
+	<relative value="true" />
+    	<fixed value="false" />
+    	<teamcolorNoEnergy value="false" />
+    	<teamcolorEnergy value="false" />
+
+	<!--trajectory type="spiral">
+		<speed value="14.0"/>
+		<scale value="1"/>
+		<frequency value="0.5"/>
+	</trajectory-->
+<isDaylightAffected value="true" />
+</unit-particle-system>

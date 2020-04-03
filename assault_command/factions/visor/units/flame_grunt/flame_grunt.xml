@@ -1,0 +1,344 @@
+<?xml version="1.0" standalone="no"?>
+
+<unit>
+
+	<!-- *** parameters *** -->
+
+	<parameters>
+		<size value="1"/>
+		<height value="2"/>
+		<max-hp value="120" regeneration="1"/>
+		<max-ep value="0"/>
+		<armor value="1"/>
+		<armor-type value="infantry"/>					
+		<sight value="10"/>
+		<time value="2"/>	
+		<multi-selection value="true"/>	
+		<cellmap value="false"/>
+		<levels>
+			<level name="rookie" kills="2"/>
+			<level name="experienced" kills="4"/>
+			<level name="veteran" kills="8"/>
+		</levels>
+		<fields>
+			<field value="land"/>
+		</fields>	
+		<properties/>
+		<light enabled="false"/>
+		<unit-requirements/>
+		<upgrade-requirements/>
+		<resource-requirements>
+			<resource name="oil" amount="100"/>		
+		</resource-requirements>
+		<resources-stored/>
+		<image path="../../../../icons/fgrunt.bmp"/>
+		<image-cancel path="../../../../icons/stop.bmp"/>
+		<meeting-point value="false"/>
+		<selection-sounds enabled="true">					
+		</selection-sounds>
+		<command-sounds enabled="true">
+		</command-sounds>
+   		<tags>
+		<tag value="land" />
+		<tag value="organic" />
+   		</tags>
+	</parameters>
+
+
+	<!-- *** skills *** -->
+
+	<skills>
+	
+		<skill>
+			<type value="stop"/>
+			<name value="stop_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="1000"/>
+			<anim-speed value="25"/>
+			<animation path="/support/flamestand.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+		
+		<skill>
+			<type value="stop"/>
+			<name value="stop_oil_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="500"/>
+			<anim-speed value="90"/>
+			<animation path="/support/flameattack.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="move"/>
+			<name value="move_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="300"/>
+			<anim-speed value="160"/>
+			<animation path="/support/flamerun.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="move"/>
+			<name value="move_oil_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="270"/>
+			<anim-speed value="150"/>
+			<animation path="/support/flamerun.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+		
+		<skill>
+			<type value="harvest"/>
+			<name value="oil_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="150"/>
+			<anim-speed value="90"/>
+			<animation path="/support/flameattack.g3d"/>
+			<particles value="true">
+				<particle-file path="harvestbeam.xml"/>
+			</particles>
+			<sound enabled="true" start-time="0.5">
+
+			</sound>
+		</skill>
+
+		<skill>
+			<type value="build"/>
+			<name value="build_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="450"/>
+			<anim-speed value="90"/>
+			<animation path="support/flameattack.g3d"/>
+			<particles value="true">
+				<particle-file path="harvestbeam.xml"/>
+			</particles>
+			<sound enabled="true" start-time="0.5">
+			</sound>
+		</skill>
+
+		<skill>
+			<type value="repair"/>
+			<name value="repair_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="60"/>
+			<anim-speed value="60"/>
+			<animation path="/support/flameattack.g3d"/>
+			<particles value="true">
+				<particle-file path="harvestbeam.xml"/>
+			</particles>
+			<sound enabled="true" start-time="0.5">
+			</sound>
+		</skill>
+
+		<skill>
+			<type value="repair"/>
+			<name value="fix_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="60"/>
+			<anim-speed value="120"/>
+			<animation path="/support/flameattack.g3d"/>
+			<particles value="true">
+				<particle-file path="harvestbeam.xml"/>
+			</particles>
+			<sound enabled="true" start-time="0.5">
+			</sound>
+		</skill>
+
+		<skill>
+			<type value="repair"/>
+			<name value="heal_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="60"/>
+			<anim-speed value="60"/>
+			<animation path="/support/flameattack.g3d"/>
+			<particles value="true">
+				<particle-file path="harvestbeam.xml"/>
+			</particles>
+			<sound enabled="true" start-time="0.5">
+			</sound>
+		</skill>
+
+		<skill>
+			<type value="attack"/>
+			<name value="attack_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="300"/>
+			<anim-speed value="200"/>
+			<animation path="/support/flameattack.g3d"/>
+			<particles value="true">
+				<particle-file path="flame.xml"/>
+			</particles>
+			<sound enabled="true" start-time="0.2">
+				<sound-file path="../flame_turret/sounds/burn.wav"/>
+			</sound>
+			<attack-strenght value="1"/>
+			<attack-var value="1"/>
+			<attack-range value="6"/>
+			<attack-type value="flame"/>
+			<attack-start-time value="0.2"/>
+			<attack-fields>
+				<field value="land"/>
+			</attack-fields>
+			<projectile value="false"/>
+			<splash value="true">
+				<radius value="1"/>
+				<damage-all value="false"/>
+				<particle value="true" path="gun_hit.xml"/>
+			</splash>
+		</skill>
+		
+		<skill>												
+			<type value="morph"/>											
+			<name value="morph"/>											
+			<ep-cost value="0"/>											
+			<speed value="100"/>											
+			<anim-speed value="60"/>
+			<animation path="/support/flameattack.g3d"/>
+			<sound enabled="false"/>								
+		</skill>
+	
+		<skill>
+			<type value="die"/>
+			<name value="die_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="90"/>
+			<anim-speed value="90"/>
+			<animation path="/support/troopdie2.g3d"/>
+			<particles value="true">
+				<particle-file path="blood.xml"/>
+			</particles>
+			<sound enabled="true" start-time="0">							
+			</sound>			
+			<fade value="false"/>
+		</skill>						
+
+	</skills>
+
+	<!-- *** commands *** -->
+	
+	<commands>
+		
+		<command>
+			<type value= "stop"/>
+			<name value="stop"/>
+			<image path="../../../../icons/stop.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+		</command>
+
+		<command>
+			<type value= "move"/>
+			<name value="move"/>
+			<image path="../../../../icons/move.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+		</command>
+
+		<command>
+			<type value="attack"/>
+			<name value="attack"/>
+			<image path="../../../../icons/flame.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+			<attack-skill value="attack_skill"/>
+		</command>
+
+		<command>
+			<type value="attack_stopped"/>
+			<name value="hold_position"/>
+			<image path="../../../../icons/hold.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+			<attack-skill value="attack_skill"/>
+		</command>
+
+		<command>
+			<type value="harvest"/>
+			<name value="pump"/>
+			<image path="../../../../icons/oil.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+			<harvest-skill value="oil_skill"/>
+			<stop-loaded-skill value="stop_oil_skill"/>
+			<move-loaded-skill value="move_oil_skill"/>
+			<harvested-resources>
+				<resource name="oil"/>										
+			</harvested-resources>
+			<max-load value="15"/>
+			<hits-per-unit value="1"/>				
+		</command>
+
+		<command>
+			<type value="repair"/>
+			<name value="repair_tank"/>
+			<image path="../../../../icons/repair.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+			<repair-skill value="fix_skill"/>
+			<repaired-units>
+				<unit name="command_h_q"/>
+				<unit name="battle_lab"/>
+				<unit name="flame_turret"/>
+				<unit name="motorcycle"/>
+				<unit name="recon"/>
+				<unit name="titan_rocket"/>
+				<unit name="dragon_tank"/>
+				<unit name="goliath_tank"/>	
+				<unit name="panther_tank"/>	
+				<unit name="gatherer"/>											
+				<unit name="destroyer"/>						
+				<unit name="s_a_m"/>	
+				<unit name="bunker_crusher"/>						
+			</repaired-units>		
+		</command>
+
+		<command>
+			<type value= "build"/>
+			<name value="build_defense"/>
+			<image path="../../../../icons/build.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+			<build-skill value="build_skill"/>
+			<buildings>	
+				<building name="flame_turret"/>
+				<building name="s_a_m"/>
+			</buildings>
+			<start-sound enabled="false"/>
+			<built-sound enabled="true">							
+			</built-sound>	
+		</command>
+
+		<command>												
+			<type value="morph"/>											
+			<name value="promote_commando"/>										
+			<image path="../../../../icons/karina.bmp"/>	
+			<unit-requirements/>											
+			<upgrade-requirements>
+			</upgrade-requirements>						
+			<morph-skill value="morph"/>										
+			<morph-unit name= "commando"/>									
+			<discount value="0"/>											
+		</command>	
+
+		<command>												
+			<type value="morph"/>											
+			<name value="promote_officer"/>										
+			<image path="../../../../icons/officer2.bmp"/>	
+			<unit-requirements/>											
+			<upgrade-requirements>
+			</upgrade-requirements>						
+			<morph-skill value="morph"/>										
+			<morph-unit name= "field_officer"/>									
+			<discount value="0"/>											
+		</command>	
+	</commands>
+</unit>

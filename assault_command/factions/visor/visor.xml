@@ -1,0 +1,37 @@
+<?xml version="1.0" standalone="no"?>
+
+<faction>
+	<starting-resources>
+				<resource name="oil" amount="750"/>
+	</starting-resources>
+	<starting-units>
+		<unit name="command_h_q" amount="2"/>
+		<unit name="battle_lab" amount="1"/>
+		<unit name="grunt" amount="10"/>
+	</starting-units>	
+	
+	<healthbar>
+			<height value="1"/>
+			<thickness value="0.2"/>
+			<visible value="selected"/>
+	</healthbar>
+	<ai-behavior>
+		<warrior-units>
+			<unit name="grunt" minimum="20"/>
+			<unit name="rocket_grunt" minimum="5"/>
+			<unit name="guard" minimum="5"/>
+			<unit name="gatherer" minimum="1"/>
+			<unit name="panther_tank" minimum="1"/>
+<!-- 			<unit name="goliath_tank" minimum="1"/>
+			<unit name="dragon_tank" minimum="2"/> -->
+		</warrior-units>
+		<static-values>
+			<static type-name="MinStaticResourceCount" value="-10"/>
+			<static type-name="MinWorkerAttackersHarvesting" value="6"/>
+			<static type-name="MinBuildSpacing" value="4"/>
+			<static type-name="MinMinWarriors" value="1"/>
+			<static type-name="MaxMinWarriors" value="2"/>
+		</static-values>
+	</ai-behavior>
+	<music value="true" path="soundtrack_s31.ogg"/>
+</faction>

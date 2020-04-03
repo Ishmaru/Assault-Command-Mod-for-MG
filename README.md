@@ -2,12 +2,13 @@
 
 ###MOD FOR MEGAGLEST
 
-### Current version = 2.1
 
-![Screenshot](https://raw.githubusercontent.com/Ishmaru/Assault-Command-Mod-for-MG/master/screen4.png)
+### Current version = 2.7
+
+![Screenshot](https://raw.githubusercontent.com/Ishmaru/Assault-Command-Mod-for-MG/master/screen5.png)
 
 
-### Adds a new Techtree (Assault Command) & 2 new factions Assault (Name WIP) & Defense (Name WIP)
+### Adds a new Techtree (Assault Command) & 2 new factions Atlus (Tan Colored) and Visor (Green Colored)
 
 Assault Command is a fast paced RTS experience. With some unique features:
 
@@ -46,7 +47,7 @@ Start Megaglest and select Assault Command from the Techs option (in custom game
 ![alt text](https://raw.githubusercontent.com/Ishmaru/Assault-Command-Mod-for-MG/master/assault_command_techtree.png "Build Tree Diagram")
 
 ###Recomended Tilesets:
-Mediterran, Scrub Land, Birch Forest, Dark Forest
+Mediterran, Desert 4, Scrub Land, Birch Forest, Dark Forest
 
 ##Assault Command credits/license.
 
