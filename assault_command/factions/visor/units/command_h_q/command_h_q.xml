@@ -10,7 +10,8 @@
 		<armor-type value="building"/>
 		<sight value="10" />
 		<time value="100" />
-		<multi-selection value="false" />
+		<multi-selection value="true"/>
+		<uniform-selection value="true"/>
 		<cellmap value="true">
 			<row value="11111"/>
 			<row value="11111"/>
@@ -66,12 +67,12 @@
 				</particles>
 		</attack-boost>
 	</attack-boosts>
-	
+
 	<!-- *** skills *** -->
 	<skills>
 		<!-- *** skill 0 *** -->
 		<skill>
-			<type value="stop"/>	
+			<type value="stop"/>
 			<name value="stop_skill"/>
 			<ep-cost value="0" />
 			<speed value="50" />
@@ -81,36 +82,36 @@
 			<attack-boost name="repair" />
 
 		</skill>
-		
+
 		<!-- *** skill 1 *** -->
 		<skill>
-			<type value="be_built" />	
-			<name value="be_built_skill"/>		
+			<type value="be_built" />
+			<name value="be_built_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="300" />
 			<animation path="fort/fort.g3d" />
 			<sound enabled="false" />
-		</skill>	
-		
-		
+		</skill>
+
+
 		<!-- *** skill 3 *** -->
 		<skill>
 			<type value="produce"/>
-			<name value="produce_skill"/>	
+			<name value="produce_skill"/>
 			<ep-cost value="0" />
 			<speed value="150" />
 			<anim-speed value="100" />
 			<animation path="fort/fort.g3d" />
 			<sound enabled="false" />
 			<attack-boost name="repair" />
-		</skill>	
+		</skill>
 
-	
+
 		<!-- *** skill 4 *** -->
 		<skill>
-			<type value="die" />	
-			<name value="die_skill"/>		
+			<type value="die" />
+			<name value="die_skill"/>
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="30" />
@@ -119,7 +120,7 @@
 			</particles>
 			<sound enabled="true" start-time="0">
 				<sound-file path="/sounds/tech_building_fall4.wav"/>
-			</sound>			
+			</sound>
 			<fade value="false"/>
 			<shake enabled="true" intensity="1000" duration="150" start-time="0.0">
 				<self enabled="true" visible="true" in-camera-view="false" camera-distance-affected="true"/>
@@ -129,7 +130,7 @@
 		</skill>
 
 	</skills>
-	
+
 	<!-- *** commands *** -->
 	<commands>
 
@@ -182,7 +183,7 @@
 			<produce-skill value="produce_skill"/>
 			<produced-unit name="panther_tank"/>
 		</command>
-		
+
 		<command>
 			<type value="produce"/>
 			<name value="titan_rocket" />
@@ -192,7 +193,7 @@
 			<produce-skill value="produce_skill"/>
 			<produced-unit name="titan_rocket"/>
 		</command>
-		
+
 		<command>
 			<type value="produce"/>
 			<name value="produce_goliath_tank" />
