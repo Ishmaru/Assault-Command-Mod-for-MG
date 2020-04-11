@@ -1,9 +1,26 @@
 Changelog:
 
 -----------------
+Version 2.8
+-----------------
+Whats Added:
+- New Model for Spartan IFV
+- Spartan IFV are no longer an upgrade for Starter IFV, instead built directly from HQ for 350 credits.
+- Multi Select For Buildings
+
+Balance changes:
+- Many units in Atlus and Visor have decreased kill requirements for veterency levels.
+- Visor Guard only has one Veterency Level, (Any more made them invulerable to almost all dammage)
+- Recon added to Atlus HMG Upgrade
+- Scorpion SPG added to Atlus Composite Armor Upgrade
+- Mobile Base now auto repair adjacient units, much like HQ does.
+- Both Factions start with one Gatherer/Transport and 400 credits.
+- Atlus Starter IFV units have been removed. Only the Spartan varients are buildable.
+
+-----------------
 Version 2.7
 -----------------
-Whats changed:
+Whats Added:
 - New Faction names Atlus (Tan Colored) and Visor (Green Colored)
 - New Models For Visor tanks: Panther Tank, Bunker Crusher, and Goliath Tank
 - Bunker Crusher now fires a visible slow moving/high arc projectile, at a higher rate of fire.

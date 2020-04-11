@@ -10,7 +10,7 @@
 		<resource name="oil" amount="1000"/>
 	</resource-requirements>
 	<effects>
-		<unit name="i_f_v"/>
+		<unit name="recon"/>
 		<unit name="spartan_i_f_v"/>
 	</effects>
 	<max-hp value="0"/>

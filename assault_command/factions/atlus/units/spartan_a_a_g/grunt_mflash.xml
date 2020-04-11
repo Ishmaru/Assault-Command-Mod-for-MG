@@ -2,12 +2,12 @@
 <unit-particle-system>
     	<texture value="true" path="../command_h_q/images/m_flash.bmp" luminance="true"/>
 	<primitive value="quad"/>
-	<offset x="0" y="0.2" z="1.4"/>
+	<offset x="0" y="0.2" z="1.5"/>
 	<direction x="0" y="0" z="0"/>
 	<color red="1.0" green="0.9" blue="0.3" alpha="1" />
 	<color-no-energy red="1.0" green="0.1" blue="0.1" alpha="0.0" />
     	<radius value="0.0001" />
-    	<size value="4.0" />
+    	<size value="5.0" />
     	<size-no-energy value="0" />
     	<speed value="5" />
 	<gravity value="0"/>

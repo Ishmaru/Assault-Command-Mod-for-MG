@@ -11,8 +11,9 @@
 	</resource-requirements>
 	<effects>
 		<unit name="stalker"/>
-		<unit name="i_f_v"/>
 		<unit name="spartan_i_f_v"/>
+		<unit name="scorpion_siege"/>
+		<unit name="scorpion_assault"/>
 	</effects>
 	<max-hp value="50"/>
 	<max-ep value="0"/>

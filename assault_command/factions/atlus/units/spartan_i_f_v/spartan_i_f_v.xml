@@ -12,13 +12,13 @@
 		<armor value="0"/>	
 		<armor-type value="armor_medium"/>				
 		<sight value="10"/>
-		<time value="6"/>	
+		<time value="10"/>	
 		<multi-selection value="true"/>	
 		<cellmap value="false"/>
 		<levels>
-			<level name="rookie" kills="8"/>
-			<level name="experienced" kills="16"/>
-			<level name="veteran" kills="32"/>
+			<level name="rookie" kills="4"/>
+			<level name="experienced" kills="8"/>
+			<level name="veteran" kills="16"/>
 		</levels>
 		<fields>
 			<field value="land"/>
@@ -31,7 +31,7 @@
 		</unit-requirements>
 		<upgrade-requirements/>
 		<resource-requirements>
-			<resource name="oil" amount="150"/>				
+			<resource name="oil" amount="350"/>				
 		</resource-requirements>
 		<resources-stored/>
 		<image path="../../../../icons/spartan.bmp"/>
@@ -57,7 +57,7 @@
 			<ep-cost value="0"/>
 			<speed value="500"/>
 			<anim-speed value="10"/>
-			<animation path="ifv/spartanstand.g3d"/>
+			<animation path="vulcan/vulcanstand.g3d"/>
 			<sound enabled="false"/>
 		</skill>
 		
@@ -67,7 +67,7 @@
 			<ep-cost value="0"/>
 			<speed value="450"/>
 			<anim-speed value="75"/>
-			<animation path="ifv/spartanrun.g3d"/>       <particles value="true">
+			<animation path="vulcan/vulcanrun.g3d"/>       <particles value="true">
          <particle-file path="dust.xml"/>
 			</particles>
 			<sound enabled="false">
@@ -81,13 +81,13 @@
 			<ep-cost value="0"/>
 			<speed value="140"/>
 			<anim-speed value="140"/>
-			<animation path="ifv/spartanshoot.g3d"/>
-			<particles value="true" start-time="0.1" end-time="0.3">
+			<animation path="vulcan/vulcanshoot.g3d"/>
+			<particles value="true" start-time="0.05" end-time="0.95">
 				<particle-file path="gun_muzzle.xml"/>
 				<particle-file path="grunt_mflash.xml"/>
 			</particles>
 			<sound enabled="true" start-time="0.03">
-				<sound-file path="/sounds/spartan.wav"/>
+				<sound-file path="/sounds/shoot.wav"/>
 
 			</sound>
 			<attack-strenght value="2"/>
@@ -113,7 +113,7 @@
 			<ep-cost value="12"/>
 			<speed value="100"/>
 			<anim-speed value="100"/>
-			<animation path="ifv/spartanrocket.g3d"/>
+			<animation path="vulcan/vulcanrocket.g3d"/>
 			<sound enabled="true" start-time="0.25">
 				<sound-file path="/sounds/missle_.wav"/>
 			</sound>
@@ -159,7 +159,7 @@
 			<ep-cost value="0"/>
 			<speed value="60"/>
 			<anim-speed value="80"/>
-			<animation path="ifv/ifvdie.g3d"/>       <particles value="true">
+			<animation path="vulcan/vulcandie.g3d"/>       <particles value="true">
          <particle-file path="smoke.xml"/>  <particle-file path="expl_small.xml"/>
 			</particles>
 			<sound enabled="true" start-time="0">
@@ -210,13 +210,13 @@
 
 		<command>
 			<type value="attack"/>
-			<name value="attack"/>
+			<name value="rocket_attack"/>
 			<image path="../../../../icons/rocket.bmp"/>
 			<unit-requirements/>
 			<upgrade-requirements/>
 			<move-skill value="move_skill"/>
 			<attack-skill value="missle_skill"/>
-		</command>		
+		</command>	
 
 		<command>
 			<type value="attack_stopped"/>

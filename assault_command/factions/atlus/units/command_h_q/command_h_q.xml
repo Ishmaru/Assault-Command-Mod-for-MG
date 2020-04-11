@@ -156,12 +156,12 @@
 
 		<command>
 			<type value="produce"/>
-			<name value="produce_i_f_v" />
-			<image path="../../../../icons/ifv.bmp" />
+			<name value="produce_spartan_i_f_v" />
+			<image path="../../../../icons/spartan.bmp" />
 			<unit-requirements />
 			<upgrade-requirements />
 			<produce-skill value="produce_skill"/>
-			<produced-unit name="i_f_v"/>
+			<produced-unit name="spartan_i_f_v"/>
 		</command>
 
 		<command>

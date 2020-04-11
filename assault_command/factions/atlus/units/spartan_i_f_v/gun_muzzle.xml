@@ -1,7 +1,7 @@
 <?xml version="1.0" standalone="yes"?>
 <unit-particle-system>
 	<size value="0.5" />
-	<emission-rate value="0.2" />
+	<emission-rate value="1.5" />
 	<radius value="0.1"/>
 	<offset x="0" y="0.2" z="1.5"/>
 	<color red="1.0" green="0.9" blue="0.3" alpha="0.7" />
@@ -14,7 +14,7 @@
 	<model value="false"/>
 	<primitive value="quad"/>
 	<size-no-energy value="0.02" />
-	<speed value="6.0" />
+	<speed value="3.0" />
 	<gravity value="0.0"/>
 	<energy-max value="10" />
 	<energy-var value="3" />

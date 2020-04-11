@@ -2,12 +2,13 @@
 
 <faction>
 	<starting-resources>
-				<resource name="oil" amount="750"/>
+				<resource name="oil" amount="400"/>
 	</starting-resources>
 	<starting-units>
 		<unit name="command_h_q" amount="2"/>
 		<unit name="battle_lab" amount="1"/>
 		<unit name="grunt" amount="10"/>
+		<unit name="gatherer" amount="1"/>
 	</starting-units>	
 	
 	<healthbar>

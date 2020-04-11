@@ -294,7 +294,6 @@
 				<unit name="sentry_gun"/>
 				<unit name="energy_cannon"/>
 				<unit name="motorcycle"/>
-				<unit name="i_f_v"/>
 				<unit name="spartan_i_f_v"/>
 				<unit name="recon"/>
 				<unit name="stalker"/>

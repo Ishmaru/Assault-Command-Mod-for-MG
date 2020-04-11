@@ -49,7 +49,24 @@
             <resource name="oil" amount-value="1500" />
         </resources-death>
 	</parameters>
-
+	<attack-boosts>
+		<attack-boost name="repair">
+			<allow-multiple-boosts value="false" />
+			<radius value="10" />
+			<target value="ally"/>
+			<max-hp value="0" regeneration="2"/>
+			<max-ep value="0"/>
+			<sight value="0" />
+			<attack-strenght value="0"/>
+			<attack-range value="0" />
+			<armor value="0" />
+			<move-speed value="0"/>
+			<production-speed value="0" />
+				<particles value="true">
+					<affected-particle-file path="re.xml"/>
+				</particles>
+		</attack-boost>
+	</attack-boosts>
 
 	<!-- *** skills *** -->
 
@@ -63,6 +80,7 @@
 			<anim-speed value="10"/>
 			<animation path="rig/rigstand.g3d"/>
 			<sound enabled="false"/>
+			<attack-boost name="repair" />
 		</skill>
 		
 		<skill>
@@ -75,8 +93,8 @@
          	<particle-file path="dust1.xml"/>
             <particle-file path="dust2.xml"/>
 			</particles>
-			<sound enabled="false">
-			</sound>
+			<sound enabled="false"/>
+			<attack-boost name="repair" />
 		</skill>
 
 		<skill>
@@ -97,6 +115,7 @@
 			</attack-fields>
 			<projectile value="false"/>
 			<splash value="false"/>
+			<attack-boost name="repair" />
 		</skill>
 
 		
@@ -129,6 +148,7 @@
 			<particles value="true">
 			</particles>
 			<sound enabled="false"/>
+			<attack-boost name="repair" />
 		</skill>
 		
 		<skill>
@@ -143,6 +163,7 @@
          		<particle-file path="dust2.xml"/>
 			</particles>
 			<sound enabled="false"/>
+			<attack-boost name="repair" />
 		</skill>
 
 		<skill>
@@ -155,6 +176,7 @@
 			<particles value="true">
 			</particles>
 			<sound enabled="false"/>
+			<attack-boost name="repair" />
 
 		</skill>
 		<skill>
@@ -165,6 +187,7 @@
 			<anim-speed value="150" />
 			<animation path="rig/rigstand.g3d" />
 			<sound enabled="false" />
+			<attack-boost name="repair" />
 		</skill>
 
 	</skills>
@@ -230,12 +253,12 @@
 
 		<command>
 			<type value="produce"/>
-			<name value="produce_i_f_v" />
-			<image path="../../../../icons/ifv.bmp" />
+			<name value="produce_spartan_i_f_v" />
+			<image path="../../../../icons/spartan.bmp" />
 			<unit-requirements />
 			<upgrade-requirements />
 			<produce-skill value="produce_skill"/>
-			<produced-unit name="i_f_v"/>
+			<produced-unit name="spartan_i_f_v"/>
 		</command>
 
 		<command>
