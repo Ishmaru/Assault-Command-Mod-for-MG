@@ -1,6 +1,6 @@
 ![Assault Command](https://raw.githubusercontent.com/Ishmaru/Assault-Command-Mod-for-MG/master/command_assault.png)
 
-###MOD FOR MEGAGLEST
+### MOD FOR MEGAGLEST
 
 
 ### Current version = 2.8
@@ -43,7 +43,7 @@ Start Megaglest and select Assault Command from the Techs option (in custom game
 * Missing some sounds (Voice, Helicopter,FX)
 * Unit documentation.
 
-###Unit Build Tree: (Outdated as of v2.8)
+###Unit Build Tree: (Updated as of v2.8)
 ![alt text](https://raw.githubusercontent.com/Ishmaru/Assault-Command-Mod-for-MG/master/Atlus_Techtree.png "Atlus Build Tree Diagram")
 ![alt text](https://raw.githubusercontent.com/Ishmaru/Assault-Command-Mod-for-MG/master/Visor_Techtree.png "Visor Build Tree Diagram")
 
