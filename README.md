@@ -43,8 +43,9 @@ Start Megaglest and select Assault Command from the Techs option (in custom game
 * Missing some sounds (Voice, Helicopter,FX)
 * Unit documentation.
 
-###Unit Build Tree: (Outdated as of v2.1)
-![alt text](https://raw.githubusercontent.com/Ishmaru/Assault-Command-Mod-for-MG/master/assault_command_techtree.png "Build Tree Diagram")
+###Unit Build Tree: (Outdated as of v2.8)
+![alt text](https://raw.githubusercontent.com/Ishmaru/Assault-Command-Mod-for-MG/master/Atlus_Techtree.png "Atlus Build Tree Diagram")
+![alt text](https://raw.githubusercontent.com/Ishmaru/Assault-Command-Mod-for-MG/master/Visor_Techtree.png "Visor Build Tree Diagram")
 
 ###Recomended Tilesets:
 Mediterran, Desert 4, Scrub Land, Birch Forest, Dark Forest

@@ -259,7 +259,7 @@
 		<command>
 			<type value="produce"/>
 			<name value="air_strike" />
-			<image path="../../../../icons/airstrike.bmp" />
+			<image path="../../../../icons/orbital_strike.bmp" />
 			<unit-requirements />
 			<upgrade-requirements />
 			<produce-skill value="produce_skill"/>
