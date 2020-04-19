@@ -7,9 +7,9 @@
 	<parameters>
 		<size value="1"/>
 		<height value="0"/>
-		<max-hp value="120" regeneration="1"/>
+		<max-hp value="100" regeneration="1"/>
 		<max-ep value="0"/>
-		<armor value="2"/>	
+		<armor value="1"/>	
 		<armor-type value="infantry"/>				
 		<sight value="10"/>
 		<time value="5"/>	
@@ -28,7 +28,7 @@
 		<unit-requirements/>
 		<upgrade-requirements/>
 		<resource-requirements>
-			<resource name="oil" amount="150"/>
+			<resource name="oil" amount="175"/>
 		</resource-requirements>
 		<resources-stored/>
 		<image path="../../../../icons/wasp.bmp"/>

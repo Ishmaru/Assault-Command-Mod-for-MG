@@ -31,7 +31,7 @@
 		</unit-requirements>
 		<upgrade-requirements/>
 		<resource-requirements>
-			<resource name="oil" amount="150"/>				
+			<resource name="oil" amount="175"/>				
 		</resource-requirements>
 		<resources-stored/>
 		<image path="../../../../icons/motorcycle2.bmp"/>
@@ -158,7 +158,7 @@
 			<type value="harvest"/>
 			<name value="oil_skill"/>		
 			<ep-cost value="0"/>
-			<speed value="150"/>
+			<speed value="120"/>
 			<anim-speed value="50"/>
 			<animation path="biker/bikerstand.g3d"/>
 			<sound enabled="false"/>
@@ -230,7 +230,7 @@
 			<harvested-resources>
 				<resource name="oil"/>										
 			</harvested-resources>
-			<max-load value="30"/>
+			<max-load value="25"/>
 			<hits-per-unit value="1"/>				
 		</command>
 

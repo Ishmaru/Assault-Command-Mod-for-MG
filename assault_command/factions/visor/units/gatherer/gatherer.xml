@@ -26,7 +26,7 @@
 		</unit-requirements>
 		<upgrade-requirements/>
 		<resource-requirements>	
-					<resource name="oil" amount="750" />			
+					<resource name="oil" amount="900" />			
 		</resource-requirements>
 		<resources-stored>
 			<resource name="oil" amount="300"/>
@@ -43,7 +43,7 @@
         </resources-death>
 	</parameters>
 	<attack-boosts>
-		<attack-boost name="repair">
+<!-- 		<attack-boost name="repair">
 			<allow-multiple-boosts value="false" />
 			<radius value="10" />
 			<target value="ally"/>
@@ -58,7 +58,7 @@
 				<particles value="true">
 					<affected-particle-file path="re.xml"/>
 				</particles>
-		</attack-boost>
+		</attack-boost> -->
 	</attack-boosts>
 
 	<!-- *** skills *** -->
@@ -76,7 +76,7 @@
          		<particle-file path="dust.xml"/>
 			</particles>
 			<sound enabled="false"/>
-			<attack-boost name="repair" />
+			<!-- <attack-boost name="repair" /> -->
 		</skill>
 		
 		<skill>
@@ -90,7 +90,7 @@
          		<particle-file path="dust.xml"/>
 			</particles>
 			<sound enabled="false"/>
-			<attack-boost name="repair" />
+			<!-- <attack-boost name="repair" /> -->
 		</skill>
 
 		<skill>
@@ -104,7 +104,7 @@
          		<particle-file path="dust.xml"/>
 			</particles>
 			<sound enabled="false"/>
-			<attack-boost name="repair" />
+			<!-- <attack-boost name="repair" /> -->
 		</skill>
 		
 		<skill>
@@ -118,7 +118,7 @@
          		<particle-file path="dust.xml"/>
 			</particles>
 			<sound enabled="false"/>
-			<attack-boost name="repair" />
+			<!-- <attack-boost name="repair" /> -->
 		</skill>
 
 		<skill>
@@ -153,7 +153,7 @@
          		<particle-file path="dust.xml"/>
 			</particles>
 			<sound enabled="false"/>
-			<attack-boost name="repair" />
+			<!-- <attack-boost name="repair" /> -->
 		</skill>
 		<skill>
 			<type value="produce"/>
@@ -163,7 +163,7 @@
 			<anim-speed value="100" />
 			<animation path="transport/transportstand.g3d" />
 			<sound enabled="false" />
-			<attack-boost name="repair" />
+			<!-- <attack-boost name="repair" /> -->
 		</skill>
 	</skills>
 
