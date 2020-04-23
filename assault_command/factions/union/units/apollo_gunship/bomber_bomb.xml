@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="yes"?>
+<projectile-particle-system>
+    	<texture value="true" path="../command_h_q/images/particle_2.bmp" luminance="true"/>   <mode value="black"/>
+    	<model value="true" path="models/bomb.g3d"/>
+	<primitive value="quad"/>
+	<offset x="0" y="-0.7" z="0"/>
+	<color red="0.1" green="0.1" blue="0.1" alpha="0.2" />
+	<color-no-energy red="0.0" green="0.0" blue="0.0" alpha="0.2" />
+    	<size value="3" />
+    	<size-no-energy value="3" />
+    	<speed value="10.0" />
+	<gravity value="0"/>
+    	<emission-rate value="1" />
+    	<energy-max value="40" />
+    	<energy-var value="2" />
+	
+	<trajectory type="parabolic">
+		<speed value="15"/>
+		<scale value="-0.3"/>
+	</trajectory>
+</projectile-particle-system>

@@ -5,12 +5,12 @@
 	<!-- *** parameters *** -->
 
 	<parameters>
-		<size value="2"/>
+		<size value="3"/>
 		<height value="3"/>
-		<max-hp value="100" regeneration="0"/>
-		<max-ep value="6" regeneration="1"/>
+		<max-hp value="200" regeneration="0"/>
+		<max-ep value="36" regeneration="1"/>
 		<armor value="0"/>	
-		<armor-type value="armor_medium"/>				
+		<armor-type value="armor_heavy"/>				
 		<sight value="15"/>
 		<time value="30"/>	
 		<multi-selection value="true"/>	
@@ -30,7 +30,7 @@
 		</unit-requirements>
 		<upgrade-requirements/>
 		<resource-requirements>
-			<resource name="oil" amount="750"/>				
+			<resource name="oil" amount="1000"/>				
 		</resource-requirements>
 		<resources-stored/>
 		<image path="../../../../icons/viper.bmp"/>
@@ -41,7 +41,7 @@
 		<command-sounds enabled="true">
 		</command-sounds>
 		<resources-death>
-            <resource name="oil" amount-value="400" />
+            <resource name="oil" amount-value="500" />
         </resources-death>
 	</parameters>
 
@@ -56,7 +56,7 @@
 			<ep-cost value="0"/>
 			<speed value="500"/>
 			<anim-speed value="40"/>
-			<animation path="plane/planestand.g3d"/>
+			<animation path="plane/specturestand.g3d"/>
 			<particles value="true" start-time="0.1" end-time="0.75">
 				<particle-file path="dust.xml"/>
 			</particles>
@@ -67,9 +67,9 @@
 			<type value="move"/>
 			<name value="move_skill"/>		
 			<ep-cost value="0"/>
-			<speed value="850"/>
+			<speed value="650"/>
 			<anim-speed value="30"/>
-			<animation path="plane/planerun.g3d"/>       
+			<animation path="plane/specturerun.g3d"/>       
 			<particles value="true">
 				<particle-file path="dust.xml"/>
 			</particles>
@@ -83,31 +83,67 @@
 			<ep-cost value="6"/>
 			<speed value="100"/>
 			<anim-speed value="100"/>
-			<animation path="plane/planeshoot.g3d"/>
+			<animation path="plane/spectureshoot.g3d"/>
 			<particles value="true">
 				<particle-file path="dust.xml"/>
+				<particle-file path="gun_muzzle.xml"/>
+				<particle-file path="grunt_mflash.xml"/>
+				<particle-file path="gun_muzzle2.xml"/>
+				<particle-file path="grunt_mflash2.xml"/>
 			</particles>
-			<sound enabled="true" start-time="0.25">
+			<sound enabled="true" start-time="0.1">
+				<sound-file path="/sounds/shoot.wav"/>
+			</sound>
+			<sound enabled="true" start-time="0.20">
 				<sound-file path="/sounds/missle_.wav"/>
 			</sound>
-			<sound enabled="true" start-time="0.75">
+			<sound enabled="true" start-time="0.40">
 				<sound-file path="/sounds/missle_.wav"/>
 			</sound>
-			<attack-strenght value="4"/>
-			<attack-var value="3"/>
+			<sound enabled="true" start-time="0.60">
+				<sound-file path="/sounds/missle_.wav"/>
+			</sound>
+			<sound enabled="true" start-time="0.80">
+				<sound-file path="/sounds/missle_.wav"/>
+			</sound>
+			<sound enabled="true" start-time="0.95">
+				<sound-file path="/sounds/missle_.wav"/>
+			</sound>
+			<attack-strenght value="6"/>
+			<attack-var value="5"/>
 			<attack-range value="8"/>
-			<attack-type value="explosive"/>
+			<attack-type value="explosive_"/>
 			<attack-start-time value="0.0"/>
 			<attack-fields>
-				<field value="air"/>
+				<field value="land"/>
 			</attack-fields>
 			<projectiles>
-				<projectile attack-start-time="0.25" damage-percentage="50">	
+				<projectile attack-start-time="0.01" damage-percentage="5">	
+					<particle value="true" path="particle_proj_mgun.xml"/>
+					<hitsound enabled="false"/>
+				</projectile>
+				<projectile attack-start-time="0.20" damage-percentage="18">	
 					<particle value="true" path="particle_proj1.xml"/>
 					<hitsound enabled="false"/>
 				</projectile>
-				<projectile attack-start-time="0.75" damage-percentage="50">	
+				<projectile attack-start-time="0.40" damage-percentage="18">	
+					<particle value="true" path="particle_proj1.xml"/>
+					<hitsound enabled="false"/>
+				</projectile>
+				<projectile attack-start-time="0.55" damage-percentage="5">	
+					<particle value="true" path="particle_proj_mgun.xml"/>
+					<hitsound enabled="false"/>
+				</projectile>
+				<projectile attack-start-time="0.60" damage-percentage="18">	
 					<particle value="true" path="particle_proj2.xml"/>
+					<hitsound enabled="false"/>
+				</projectile>
+				<projectile attack-start-time="0.80" damage-percentage="18">	
+					<particle value="true" path="particle_proj3.xml"/>
+					<hitsound enabled="false"/>
+				</projectile>
+				<projectile attack-start-time="0.95" damage-percentage="18">	
+					<particle value="true" path="particle_proj4.xml"/>
 					<hitsound enabled="false"/>
 				</projectile>
 			</projectiles>
@@ -118,46 +154,6 @@
 			</splash>
 		</skill>
 
-		<skill>
-			<type value="attack"/>
-			<name value="bomb_skill"/>		
-			<ep-cost value="6"/>
-			<speed value="100"/>
-			<anim-speed value="100"/>
-			<animation path="plane/planeshoot.g3d"/>
-			<particles value="true">
-				<particle-file path="dust.xml"/>
-			</particles>
-			<sound enabled="true" start-time="0.25">
-				<sound-file path="/sounds/missle_.wav"/>
-			</sound>
-			<sound enabled="true" start-time="0.75">
-				<sound-file path="/sounds/missle_.wav"/>
-			</sound>
-			<attack-strenght value="4"/>
-			<attack-var value="3"/>
-			<attack-range value="0"/>
-			<attack-type value="explosive"/>
-			<attack-start-time value="0.0"/>
-			<attack-fields>
-				<field value="land"/>
-			</attack-fields>
-			<projectiles>
-				<projectile attack-start-time="0.25" damage-percentage="50">	
-					<particle value="true" path="bomber_bomb.xml"/>
-					<hitsound enabled="false"/>
-				</projectile>
-				<projectile attack-start-time="0.75" damage-percentage="50">	
-					<particle value="true" path="bomber_bomb.xml"/>
-					<hitsound enabled="false"/>
-				</projectile>
-			</projectiles>
-			<splash value="true">
-				<radius value="1"/>
-				<damage-all value="true"/>
-				<particle value="true" path="particle_splash.xml"/>
-			</splash>
-		</skill>
 
 		<skill>
 			<type value="die"/>
@@ -165,7 +161,7 @@
 			<ep-cost value="0"/>
 			<speed value="60"/>
 			<anim-speed value="80"/>
-			<animation path="plane/planedie.g3d"/>       <particles value="true">
+			<animation path="plane/specturedie.g3d"/>       <particles value="true">
          <particle-file path="smoke.xml"/>  <particle-file path="expl_small.xml"/>
 			</particles>
 			<sound enabled="true" start-time="0">
@@ -214,15 +210,6 @@
 			<attack-skill value="missle_skill"/>
 		</command>
 
-		<command>
-			<type value="attack"/>
-			<name value="bomb_attack"/>
-			<image path="../../../../icons/expl.bmp"/>
-			<unit-requirements/>
-			<upgrade-requirements/>
-			<move-skill value="move_skill"/>
-			<attack-skill value="bomb_skill"/>
-		</command>
 
 		<command>
 			<type value="attack_stopped"/>

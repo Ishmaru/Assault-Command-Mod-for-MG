@@ -173,6 +173,16 @@
 			<produce-skill value="produce_skill"/>
 			<produced-unit name="raptor_v_t_o_l"/>
 		</command>
+
+		<command>
+			<type value="produce"/>
+			<name value="produce_apollo_gunship" />
+			<image path="../../../../icons/stingray.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="apollo_gunship"/>
+		</command>
 <!-- 
 		<command>
 			<type value="produce"/>
