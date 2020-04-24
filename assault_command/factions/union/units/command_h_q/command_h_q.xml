@@ -156,6 +156,16 @@
 
 		<command>
 			<type value="produce"/>
+			<name value="produce_supply_truck" />
+			<image path="../../../../icons/transport.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="supply_truck"/>
+		</command>
+		
+		<command>
+			<type value="produce"/>
 			<name value="produce_jager_tank" />
 			<image path="../../../../icons/tank.bmp" />
 			<unit-requirements />
@@ -183,6 +193,7 @@
 			<produce-skill value="produce_skill"/>
 			<produced-unit name="apollo_gunship"/>
 		</command>
+
 <!-- 
 		<command>
 			<type value="produce"/>

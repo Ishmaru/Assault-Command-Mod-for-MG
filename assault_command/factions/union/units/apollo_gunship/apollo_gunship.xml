@@ -7,10 +7,10 @@
 	<parameters>
 		<size value="3"/>
 		<height value="3"/>
-		<max-hp value="200" regeneration="0"/>
+		<max-hp value="300" regeneration="0"/>
 		<max-ep value="36" regeneration="1"/>
 		<armor value="0"/>	
-		<armor-type value="armor_heavy"/>				
+		<armor-type value="armor_medium"/>				
 		<sight value="15"/>
 		<time value="30"/>	
 		<multi-selection value="true"/>	
@@ -30,7 +30,7 @@
 		</unit-requirements>
 		<upgrade-requirements/>
 		<resource-requirements>
-			<resource name="oil" amount="1000"/>				
+			<resource name="oil" amount="1200"/>				
 		</resource-requirements>
 		<resources-stored/>
 		<image path="../../../../icons/viper.bmp"/>
@@ -67,7 +67,7 @@
 			<type value="move"/>
 			<name value="move_skill"/>		
 			<ep-cost value="0"/>
-			<speed value="650"/>
+			<speed value="550"/>
 			<anim-speed value="30"/>
 			<animation path="plane/specturerun.g3d"/>       
 			<particles value="true">
