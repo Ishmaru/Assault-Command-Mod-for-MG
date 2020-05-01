@@ -16,9 +16,9 @@
 		<multi-selection value="true"/>	
 		<cellmap value="false"/>
 		<levels>
-			<level name="rookie" kills="4"/>
-			<level name="experienced" kills="8"/>
-			<level name="veteran" kills="16"/>
+			<level name="rookie" kills="6"/>
+			<level name="experienced" kills="12"/>
+			<level name="veteran" kills="24"/>
 		</levels>
 		<fields>
 			<field value="air"/>

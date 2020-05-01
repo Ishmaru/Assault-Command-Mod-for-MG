@@ -176,6 +176,16 @@
 
 		<command>
 			<type value="produce"/>
+			<name value="produce_sol_gunship" />
+			<image path="../../../../icons/viper.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="sol_gunship"/>
+		</command>
+
+		<command>
+			<type value="produce"/>
 			<name value="produce_raptor_v_t_o_l" />
 			<image path="../../../../icons/stingray.bmp" />
 			<unit-requirements />
