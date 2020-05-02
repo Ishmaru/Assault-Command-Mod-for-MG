@@ -45,6 +45,24 @@
             <resource name="oil" amount-value="50" />
         </resources-death>
 	</parameters>
+	<attack-boosts>
+		<attack-boost name="target_designator">
+			<allow-multiple-boosts value="false" />
+			<radius value="6" />
+			<target value="ally"/>
+			<max-hp value="0"/>
+			<max-ep value="0"/>
+			<sight value="0" />
+			<attack-strenght value="1"/>
+			<attack-range value="1" />
+			<armor value="0" />
+			<move-speed value="0"/>
+			<production-speed value="0" />
+				<particles value="false"/>
+			<!-- 		<affected-particle-file path="re.xml"/>
+				</particles> -->
+		</attack-boost>
+	</attack-boosts>
 
 	<!-- *** skills *** -->
 
@@ -58,6 +76,7 @@
 			<anim-speed value="10"/>
 			<animation path="ifv/ifvstand.g3d"/>
 			<sound enabled="false"/>
+			<attack-boost name="target_designator" />
 		</skill>
 		
 		<skill>
@@ -67,43 +86,40 @@
 			<speed value="600"/>
 			<anim-speed value="125"/>
 			<animation path="ifv/ifvrun.g3d"/>       <particles value="true">
-         <particle-file path="dust.xml"/>
+        	<particle-file path="dust.xml"/>
 			</particles>
 			<sound enabled="false">
 			</sound>
+			<attack-boost name="target_designator" />
 		</skill>
 
 
 		<skill>
 			<type value="attack"/>
-			<name value="attack_skill"/>		
+			<name value="target_skill"/>		
 			<ep-cost value="0"/>
-			<speed value="100"/>
-			<anim-speed value="100"/>
-			<animation path="ifv/ifvshoot.g3d"/>
+			<speed value="60"/>
+			<anim-speed value="60"/>
+			<animation path="ifv/ifvlaser.g3d"/>
 			<particles value="true" start-time="0.1" end-time="0.75">
-				<particle-file path="gun_muzzle.xml"/>
-				<particle-file path="grunt_mflash.xml"/>
 			</particles>
-			<sound enabled="true" start-time="0.20">
-				<sound-file path="/sounds/shoot.wav"/>
-
-			</sound>
-			<attack-strenght value="2"/>
-			<attack-var value="2"/>
-			<attack-range value="6"/>
-			<attack-type value="hmg"/>
-			<attack-start-time value="0.60"/>
+			<sound enabled="true" start-time="0.20"></sound>
+			<attack-strenght value="0"/>
+			<attack-var value="0"/>
+			<attack-range value="7"/>
+			<attack-type value="na"/>
+			<attack-start-time value="0.10"/>
 			<attack-fields>
 				<field value="land"/>
 				<field value="air"/>
 			</attack-fields>
 			<projectile value="false"/>
-			<splash value="true">
-				<radius value="0"/>
+			<splash value="false"/>
+<!-- 				<radius value="0"/>
 				<damage-all value="true"/>
 				<particle value="true" path="gun_hit.xml"/>
-			</splash>
+			</splash> -->
+			<attack-boost name="target_designator" />
 		</skill>
 		
 		<skill>
@@ -126,15 +142,7 @@
 			</shake>
 		</skill>
 
-		<skill>												
-			<type value="morph"/>											
-			<name value="morph"/>											
-			<ep-cost value="0"/>											
-			<speed value="100"/>											
-			<anim-speed value="30"/>
-			<animation path="ifv/ifvstand.g3d"/>
-			<sound enabled="false"/>								
-		</skill>
+
 
 	</skills>
 
@@ -162,12 +170,12 @@
 
 		<command>
 			<type value="attack"/>
-			<name value="attack"/>
-			<image path="../../../../icons/bullet.bmp"/>
+			<name value="target"/>
+			<image path="../../../../icons/range.bmp"/>
 			<unit-requirements/>
 			<upgrade-requirements/>
 			<move-skill value="move_skill"/>
-			<attack-skill value="attack_skill"/>
+			<attack-skill value="target_skill"/>
 		</command>	
 
 		<command>
@@ -177,20 +185,19 @@
 			<unit-requirements/>
 			<upgrade-requirements/>
 			<stop-skill value="stop_skill"/>
-			<attack-skill value="attack_skill"/>
+			<attack-skill value="target_skill"/>
 		</command>
 
-		<command>												
-			<type value="morph"/>											
-			<name value="upgrade_to_support_recon"/>										
-			<image path="../../../../icons/recon.bmp"/>	
-			<unit-requirements/>											
-			<upgrade-requirements>
-			</upgrade-requirements>						
-			<morph-skill value="morph"/>										
-			<morph-unit name= "support_recon"/>									
-			<discount value="0"/>											
-		</command>
+<!-- 		<command>
+			<type value="produce"/>
+			<name value="e_m_p_burst"/>
+			<image path="../../../../icons/emp.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="e_m_p"/>
+		</command>	 -->
+
 		
 	</commands>
 </unit>
