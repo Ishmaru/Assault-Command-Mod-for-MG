@@ -1,0 +1,20 @@
+<?xml version="1.0" standalone="yes"?>
+<unit-particle-system>
+        <size value="1.2" />
+        <emission-rate value="0.2" />
+    <radius value="0.1"/>
+    <offset x="0" y="0.1" z="0"/> 
+	<color red="1.0" green="0.9" blue="0.2" alpha=".7" />
+	<color-no-energy red="1.0" green="0.5" blue="0.0" alpha="0.0" />
+        <texture value="true" path="../command_h_q/images/m_flash.bmp" luminance="true" />
+    <direction x="0" y="0" z="0"/>
+    <relative value="false"/>
+    <fixed value="true"/>
+        <model value="false"/>
+    <primitive value="quad"/>
+        <size-no-energy value="2" />
+        <speed value="0.0" />
+    <gravity value="0.0"/>
+        <energy-max value="7" />
+        <energy-var value="0" />
+</unit-particle-system>

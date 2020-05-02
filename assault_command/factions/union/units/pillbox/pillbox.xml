@@ -1,0 +1,151 @@
+<?xml version="1.0" standalone="no"?>
+
+<unit>
+
+	<!-- *** parameters *** -->
+
+	<parameters>
+		<count-in-victory-conditions value="false"/>
+		<size value="2"/>
+		<height value="2"/>
+		<max-hp value="150" regeneration="0"/>
+		<max-ep value="10" regeneration="1"/>
+		<armor value="0"/>	
+		<armor-type value="armor_heavy"/>				
+		<sight value="10"/>
+		<time value="30"/>	
+		<multi-selection value="false"/>	
+		<cellmap value="false"/>
+		<levels>
+		</levels>
+		<fields>
+			<field value="land"/>
+		</fields>	
+		<properties/>
+		<light enabled="false"/>
+		<unit-requirements>
+		</unit-requirements>
+		<upgrade-requirements/>
+		<resource-requirements>
+			<resource name="oil" amount="300"/>				
+		</resource-requirements>
+		<resources-stored/>
+		<image path="../../../../icons/sentry.bmp"/>
+		<image-cancel path="../../../../icons/stop.bmp"/>
+		<meeting-point value="false"/>
+		<selection-sounds enabled="true">
+		</selection-sounds>
+		<command-sounds enabled="true">
+		</command-sounds>
+		<resources-death>
+            <resource name="oil" amount-value="100" />
+        </resources-death>
+	</parameters>
+
+
+	<!-- *** skills *** -->
+
+	<skills>
+	
+		<skill>
+			<type value="stop"/>
+			<name value="stop_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="300"/>
+			<anim-speed value="30"/>
+			<animation path="bunker/bunker.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+
+
+        <skill>
+			<type value="be_built"/>
+			<name value="be_built_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="0"/>
+			<anim-speed value="0"/>
+			<animation path="bunker/bunkerbuilt.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="attack"/>
+			<name value="attack_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="150"/>
+			<anim-speed value="150"/>
+			<animation path="bunker/bunker.g3d"/>
+			<particles value="true">
+				<particle-file path="pillbox_shoot.xml">
+					<shape value="conical">
+						<angle value="90"/>
+					</shape>
+					<radius value="0.8"/>
+					<min-radius value="0.8"/>
+					<direction x="0" y="0.1" z="0"/>
+					<offset x="0" y="0.1" z="0"/>
+				</particle-file>
+			</particles>
+			<sound enabled="true" start-time="0">
+				<sound-file path="sound/shoot.wav"/>
+			</sound>
+			<attack-strenght value="2"/>
+			<attack-var value="2"/>
+			<attack-range value="10"/>
+			<attack-type value="hmg"/>
+			<attack-start-time value="0.3"/>
+			<attack-fields>
+				<field value="land"/>
+				<field value="air"/>
+			</attack-fields>
+			<projectile value="false"/>
+			<splash value="false"/>
+		</skill>
+
+		<skill>
+			<type value="die"/>
+			<name value="die_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="300"/>
+			<anim-speed value="60"/>
+			<animation path="bunker/bunkerdie.g3d"/>    <particles value="true">
+         <particle-file path="smoke.xml"/>	<particle-file path="expl_small.xml"/>
+			</particles>
+			<sound enabled="true" start-time="0">
+				<sound-file path="sound/small_expl.wav"/>
+			</sound>			
+			<fade value="false"/>
+			<shake enabled="true" intensity="300" duration="70" start-time="0.0">
+				<self enabled="true" visible="true" in-camera-view="false" camera-distance-affected="true"/>
+				<team enabled="true" visible="true" in-camera-view="false" camera-distance-affected="true"/>
+				<enemy enabled="true" visible="true" in-camera-view="false" camera-distance-affected="true"/>
+			</shake>
+		</skill>
+
+	</skills>
+
+	<!-- *** commands *** -->
+	
+	<commands>
+
+		<command>
+			<type value="attack_stopped"/>
+			<name value="on"/>
+			<image path="../../../../icons/bullet.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+			<attack-skill value="attack_skill"/>
+		</command>
+
+		<command>
+			<type value= "stop"/>
+			<name value="off"/>
+			<image path="../../../../icons/stop.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+		</command>
+
+	</commands>
+</unit>

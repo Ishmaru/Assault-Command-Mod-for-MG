@@ -261,6 +261,9 @@
 				<unit name="command_h_q"/>
 				<unit name="recon"/>
 				<unit name="jager_tank"/>
+				<unit name="support_recon"/>
+				<unit name="pillbox"/>
+				<unit name="supply_truck"/>
 <!-- 				<unit name="battle_lab"/>
 				<unit name="mobile_base"/>
 				<unit name="sentry_gun"/>
@@ -285,6 +288,7 @@
 			<move-skill value="move_skill"/>
 			<build-skill value="build_skill"/>
 			<buildings>	
+				<building name="pillbox"/>
 <!-- 				<building name="sentry_gun"/>
 				<building name="energy_cannon"/> -->
 			</buildings>
