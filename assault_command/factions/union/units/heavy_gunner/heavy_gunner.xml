@@ -264,19 +264,9 @@
 				<unit name="support_recon"/>
 				<unit name="pillbox"/>
 				<unit name="supply_truck"/>
+				<unit name="warehouse"/>
 <!-- 				<unit name="battle_lab"/>
-				<unit name="mobile_base"/>
-				<unit name="sentry_gun"/>
-				<unit name="energy_cannon"/>
-				<unit name="motorcycle"/>
-				<unit name="spartan_i_f_v"/>
-				<unit name="recon"/>
-				<unit name="stalker"/>
-				<unit name="sabre_tank"/>
-				<unit name="cobra_m_r_l_s"/>
-				<unit name="scorpion_assault"/>
-				<unit name="scorpion_siege"/>
-				<unit name="prototype_tank"/>	 -->					
+ -->					
 			</repaired-units>		
 		</command>
 
@@ -290,8 +280,7 @@
 			<build-skill value="build_skill"/>
 			<buildings>	
 				<building name="pillbox"/>
-<!-- 				<building name="sentry_gun"/>
-				<building name="energy_cannon"/> -->
+				<building name="warehouse"/>
 			</buildings>
 			<start-sound enabled="false"/>
 			<built-sound enabled="true">							

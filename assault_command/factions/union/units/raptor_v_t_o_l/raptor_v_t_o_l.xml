@@ -7,7 +7,7 @@
 	<parameters>
 		<size value="2"/>
 		<height value="3"/>
-		<max-hp value="100" regeneration="0"/>
+		<max-hp value="150" regeneration="0"/>
 		<max-ep value="6" regeneration="1"/>
 		<armor value="0"/>	
 		<armor-type value="armor_medium"/>				
@@ -129,10 +129,10 @@
 				<particle-file path="dust.xml"/>
 			</particles>
 			<sound enabled="true" start-time="0.25">
-				<sound-file path="/sounds/missle_.wav"/>
+				<sound-file path="/sounds/bomb.wav"/>
 			</sound>
 			<sound enabled="true" start-time="0.75">
-				<sound-file path="/sounds/missle_.wav"/>
+				<sound-file path="/sounds/bomb.wav"/>
 			</sound>
 			<attack-strenght value="4"/>
 			<attack-var value="3"/>

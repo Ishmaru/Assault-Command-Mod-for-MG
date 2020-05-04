@@ -1,0 +1,98 @@
+<?xml version="1.0" standalone="no" ?>
+<unit>
+	<!-- *** parameters *** -->
+	<parameters>
+		<count-in-victory-conditions value="false"/>
+		<size value="3" />
+		<height value="2" />
+		<max-hp value="500" regeneration="0"/>
+		<max-ep value="0" />
+		<armor value="0" />
+		<armor-type value="building"/>
+		<sight value="10" />
+		<time value="30" />
+		<multi-selection value="true"/>
+		<uniform-selection value="true"/>
+		<cellmap value="false"/>
+		<levels/>
+		<fields>
+			<field value="land" />
+		</fields>
+		<properties>
+			<property value="burnable"/>
+		</properties>
+		<light enabled="false" />
+		<unit-requirements>
+		</unit-requirements>
+		<upgrade-requirements />
+		<resource-requirements>
+			<resource name="oil" amount="300" />
+		</resource-requirements>
+		<resources-stored>
+			<resource name="oil" amount="300"/>
+		</resources-stored>
+		<image path="../../../../icons/hq.bmp"/>
+		<image-cancel path="../../../../icons/stop.bmp"/>
+		<meeting-point value="true" image-path="../../../../icons/meet.bmp"/>
+		<selection-sounds enabled="true">
+		</selection-sounds>
+		<command-sounds enabled="true">
+		</command-sounds>
+		<resources-death>
+            <resource name="oil" amount-value="150" />
+        </resources-death>
+	</parameters>
+
+	<!-- *** skills *** -->
+	<skills>
+		<!-- *** skill 0 *** -->
+		<skill>
+			<type value="stop"/>
+			<name value="stop_skill"/>
+			<ep-cost value="0" />
+			<speed value="50" />
+			<anim-speed value="100" />
+			<animation path="warehouse/supplystash.g3d" />
+			<sound enabled="false" />
+		</skill>
+
+		<!-- *** skill 1 *** -->
+		<skill>
+			<type value="be_built" />
+			<name value="be_built_skill"/>
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="warehouse/supplystashbuild.g3d" />
+			<sound enabled="false" />
+		</skill>
+
+
+		<!-- *** skill 4 *** -->
+		<skill>
+			<type value="die" />
+			<name value="die_skill"/>
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="30" />
+			<animation path="warehouse/supplystashdie.g3d" />    <particles value="true">
+         <particle-file path="smoke.xml"/>
+			</particles>
+			<sound enabled="true" start-time="0">
+				<sound-file path="../command_h_q/sounds/tech_building_fall4.wav"/>
+			</sound>
+			<fade value="false"/>
+			<shake enabled="true" intensity="300" duration="75" start-time="0.0">
+				<self enabled="true" visible="true" in-camera-view="false" camera-distance-affected="true"/>
+				<team enabled="true" visible="true" in-camera-view="false" camera-distance-affected="true"/>
+				<enemy enabled="true" visible="true" in-camera-view="false" camera-distance-affected="true"/>
+			</shake>
+		</skill>
+
+	</skills>
+
+	<!-- *** commands *** -->
+	<commands>
+
+	</commands>
+</unit>

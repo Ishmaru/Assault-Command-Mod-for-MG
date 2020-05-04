@@ -106,7 +106,7 @@
 			<sound enabled="true" start-time="0.20"></sound>
 			<attack-strenght value="0"/>
 			<attack-var value="0"/>
-			<attack-range value="7"/>
+			<attack-range value="10"/>
 			<attack-type value="na"/>
 			<attack-start-time value="0.10"/>
 			<attack-fields>

@@ -87,11 +87,8 @@
 			<particles value="true">
 				<particle-file path="dust.xml"/>
 			</particles>
-			<sound enabled="true" start-time="0.25">
-				<sound-file path="/sounds/missle_.wav"/>
-			</sound>
-			<sound enabled="true" start-time="0.75">
-				<sound-file path="/sounds/missle_.wav"/>
+			<sound enabled="true" start-time="0.15">
+				<sound-file path="/sounds/shoot.wav"/>
 			</sound>
 			<attack-strenght value="4"/>
 			<attack-var value="3"/>
