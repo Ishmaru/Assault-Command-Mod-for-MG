@@ -31,7 +31,7 @@
 		</unit-requirements>
 		<upgrade-requirements/>
 		<resource-requirements>
-			<resource name="oil" amount="600"/>				
+			<resource name="oil" amount="800"/>				
 		</resource-requirements>
 		<resources-stored/>
 		<image path="../../../../icons/mrls.bmp"/>

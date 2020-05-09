@@ -137,7 +137,7 @@
 		<command>
 			<type value="produce"/>
 			<name value="recruit_grunt" />
-			<image path="../../../../icons/grunt.bmp" />
+			<image path="../../../../icons/grunt3.bmp" />
 			<unit-requirements />
 			<upgrade-requirements />
 			<produce-skill value="produce_skill"/>
@@ -147,7 +147,7 @@
 		<command>
 			<type value="produce"/>
 			<name value="produce_recon" />
-			<image path="../../../../icons/recon.bmp" />
+			<image path="../../../../icons/recon3.bmp" />
 			<unit-requirements />
 			<upgrade-requirements />
 			<produce-skill value="produce_skill"/>
@@ -157,7 +157,7 @@
 		<command>
 			<type value="produce"/>
 			<name value="produce_supply_truck" />
-			<image path="../../../../icons/transport.bmp" />
+			<image path="../../../../icons/truck.bmp" />
 			<unit-requirements />
 			<upgrade-requirements />
 			<produce-skill value="produce_skill"/>
@@ -167,7 +167,7 @@
 		<command>
 			<type value="produce"/>
 			<name value="produce_jager_tank" />
-			<image path="../../../../icons/tank.bmp" />
+			<image path="../../../../icons/jager.bmp" />
 			<unit-requirements />
 			<upgrade-requirements />
 			<produce-skill value="produce_skill"/>
@@ -177,7 +177,7 @@
 		<command>
 			<type value="produce"/>
 			<name value="produce_sol_gunship" />
-			<image path="../../../../icons/viper.bmp" />
+			<image path="../../../../icons/sol.bmp" />
 			<unit-requirements />
 			<upgrade-requirements />
 			<produce-skill value="produce_skill"/>
@@ -187,7 +187,7 @@
 		<command>
 			<type value="produce"/>
 			<name value="produce_raptor_v_t_o_l" />
-			<image path="../../../../icons/stingray.bmp" />
+			<image path="../../../../icons/vtol.bmp" />
 			<unit-requirements />
 			<upgrade-requirements />
 			<produce-skill value="produce_skill"/>
@@ -197,7 +197,7 @@
 		<command>
 			<type value="produce"/>
 			<name value="produce_apollo_gunship" />
-			<image path="../../../../icons/stingray.bmp" />
+			<image path="../../../../icons/apollo.bmp" />
 			<unit-requirements />
 			<upgrade-requirements />
 			<produce-skill value="produce_skill"/>

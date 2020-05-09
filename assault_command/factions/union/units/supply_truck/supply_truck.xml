@@ -26,10 +26,10 @@
 		</unit-requirements>
 		<upgrade-requirements/>
 		<resource-requirements>	
-					<resource name="oil" amount="300" />			
+					<resource name="oil" amount="350" />			
 		</resource-requirements>
 		<resources-stored/>
-		<image path="../../../../icons/transport.bmp"/>
+		<image path="../../../../icons/truck.bmp"/>
 		<image-cancel path="../../../../icons/stop.bmp"/>
 		<meeting-point value="false"/>
 		<selection-sounds enabled="true">

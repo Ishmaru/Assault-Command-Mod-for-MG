@@ -29,7 +29,7 @@
 		</unit-requirements>
 		<upgrade-requirements/>
 		<resource-requirements>	
-					<resource name="oil" amount="100" />			
+					<resource name="oil" amount="150" />			
 		</resource-requirements>
 		<resources-stored/>
 		<image path="../../../../icons/rgrunt.bmp"/>

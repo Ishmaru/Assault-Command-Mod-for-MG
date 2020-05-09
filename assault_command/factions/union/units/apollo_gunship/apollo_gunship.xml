@@ -33,7 +33,7 @@
 			<resource name="oil" amount="1200"/>				
 		</resource-requirements>
 		<resources-stored/>
-		<image path="../../../../icons/viper.bmp"/>
+		<image path="../../../../icons/apollo.bmp"/>
 		<image-cancel path="../../../../icons/stop.bmp"/>
 		<meeting-point value="false"/>
 		<selection-sounds enabled="true">

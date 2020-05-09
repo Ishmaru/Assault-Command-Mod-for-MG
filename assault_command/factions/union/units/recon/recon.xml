@@ -34,7 +34,7 @@
 			<resource name="oil" amount="200"/>				
 		</resource-requirements>
 		<resources-stored/>
-		<image path="../../../../icons/recon.bmp"/>
+		<image path="../../../../icons/recon3.bmp"/>
 		<image-cancel path="../../../../icons/stop.bmp"/>
 		<meeting-point value="false"/>
 		<selection-sounds enabled="true">
@@ -183,7 +183,7 @@
 		<command>												
 			<type value="morph"/>											
 			<name value="upgrade_to_support_recon"/>										
-			<image path="../../../../icons/recon.bmp"/>	
+			<image path="../../../../icons/support.bmp"/>	
 			<unit-requirements/>											
 			<upgrade-requirements>
 			</upgrade-requirements>						

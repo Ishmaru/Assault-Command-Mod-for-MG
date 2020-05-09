@@ -31,7 +31,7 @@
 		</unit-requirements>
 		<upgrade-requirements/>
 		<resource-requirements>
-			<resource name="oil" amount="350"/>				
+			<resource name="oil" amount="400"/>				
 		</resource-requirements>
 		<resources-stored/>
 		<image path="../../../../icons/stalker.bmp"/>
@@ -222,7 +222,7 @@
 			<unit-requirements/>											
 			<upgrade-requirements>
 			</upgrade-requirements>		
-			<ignore-resource-requirements value="true" />					
+			<!-- <ignore-resource-requirements value="true" />					 -->
 			<morph-skill value="morph"/>										
 			<morph-unit name= "transport_heli_stalker"/>									
 			<discount value="0"/>											

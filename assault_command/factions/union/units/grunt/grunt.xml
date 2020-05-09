@@ -32,7 +32,7 @@
 					<resource name="oil" amount="50" />			
 		</resource-requirements>
 		<resources-stored/>
-		<image path="../../../../icons/grunt.bmp"/>
+		<image path="../../../../icons/grunt3.bmp"/>
 		<image-cancel path="../../../../icons/stop.bmp"/>
 		<meeting-point value="false"/>
 		<selection-sounds enabled="true">
@@ -290,7 +290,7 @@
 		<command>												
 			<type value="morph"/>											
 			<name value="promote_to_heavy_gunner"/>										
-			<image path="../../../../icons/blackops.bmp"/>	
+			<image path="../../../../icons/gunner.bmp"/>	
 			<unit-requirements/>											
 			<upgrade-requirements>
 			</upgrade-requirements>						
