@@ -35,7 +35,7 @@
 		<resources-stored>
 			<resource name="oil" amount="2000"/>
 		</resources-stored>
-		<image path="../../../../icons/lab.bmp"/>
+		<image path="../../../../icons/lab3.bmp"/>
 		<image-cancel path="../../../../icons/stop.bmp"/>
 		<meeting-point value="false"/>
 		<selection-sounds enabled="true">

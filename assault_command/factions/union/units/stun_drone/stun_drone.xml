@@ -1,0 +1,224 @@
+<?xml version="1.0" standalone="no"?>
+
+<unit>
+
+	<!-- *** parameters *** -->
+
+	<parameters>
+		<size value="2"/>
+		<height value="3"/>
+		<max-hp value="50" regeneration="0"/>
+		<max-ep value="4" regeneration="1"/>
+		<armor value="0"/>	
+		<armor-type value="armor_medium"/>				
+		<sight value="15"/>
+		<time value="8"/>	
+		<multi-selection value="true"/>	
+		<cellmap value="false"/>
+		<levels>
+		</levels>
+		<fields>
+			<field value="air"/>
+		</fields>	
+		<properties>	
+		</properties>
+		<light enabled="false"/>
+		<unit-requirements>
+		</unit-requirements>
+		<upgrade-requirements/>
+		<resource-requirements>
+			<resource name="oil" amount="350"/>				
+		</resource-requirements>
+		<resources-stored/>
+		<image path="../../../../icons/stun_drone.bmp"/>
+		<image-cancel path="../../../../icons/stop.bmp"/>
+		<meeting-point value="false"/>
+		<selection-sounds enabled="true">
+		</selection-sounds>
+		<command-sounds enabled="true">
+		</command-sounds>
+		<resources-death>
+            <resource name="oil" amount-value="50" />
+        </resources-death>
+	</parameters>
+	<attack-boosts>
+		<attack-boost name="stun">
+			<allow-multiple-boosts value="false" />
+			<radius value="4" />
+			<target value="foe"/>
+			<max-hp value="0" />
+			<max-ep value="-90" value-percent-multiplier="true"/>
+			<sight value="0" />
+			<attack-strenght value="-90" value-percent-multiplier="true"/>
+			<attack-range value="-100" value-percent-multiplier="true"/>
+			<armor value="0" />
+			<move-speed value="-100" value-percent-multiplier="true"/>
+			<production-speed value="-50" value-percent-multiplier="true"/>
+				<particles value="true">
+					<affected-particle-file path="slow.xml"/>
+				</particles>
+		</attack-boost>
+	</attack-boosts>
+
+	<!-- *** skills *** -->
+
+	<skills>
+	
+		<skill>
+			<type value="stop"/>
+			<name value="stop_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="500"/>
+			<anim-speed value="100"/>
+			<animation path="stundrone/stundrone.g3d"/>
+			<particles value="true" start-time="0.1" end-time="0.75">
+				<particle-file path="dust.xml"/>
+			</particles>
+			<sound enabled="false"/>
+		</skill>
+		
+		<skill>
+			<type value="stop"/>
+			<name value="stop_activated_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="500"/>
+			<anim-speed value="100"/>
+			<animation path="stundrone/stundrone.g3d"/>
+			<particles value="true">
+				<particle-file path="dust.xml"/>
+				<particle-file path="slow_beam.xml"/>
+			</particles>
+			<sound enabled="true" start-time="0">
+				<sound-file path="sounds/stun.wav"/>
+			</sound>
+			<attack-boost name="stun" />
+		</skill>
+
+		<skill>
+			<type value="move"/>
+			<name value="move_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="450"/>
+			<anim-speed value="100"/>
+			<animation path="stundrone/stundrone.g3d"/>     
+			<particles value="true">
+				<particle-file path="dust.xml"/>
+			</particles>
+			<sound enabled="false">
+			</sound>
+		</skill>
+
+		<skill>
+			<type value="move"/>
+			<name value="move_activated_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="450"/>
+			<anim-speed value="100"/>
+			<animation path="stundrone/stundrone.g3d"/>      
+			<particles value="true">
+				<particle-file path="dust.xml"/>
+				<particle-file path="slow_beam.xml"/>
+			</particles>
+			<sound enabled="true" start-time="0">
+				<sound-file path="sounds/stun.wav"/>
+			</sound>
+			<attack-boost name="stun" />
+		</skill>
+
+		<skill>
+			<type value="attack"/>
+			<name value="attack_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="150"/>
+			<anim-speed value="150"/>
+			<animation path="stundrone/stundrone.g3d"/>
+			<particles value="true">
+				<particle-file path="dust.xml"/>
+				<particle-file path="slow_beam.xml"/>
+			</particles>
+			<sound enabled="true" start-time="0">
+				<sound-file path="sounds/stun.wav"/>
+			</sound>
+			<attack-strenght value="0"/>
+			<attack-var value="0"/>
+			<attack-range value="2"/>
+			<attack-type value="na"/>
+			<attack-start-time value="0.9"/>
+			<attack-fields>
+				<field value="land"/>
+			</attack-fields>
+			<projectile value="false"/>
+			<splash value="false"/>
+			<attack-boost name="stun" />
+		</skill>
+
+
+
+		<skill>
+			<type value="die"/>
+			<name value="die_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="60"/>
+			<anim-speed value="80"/>
+			<animation path="stundrone/stundronedie.g3d"/> 
+			<particles value="true">
+        		 <particle-file path="smoke.xml"/>  
+        		 <particle-file path="expl_small.xml"/>
+			</particles>
+			<sound enabled="true" start-time="0">
+				<sound-file path="sounds/tank_destroy_2.wav"/>
+			</sound>			
+			<fade value="false"/>
+			<shake enabled="true" intensity="200" duration="50" start-time="0.0">
+				<self enabled="true" visible="true" in-camera-view="false" camera-distance-affected="true"/>
+				<team enabled="true" visible="true" in-camera-view="false" camera-distance-affected="true"/>
+				<enemy enabled="true" visible="true" in-camera-view="false" camera-distance-affected="true"/>
+			</shake>
+		</skill>
+
+
+	</skills>
+
+	<!-- *** commands *** -->
+	
+	<commands>
+		
+		<command>
+			<type value= "stop"/>
+			<name value="stop"/>
+			<image path="../../../../icons/stop.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+		</command>
+
+		<command>
+			<type value="move"/>
+			<name value="move"/>
+			<image path="../../../../icons/move.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+		</command>
+
+		<command>
+			<type value="attack"/>
+			<name value="attack"/>
+			<image path="../../../../icons/block.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_activated_skill"/>
+			<attack-skill value="attack_skill"/>
+		</command>	
+
+		<command>
+			<type value="attack_stopped"/>
+			<name value="hold_position"/>
+			<image path="../../../../icons/hold.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_activated_skill"/>
+			<attack-skill value="attack_skill"/>
+		</command>		
+	</commands>
+</unit>

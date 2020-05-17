@@ -46,7 +46,7 @@
 			<allow-multiple-boosts value="true" />
 			<radius value="4" />
 			<target value="ally"/>
-			<max-hp value="0" regeneration="1"/>
+			<max-hp value="0" regeneration="2"/>
 			<max-ep value="0"/>
 			<sight value="0" />
 			<attack-strenght value="0"/>

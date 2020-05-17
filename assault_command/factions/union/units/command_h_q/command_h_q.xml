@@ -36,7 +36,7 @@
 		<resources-stored>
 			<resource name="oil" amount="2000"/>
 		</resources-stored>
-		<image path="../../../../icons/hq.bmp"/>
+		<image path="../../../../icons/hq3.bmp"/>
 		<image-cancel path="../../../../icons/stop.bmp"/>
 		<meeting-point value="true" image-path="../../../../icons/meet.bmp"/>
 		<selection-sounds enabled="true">
@@ -172,6 +172,16 @@
 			<upgrade-requirements />
 			<produce-skill value="produce_skill"/>
 			<produced-unit name="jager_tank"/>
+		</command>
+
+		<command>
+			<type value="produce"/>
+			<name value="produce_stun_drone" />
+			<image path="../../../../icons/stun_drone.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="stun_drone"/>
 		</command>
 
 		<command>
