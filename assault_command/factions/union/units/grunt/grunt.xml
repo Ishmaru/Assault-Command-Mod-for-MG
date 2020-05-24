@@ -263,6 +263,7 @@
 				<unit name="jager_tank"/>
 				<unit name="support_recon"/>
 				<unit name="pillbox"/>
+				<unit name="shield_generator"/>
 				<unit name="supply_truck"/>
 				<unit name="warehouse"/>
 <!-- 				<unit name="battle_lab"/>
@@ -280,6 +281,7 @@
 			<build-skill value="build_skill"/>
 			<buildings>	
 				<building name="pillbox"/>
+				<building name="shield_generator"/>
 				<building name="warehouse"/>
 			</buildings>
 			<start-sound enabled="false"/>

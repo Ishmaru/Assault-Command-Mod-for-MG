@@ -265,6 +265,7 @@
 				<unit name="pillbox"/>
 				<unit name="supply_truck"/>
 				<unit name="warehouse"/>
+				<unit name="shield_generator"/>
 <!-- 				<unit name="battle_lab"/>
  -->					
 			</repaired-units>		
@@ -280,6 +281,7 @@
 			<build-skill value="build_skill"/>
 			<buildings>	
 				<building name="pillbox"/>
+				<building name="shield_generator"/>
 				<building name="warehouse"/>
 			</buildings>
 			<start-sound enabled="false"/>

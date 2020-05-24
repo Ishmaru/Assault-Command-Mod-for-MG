@@ -1,0 +1,32 @@
+<?xml version="1.0" standalone="yes"?>
+<unit-particle-system>
+    	<texture value="true" path="../command_h_q/images/lightning.bmp" luminance="true"/>
+
+	<primitive value="quad"/>
+	<offset x="0" y="1" z="0"/>
+	<direction x="0" y="0" z="0"/>
+	<color red="0.3" green="1.0" blue="0.3" alpha="1" />
+	<color-no-energy red="0.2" green="0.9" blue="0.2" alpha="0.5" />
+    	<radius value="0.1" />
+    	<size value="12" />
+    	<size-no-energy value="12" />
+    	<speed value="0" />
+	<gravity value="0"/>
+    	<emission-rate value="1" />
+    	<energy-max value="30" />
+    	<energy-var value="0" />
+	<relative value="true" />
+    	<fixed value="true" />
+
+<static-particle-count value="1" />
+    	<teamcolorNoEnergy value="false" />
+    	<teamcolorEnergy value="false" />
+
+
+
+	<!--trajectory type="spiral">
+		<speed value="14.0"/>
+		<scale value="1"/>
+		<frequency value="0.5"/>
+	</trajectory-->
+</unit-particle-system>

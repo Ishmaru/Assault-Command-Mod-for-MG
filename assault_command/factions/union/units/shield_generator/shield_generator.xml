@@ -1,0 +1,193 @@
+<?xml version="1.0" standalone="no" ?>
+<unit>
+	<!-- *** parameters *** -->
+	<parameters>
+		<count-in-victory-conditions value="false"/>
+		<size value="2" />
+		<height value="4" />
+		<max-hp value="100" regeneration="0"/>
+		<max-ep value="100" regeneration="1"/>
+		<armor value="0" />
+		<armor-type value="armor_medium"/>	
+		<sight value="10" />
+		<time value="100" />
+		<multi-selection value="false" />
+		<cellmap value="false"/>
+		<levels/>
+		<fields>
+			<field value="land" />
+		</fields>
+		<properties>
+			<property value="burnable"/>
+		</properties>
+		<light enabled="false"/>
+		<unit-requirements/>
+		<upgrade-requirements />
+		<resource-requirements>
+			<resource name="oil" amount="600" />
+		</resource-requirements>
+		<resources-stored/>							
+		<image path="../../../../icons/shield_genenerator.bmp"/>
+		<image-cancel path="../../../../icons/stop.bmp"/>
+		<meeting-point value="false"/>
+		<selection-sounds enabled="true">
+			<!-- <sound path="sounds/tech_click.wav" /> -->
+		</selection-sounds>
+		<command-sounds enabled="true">
+			<!-- <sound path="sounds/tech_click.wav" /> -->
+		</command-sounds>
+		<resources-death>
+            <resource name="oil" amount-value="500" />
+        </resources-death>
+	</parameters>
+	<attack-boosts>
+		<attack-boost name="shield">
+			<allow-multiple-boosts value="true" />
+			<radius value="5"/>
+            	<target value="ally" include-self="true">
+			</target>
+			<max-hp value="0"/>
+			<max-ep value="0"/>
+			<sight value="0"/>
+			<attack-strenght value="0"/>
+			<attack-range value="0"/>
+			<armor value="10"/>
+			<move-speed value="0"/>
+			<production-speed value="0"/>
+			<particles value="true">
+				<affected-particle-file path="shield.xml"/>
+			</particles>
+		</attack-boost>
+	</attack-boosts>
+	<!-- *** skills *** -->
+	<skills>
+		<!-- *** skill 0 *** -->
+		<skill>
+			<type value="stop"/>	
+			<name value="stop_skill"/>
+			<ep-cost value="0" />
+			<speed value="100" />
+			<anim-speed value="100" />
+			<animation path="shield/shieldgeneratorstand.g3d" />
+			<particles value="true">
+			</particles>
+			<sound enabled="false" />
+		</skill>
+		
+		<skill>
+			<type value="stop"/>	
+			<name value="activate_skill"/>
+			<ep-cost value="60" />
+			<speed value="6" />
+			<anim-speed value="6" />
+			<animation path="shield/shieldgeneratoractive.g3d" />
+			<particles value="true">
+				<particle-file path="shield_glow.xml"/>
+				<particle-file path="generator_glow.xml"/>
+				<particle-file path="generator_spark.xml"/>
+				<particle-file path="core_beam.xml"/>
+			</particles>
+			<sound enabled="true" start-time="0">
+				<sound-file path="sounds/shield.ogg"/>
+			</sound>
+			<attack-boost name="shield" />
+		</skill>
+
+
+		<!-- *** skill 1 *** -->
+		<skill>
+			<type value="be_built" />	
+			<name value="be_built_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="1" />
+			<animation path="shield/shieldgeneratorbuild.g3d" />
+			<anim-progress-bound value="true"/>
+			<particles value="false"/>
+			<sound enabled="false" />
+		</skill>	
+		
+		<!-- *** skill 4 *** -->
+		<skill>
+			<type value="die" />	
+			<name value="die_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="70" />
+			<animation path="shield/shieldgeneratordie.g3d" />
+			<particles value="true">
+				<particle-file path="expl_small.xml"/>
+				<particle-file path="smoke.xml"/>
+			</particles>
+			<sound enabled="true" start-time="0">
+				<sound-file path="sounds/small_expl.wav"/>
+			</sound>			
+			<fade value="false"/>
+			<shake enabled="true" intensity="300" duration="70" start-time="0.0">
+				<self enabled="true" visible="true" in-camera-view="false" camera-distance-affected="true"/>
+				<team enabled="true" visible="true" in-camera-view="false" camera-distance-affected="true"/>
+				<enemy enabled="true" visible="true" in-camera-view="false" camera-distance-affected="true"/>
+			</shake>
+		</skill>
+
+		<skill>
+			<type value="attack"/>
+			<name value="attack_skill"/>		
+			<ep-cost value="60"/>
+			<speed value="6"/>
+			<anim-speed value="6"/>
+			<animation path="shield/shieldgeneratoractive.g3d"/>
+			<particles value="true">
+				<particle-file path="shield_glow.xml"/>
+				<particle-file path="generator_glow.xml"/>
+				<particle-file path="core_beam.xml"/>
+			</particles>
+			<sound enabled="true" start-time="0">
+				<sound-file path="sounds/shield.ogg"/>
+			</sound>
+			<attack-strenght value="0"/>
+			<attack-var value="0"/>
+			<attack-range value="10"/>
+			<attack-type value="energy"/>
+			<attack-start-time value="0.1"/>
+			<attack-fields>
+				<field value="land"/>
+			</attack-fields>
+			<projectile value="false"/>
+			<splash value="false"/>
+			<attack-boost name="shield" />
+		</skill>
+
+	</skills>
+	
+	<!-- *** commands *** -->
+	<commands>
+		<command>
+			<type value= "stop"/>
+			<name value="shield_off"/>
+			<image path="../../../../icons/shield_off.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+		</command>
+		<command>
+			<type value="attack_stopped"/>
+			<name value="auto_shield"/>
+			<image path="../../../../icons/shield_on.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+			<attack-skill value="attack_skill"/>
+		</command>
+		<command>
+			<type value= "stop"/>
+			<name value="shield_activate"/>
+			<image path="../../../../icons/shield_now.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="activate_skill"/>
+		</command>
+		
+
+	</commands>
+</unit>
