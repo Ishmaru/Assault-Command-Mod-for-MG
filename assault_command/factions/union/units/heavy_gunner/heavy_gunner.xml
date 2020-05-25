@@ -261,6 +261,7 @@
 				<unit name="command_h_q"/>
 				<unit name="recon"/>
 				<unit name="jager_tank"/>
+				<unit name="mole_tank"/>
 				<unit name="support_recon"/>
 				<unit name="pillbox"/>
 				<unit name="supply_truck"/>

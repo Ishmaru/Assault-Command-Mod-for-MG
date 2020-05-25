@@ -163,7 +163,17 @@
 			<produce-skill value="produce_skill"/>
 			<produced-unit name="supply_truck"/>
 		</command>
-		
+	
+		<command>
+			<type value="produce"/>
+			<name value="produce_mole_tank" />
+			<image path="../../../../icons/mole.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="mole_tank"/>
+		</command>
+
 		<command>
 			<type value="produce"/>
 			<name value="produce_jager_tank" />

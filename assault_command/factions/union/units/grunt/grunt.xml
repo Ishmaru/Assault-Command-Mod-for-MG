@@ -260,6 +260,7 @@
 			<repaired-units>
 				<unit name="command_h_q"/>
 				<unit name="recon"/>
+				<unit name="mole_tank"/>
 				<unit name="jager_tank"/>
 				<unit name="support_recon"/>
 				<unit name="pillbox"/>
