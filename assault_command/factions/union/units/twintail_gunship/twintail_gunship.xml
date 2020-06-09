@@ -5,20 +5,20 @@
 	<!-- *** parameters *** -->
 
 	<parameters>
-		<size value="3"/>
+		<size value="2"/>
 		<height value="3"/>
-		<max-hp value="300" regeneration="0"/>
-		<max-ep value="36" regeneration="1"/>
+		<max-hp value="100" regeneration="0"/>
+		<max-ep value="0" regeneration="0"/>
 		<armor value="0"/>	
 		<armor-type value="armor_medium"/>				
 		<sight value="15"/>
-		<time value="30"/>	
+		<time value="15"/>	
 		<multi-selection value="true"/>	
 		<cellmap value="false"/>
 		<levels>
-			<level name="rookie" kills="6"/>
-			<level name="experienced" kills="12"/>
-			<level name="veteran" kills="24"/>
+			<level name="rookie" kills="4"/>
+			<level name="experienced" kills="8"/>
+			<level name="veteran" kills="16"/>
 		</levels>
 		<fields>
 			<field value="air"/>
@@ -30,10 +30,10 @@
 		</unit-requirements>
 		<upgrade-requirements/>
 		<resource-requirements>
-			<resource name="oil" amount="1600"/>				
+			<resource name="oil" amount="550"/>				
 		</resource-requirements>
 		<resources-stored/>
-		<image path="../../../../icons/apollo.bmp"/>
+		<image path="../../../../icons/twintail.bmp"/>
 		<image-cancel path="../../../../icons/stop.bmp"/>
 		<meeting-point value="false"/>
 		<selection-sounds enabled="true">
@@ -41,7 +41,7 @@
 		<command-sounds enabled="true">
 		</command-sounds>
 		<resources-death>
-            <resource name="oil" amount-value="1000" />
+            <resource name="oil" amount-value="150" />
         </resources-death>
 	</parameters>
 
@@ -55,8 +55,8 @@
 			<name value="stop_skill"/>		
 			<ep-cost value="0"/>
 			<speed value="500"/>
-			<anim-speed value="40"/>
-			<animation path="plane/specturestand.g3d"/>
+			<anim-speed value="100"/>
+			<animation path="twintail/twintailstand.g3d"/>
 			<particles value="true" start-time="0.1" end-time="0.75">
 				<particle-file path="dust.xml"/>
 			</particles>
@@ -68,8 +68,8 @@
 			<name value="move_skill"/>		
 			<ep-cost value="0"/>
 			<speed value="550"/>
-			<anim-speed value="30"/>
-			<animation path="plane/specturerun.g3d"/>       
+			<anim-speed value="100"/>
+			<animation path="twintail/twintailrun.g3d"/>       
 			<particles value="true">
 				<particle-file path="dust.xml"/>
 			</particles>
@@ -79,81 +79,35 @@
 
 		<skill>
 			<type value="attack"/>
-			<name value="missle_skill"/>		
-			<ep-cost value="6"/>
+			<name value="attack_skill"/>		
+			<ep-cost value="0"/>
 			<speed value="100"/>
 			<anim-speed value="100"/>
-			<animation path="plane/spectureshoot.g3d"/>
-			<particles value="true">
-				<particle-file path="dust.xml"/>
+			<animation path="twintail/twintailshoot.g3d"/>
+			<particles value="true" start-time="0.1" end-time="0.75">
 				<particle-file path="gun_muzzle.xml"/>
 				<particle-file path="grunt_mflash.xml"/>
-				<particle-file path="gun_muzzle2.xml"/>
-				<particle-file path="grunt_mflash2.xml"/>
+        		<particle-file path="dust.xml"/>
 			</particles>
-			<sound enabled="true" start-time="0.1">
+			<sound enabled="true" start-time="0.20">
 				<sound-file path="/sounds/shoot.wav"/>
 			</sound>
-			<sound enabled="true" start-time="0.20">
-				<sound-file path="/sounds/missle_.wav"/>
-			</sound>
-			<sound enabled="true" start-time="0.40">
-				<sound-file path="/sounds/missle_.wav"/>
-			</sound>
-			<sound enabled="true" start-time="0.60">
-				<sound-file path="/sounds/missle_.wav"/>
-			</sound>
-			<sound enabled="true" start-time="0.80">
-				<sound-file path="/sounds/missle_.wav"/>
-			</sound>
-			<sound enabled="true" start-time="0.95">
-				<sound-file path="/sounds/missle_.wav"/>
-			</sound>
-			<attack-strenght value="6"/>
-			<attack-var value="5"/>
-			<attack-range value="8"/>
-			<attack-type value="explosive_"/>
-			<attack-start-time value="0.0"/>
+			<attack-strenght value="2"/>
+			<attack-var value="2"/>
+			<attack-range value="5"/>
+			<attack-type value="hmg"/>
+			<attack-start-time value="0.60"/>
 			<attack-fields>
 				<field value="land"/>
+				<field value="air"/>
 			</attack-fields>
-			<projectiles>
-				<projectile attack-start-time="0.01" damage-percentage="5">	
-					<particle value="true" path="particle_proj_mgun.xml"/>
-					<hitsound enabled="false"/>
-				</projectile>
-				<projectile attack-start-time="0.20" damage-percentage="18">	
-					<particle value="true" path="particle_proj1.xml"/>
-					<hitsound enabled="false"/>
-				</projectile>
-				<projectile attack-start-time="0.40" damage-percentage="18">	
-					<particle value="true" path="particle_proj1.xml"/>
-					<hitsound enabled="false"/>
-				</projectile>
-				<projectile attack-start-time="0.55" damage-percentage="5">	
-					<particle value="true" path="particle_proj_mgun.xml"/>
-					<hitsound enabled="false"/>
-				</projectile>
-				<projectile attack-start-time="0.60" damage-percentage="18">	
-					<particle value="true" path="particle_proj2.xml"/>
-					<hitsound enabled="false"/>
-				</projectile>
-				<projectile attack-start-time="0.80" damage-percentage="18">	
-					<particle value="true" path="particle_proj3.xml"/>
-					<hitsound enabled="false"/>
-				</projectile>
-				<projectile attack-start-time="0.95" damage-percentage="18">	
-					<particle value="true" path="particle_proj4.xml"/>
-					<hitsound enabled="false"/>
-				</projectile>
-			</projectiles>
+			<projectile value="false"/>
 			<splash value="true">
 				<radius value="0"/>
 				<damage-all value="true"/>
-				<particle value="true" path="particle_splash.xml"/>
+				<particle value="true" path="gun_hit.xml"/>
 			</splash>
 		</skill>
-
 
 		<skill>
 			<type value="die"/>
@@ -161,7 +115,7 @@
 			<ep-cost value="0"/>
 			<speed value="60"/>
 			<anim-speed value="80"/>
-			<animation path="plane/specturedie.g3d"/>       <particles value="true">
+			<animation path="twintail/twintaildie.g3d"/>       <particles value="true">
          <particle-file path="smoke.xml"/>  <particle-file path="expl_small.xml"/>
 			</particles>
 			<sound enabled="true" start-time="0">
@@ -190,7 +144,6 @@
 			<upgrade-requirements/>
 			<stop-skill value="stop_skill"/>
 		</command>
-
 		<command>
 			<type value="move"/>
 			<name value="move"/>
@@ -199,26 +152,23 @@
 			<upgrade-requirements/>
 			<move-skill value="move_skill"/>
 		</command>
-
 		<command>
 			<type value="attack"/>
 			<name value="attack"/>
-			<image path="../../../../icons/rocket.bmp"/>
+			<image path="../../../../icons/bullet.bmp"/>
 			<unit-requirements/>
 			<upgrade-requirements/>
 			<move-skill value="move_skill"/>
-			<attack-skill value="missle_skill"/>
-		</command>
-
-
+			<attack-skill value="attack_skill"/>
+		</command>		
 		<command>
 			<type value="attack_stopped"/>
-			<name value="hold_position_missle"/>
+			<name value="hold_position_gun"/>
 			<image path="../../../../icons/hold.bmp"/>
 			<unit-requirements/>
 			<upgrade-requirements/>
 			<stop-skill value="stop_skill"/>
-			<attack-skill value="missle_skill"/>
-		</command>		
+			<attack-skill value="attack_skill"/>
+		</command>	
 	</commands>
 </unit>

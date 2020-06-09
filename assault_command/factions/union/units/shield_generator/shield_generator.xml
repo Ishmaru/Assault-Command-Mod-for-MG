@@ -6,7 +6,7 @@
 		<size value="2" />
 		<height value="4" />
 		<max-hp value="100" regeneration="0"/>
-		<max-ep value="100" regeneration="1"/>
+		<max-ep value="50" regeneration="1"/>
 		<armor value="0" />
 		<armor-type value="armor_medium"/>	
 		<sight value="10" />
@@ -77,7 +77,7 @@
 		<skill>
 			<type value="stop"/>	
 			<name value="activate_skill"/>
-			<ep-cost value="60" />
+			<ep-cost value="50" />
 			<speed value="6" />
 			<anim-speed value="6" />
 			<animation path="shield/shieldgeneratoractive.g3d" />
@@ -133,7 +133,7 @@
 		<skill>
 			<type value="attack"/>
 			<name value="attack_skill"/>		
-			<ep-cost value="60"/>
+			<ep-cost value="50"/>
 			<speed value="6"/>
 			<anim-speed value="6"/>
 			<animation path="shield/shieldgeneratoractive.g3d"/>

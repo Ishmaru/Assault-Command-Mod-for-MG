@@ -196,6 +196,16 @@
 
 		<command>
 			<type value="produce"/>
+			<name value="produce_twintail_gunship" />
+			<image path="../../../../icons/twintail.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="twintail_gunship"/>
+		</command>
+
+		<command>
+			<type value="produce"/>
 			<name value="produce_sol_gunship" />
 			<image path="../../../../icons/sol.bmp" />
 			<unit-requirements />

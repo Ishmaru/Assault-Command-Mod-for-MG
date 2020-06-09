@@ -2,13 +2,12 @@
 
 <faction>
 	<starting-resources>
-				<resource name="oil" amount="400"/>
+				<resource name="oil" amount="1000"/>
 	</starting-resources>
 	<starting-units>
 		<unit name="command_h_q" amount="2"/>
 		<unit name="battle_lab" amount="1"/>
 		<unit name="grunt" amount="10"/>
-		<unit name="supply_truck" amount="1"/>
 	</starting-units>	
 	
 	<healthbar>
@@ -20,7 +19,7 @@
 		<warrior-units>
 			<unit name="grunt" minimum="20"/>
 			<unit name="heavy_gunner" minimum="5"/>
-			<unit name="supply_truck" minimum="2"/>
+			<unit name="supply_truck" minimum="1"/>
 			<unit name="jager_tank" minimum="1"/>
 			<unit name="sol_gunship" minimum="1"/>
 		</warrior-units>

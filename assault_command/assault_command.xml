@@ -9,6 +9,8 @@
 <attack-type name="explosive"/>
 <attack-type name="explosive_"/>
 <attack-type name="energy"/>
+<attack-type name="mult"/>
+<attack-type name="na"/>
 	</attack-types>
 	
 	<armor-types>
@@ -63,5 +65,19 @@
 <damage-multiplier attack="energy" armor="armor_heavy" value="50.0"/>
 <damage-multiplier attack="energy" armor="armor_titan" value="20.0"/>
 <damage-multiplier attack="energy" armor="building" value="10.0"/>
+
+<damage-multiplier attack="na" armor="infantry" value="0.0"/>
+<damage-multiplier attack="na" armor="armor_light" value="0.0"/>
+<damage-multiplier attack="na" armor="armor_medium" value="0.0"/>
+<damage-multiplier attack="na" armor="armor_heavy" value="0.0"/>
+<damage-multiplier attack="na" armor="armor_titan" value="0.0"/>
+<damage-multiplier attack="na" armor="building" value="0.0"/>
+
+<damage-multiplier attack="mult" armor="infantry" value="50.0"/>
+<damage-multiplier attack="mult" armor="armor_light" value="45.0"/>
+<damage-multiplier attack="mult" armor="armor_medium" value="35.0"/>
+<damage-multiplier attack="mult" armor="armor_heavy" value="25.0"/>
+<damage-multiplier attack="mult" armor="armor_titan" value="15.0"/>
+<damage-multiplier attack="mult" armor="building" value="15.0"/>
 	</damage-multipliers>
 </tech-tree>
