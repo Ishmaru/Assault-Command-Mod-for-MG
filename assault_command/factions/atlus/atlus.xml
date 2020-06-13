@@ -2,13 +2,14 @@
 
 <faction>
 	<starting-resources>
-				<resource name="oil" amount="1000"/>
+				<resource name="oil" amount="750"/>
 	</starting-resources>
 	<starting-units>
 		<unit name="command_h_q" amount="2"/>
 		<unit name="battle_lab" amount="1"/>
 		<unit name="mobile_base" amount="1"/>
-		<unit name="grunt" amount="10"/>
+		<unit name="grunt" amount="5"/>
+		<unit name="transport_heli" amount="1"/>
 	</starting-units>	
 	
 	<healthbar>
@@ -18,11 +19,15 @@
 	</healthbar>
 	<ai-behavior>
 		<warrior-units>
-			<unit name="grunt" minimum="20"/>
-			<unit name="railgun_inf" minimum="5"/>
+			<unit name="transport_heli" minimum="2"/>
+			<unit name="grunt" minimum="10"/>
+
+			<!-- <unit name="grunt" minimum="20"/> -->
+<!-- 			<unit name="railgun_inf" minimum="5"/>
 			<unit name="black_ops" minimum="5"/>
-			<unit name="transport_heli" minimum="1"/>
 			<unit name="sabre_tank" minimum="1"/>
+			<unit name="spartan_i_f_v" minimum="2"/>
+			<unit name="transport_heli" minimum="3"/> -->
 <!-- 			<unit name="battle_tank" minimum="2"/>
 			<unit name="i_f_v" minimum="2"/>
 			<unit name="cobra_m_r_l_s" minimum="1"/> -->
@@ -30,7 +35,7 @@
 		</warrior-units>
 		<static-values>
 			<static type-name="MinStaticResourceCount" value="-10"/>
-			<static type-name="MinWorkerAttackersHarvesting" value="6"/>
+			<static type-name="MinWorkerAttackersHarvesting" value="15"/>
 			<static type-name="MinBuildSpacing" value="4"/>
 			<static type-name="MinMinWarriors" value="1"/>
 			<static type-name="MaxMinWarriors" value="2"/>

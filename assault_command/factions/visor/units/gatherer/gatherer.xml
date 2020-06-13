@@ -26,10 +26,10 @@
 		</unit-requirements>
 		<upgrade-requirements/>
 		<resource-requirements>	
-					<resource name="oil" amount="900" />			
+					<resource name="oil" amount="600" />			
 		</resource-requirements>
 		<resources-stored>
-			<resource name="oil" amount="300"/>
+			<resource name="oil" amount="1"/>
 		</resources-stored>
 		<image path="../../../../icons/gatherer.bmp"/>
 		<image-cancel path="../../../../icons/stop.bmp"/>
@@ -39,7 +39,7 @@
 		<command-sounds enabled="true">
 		</command-sounds>
 		<resources-death>
-            <resource name="oil" amount-value="500" />
+            <resource name="oil" amount-value="300" />
         </resources-death>
 	</parameters>
 	<attack-boosts>
@@ -147,7 +147,7 @@
 			<name value="oil_skill"/>		
 			<ep-cost value="0"/>
 			<speed value="350"/>
-			<anim-speed value="100"/>
+			<anim-speed value="150"/>
 			<animation path="transport/transportstand.g3d"/>
 			<particles value="true">
          		<particle-file path="dust.xml"/>
@@ -202,10 +202,10 @@
 			<harvested-resources>
 				<resource name="oil"/>										
 			</harvested-resources>
-			<max-load value="300"/>
+			<max-load value="5"/>
 			<hits-per-unit value="1"/>				
 		</command>
-		<command>
+<!-- 		<command>
 			<type value="produce"/>
 			<name value="deploy_grunt" />
 			<image path="../../../../icons/grunt2.bmp" />
@@ -213,6 +213,6 @@
 			<upgrade-requirements />
 			<produce-skill value="produce_skill"/>
 			<produced-unit name="grunt"/>
-		</command>
+		</command> -->
 	</commands>
 </unit>

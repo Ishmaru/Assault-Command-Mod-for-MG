@@ -123,7 +123,7 @@
 			<type value="harvest"/>
 			<name value="oil_skill"/>		
 			<ep-cost value="0"/>
-			<speed value="350"/>
+			<speed value="150"/>
 			<anim-speed value="100"/>
 			<animation path="truck/truckstand.g3d"/>
 			<particles value="true">

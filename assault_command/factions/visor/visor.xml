@@ -2,12 +2,13 @@
 
 <faction>
 	<starting-resources>
-				<resource name="oil" amount="1000"/>
+				<resource name="oil" amount="750"/>
 	</starting-resources>
 	<starting-units>
 		<unit name="command_h_q" amount="2"/>
 		<unit name="battle_lab" amount="1"/>
-		<unit name="grunt" amount="10"/>
+		<unit name="grunt" amount="5"/>
+		<unit name="gatherer" amount="1"/>
 	</starting-units>	
 	
 	<healthbar>
@@ -17,17 +18,20 @@
 	</healthbar>
 	<ai-behavior>
 		<warrior-units>
-			<unit name="grunt" minimum="20"/>
-			<unit name="rocket_grunt" minimum="5"/>
-			<unit name="guard" minimum="5"/>
-			<unit name="gatherer" minimum="1"/>
+			<unit name="gatherer" minimum="2"/>
+			<unit name="grunt" minimum="10"/>
+			<!-- <unit name="grunt" minimum="20"/> -->
+<!-- 			<unit name="rocket_grunt" minimum="5"/>
+			<unit name="motorcycle" minimum="5"/>
 			<unit name="panther_tank" minimum="1"/>
+			<unit name="dragon_tank" minimum="2"/>
+			<unit name="gatherer" minimum="3"/> -->
 <!-- 			<unit name="goliath_tank" minimum="1"/>
 			<unit name="dragon_tank" minimum="2"/> -->
 		</warrior-units>
 		<static-values>
 			<static type-name="MinStaticResourceCount" value="-10"/>
-			<static type-name="MinWorkerAttackersHarvesting" value="6"/>
+			<static type-name="MinWorkerAttackersHarvesting" value="15"/>
 			<static type-name="MinBuildSpacing" value="4"/>
 			<static type-name="MinMinWarriors" value="1"/>
 			<static type-name="MaxMinWarriors" value="2"/>
