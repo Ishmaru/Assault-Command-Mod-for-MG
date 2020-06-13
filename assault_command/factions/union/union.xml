@@ -5,6 +5,7 @@
 				<resource name="oil" amount="750"/>
 	</starting-resources>
 	<starting-units>
+		<!-- <unit name="credit_storage" amount="1"/> -->
 		<unit name="command_h_q" amount="2"/>
 		<unit name="battle_lab" amount="1"/>
 		<unit name="grunt" amount="5"/>

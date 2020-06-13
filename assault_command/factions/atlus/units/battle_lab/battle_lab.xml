@@ -2,6 +2,7 @@
 <unit>
 	<!-- *** parameters *** -->
 	<parameters>
+		<count-in-victory-conditions value="false"/>
 		<size value="5" />
 		<height value="6" />
 		<max-hp value="3000" regeneration="0"/>
@@ -33,7 +34,7 @@
 			<resource name="oil" amount="2000" />
 		</resource-requirements>
 		<resources-stored>
-			<resource name="oil" amount="2000"/>
+			<resource name="oil" amount="1"/>
 		</resources-stored>
 		<image path="../../../../icons/lab.bmp"/>
 		<image-cancel path="../../../../icons/stop.bmp"/>

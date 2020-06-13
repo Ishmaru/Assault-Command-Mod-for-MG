@@ -4,7 +4,7 @@
 	<parameters>
 		<size value="5" />
 		<height value="6" />
-		<max-hp value="3000" regeneration="0"/>
+		<max-hp value="4000" regeneration="0"/>
 		<max-ep value="0" />
 		<armor value="0" />
 		<armor-type value="building"/>
@@ -34,7 +34,7 @@
 			<resource name="oil" amount="2000" />
 		</resource-requirements>
 		<resources-stored>
-			<resource name="oil" amount="2000"/>
+			<resource name="oil" amount="5000"/>
 		</resources-stored>
 		<image path="../../../../icons/hq3.bmp"/>
 		<image-cancel path="../../../../icons/stop.bmp"/>
