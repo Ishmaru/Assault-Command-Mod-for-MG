@@ -43,6 +43,10 @@
 		<resources-death>
             <resource name="oil" amount-value="400" />
         </resources-death>
+        <tags>
+			<tag value="air" />
+			<tag value="vehicle" />
+   		</tags>
 	</parameters>
 
 
@@ -179,6 +183,15 @@
 			</shake>
 		</skill>
 
+		<skill>
+			<type value="produce"/>
+			<name value="produce_skill"/>	
+			<ep-cost value="0" />
+			<speed value="1000" />
+			<anim-speed value="100" />
+			<animation path="plane/planeshoot.g3d" />
+			<sound enabled="false" />
+		</skill>
 
 	</skills>
 
@@ -225,6 +238,18 @@
 		</command>
 
 		<command>
+			<type value="produce"/>
+			<name value="counter_flare" />
+			<image path="../../../../icons/counter.bmp" />
+			<unit-requirements />
+			<upgrade-requirements>
+				<upgrade name= "counter_flares"/>
+			</upgrade-requirements>
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="flare"/>
+		</command>
+
+		<command>
 			<type value="attack_stopped"/>
 			<name value="hold_position_missle"/>
 			<image path="../../../../icons/hold.bmp"/>
@@ -232,6 +257,7 @@
 			<upgrade-requirements/>
 			<stop-skill value="stop_skill"/>
 			<attack-skill value="missle_skill"/>
-		</command>		
+		</command>	
+		
 	</commands>
 </unit>

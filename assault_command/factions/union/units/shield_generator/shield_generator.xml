@@ -39,6 +39,9 @@
 		<resources-death>
             <resource name="oil" amount-value="500" />
         </resources-death>
+        <tags>
+			<tag value="land" />
+   		</tags>
 	</parameters>
 	<attack-boosts>
 		<attack-boost name="shield">

@@ -39,8 +39,8 @@
 		<command-sounds enabled="true">
 		</command-sounds>
    		<tags>
-		<tag value="land" />
-		<tag value="organic" />
+			<tag value="infantry" />
+			<tag value="land" />
    		</tags>
 	</parameters>
 

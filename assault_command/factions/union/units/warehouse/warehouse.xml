@@ -41,6 +41,9 @@
 		<resources-death>
             <resource name="oil" amount-value="150" />
         </resources-death>
+        <tags>
+			<tag value="land" />
+   		</tags>
 	</parameters>
 
 	<!-- *** skills *** -->

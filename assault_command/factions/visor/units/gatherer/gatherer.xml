@@ -41,6 +41,10 @@
 		<resources-death>
             <resource name="oil" amount-value="300" />
         </resources-death>
+        <tags>
+			<tag value="vehicle" />
+			<tag value="land" />
+   		</tags>
 	</parameters>
 	<attack-boosts>
 <!-- 		<attack-boost name="repair">

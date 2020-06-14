@@ -1,0 +1,79 @@
+<?xml version="1.0" standalone="no" ?>
+<unit>
+	<!-- *** parameters *** -->
+	<parameters>
+		<count-in-victory-conditions value="false"/>
+		<size value="2" />
+		<height value="2" />
+		<max-hp value="20" regeneration="0"/>
+		<max-ep value="0" />
+		<armor value="0" />
+		<armor-type value="armor_light"/>
+		<sight value="0" />
+		<time value="20000" />
+		<multi-selection value="false" />
+		<cellmap value="false"/>
+		<levels/>
+		<fields>
+			<field value="land" />
+		</fields>
+		<properties>
+		</properties>
+		<light enabled="false" />
+		<unit-requirements>
+		</unit-requirements>
+		<upgrade-requirements />
+		<resource-requirements>
+		</resource-requirements>
+		<resources-stored>
+		</resources-stored>
+		<image path="../../../../icons/sell.bmp" />
+		<image-cancel path="../../../../icons/stop.bmp"/>
+		<meeting-point value="false"/>
+		<selection-sounds enabled="true">
+			<sound path="sounds/tech_click.wav" />
+		</selection-sounds>
+		<command-sounds enabled="true">
+			<sound path="sounds/tech_click.wav" />
+		</command-sounds>
+		<resources-death>
+            <resource name="oil" amount-value="1000" />
+        </resources-death>
+	</parameters>
+
+	<!-- *** skills *** -->
+	<skills>
+		<!-- *** skill 0 *** -->
+		<skill>
+			<type value="stop"/>	
+			<name value="stop_skill"/>
+			<ep-cost value="0" />
+			<speed value="50" />
+			<anim-speed value="10" />
+			<animation path="chest/chest.g3d" />
+			<sound enabled="false" />
+		</skill>
+		
+		<!-- *** skill 4 *** -->
+		<skill>
+			<type value="die" />	
+			<name value="die_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="90" />
+			<animation path="chest/chestopen.g3d"/>
+			<sound enabled="true" start-time="0.0">
+				<sound-file path="sounds/chest.ogg"/>
+			</sound>	
+			<particles value="true" start-time="0.50" end-time="0.99">
+			<particle-file path="chest_open.xml"/>
+			</particles>		
+			<fade value="false"/>
+		</skill>
+
+	</skills>
+	
+	<!-- *** commands *** -->
+	<commands>		
+	</commands>
+</unit>

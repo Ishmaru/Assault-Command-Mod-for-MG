@@ -31,7 +31,7 @@
 		</unit-requirements>
 		<upgrade-requirements/>
 		<resource-requirements>
-			<resource name="oil" amount="200"/>				
+			<resource name="oil" amount="100"/>				
 		</resource-requirements>
 		<resources-stored/>
 		<image path="../../../../icons/support.bmp"/>
@@ -44,6 +44,10 @@
 		<resources-death>
             <resource name="oil" amount-value="50" />
         </resources-death>
+        <tags>
+			<tag value="vehicle" />
+			<tag value="land" />
+   		</tags>
 	</parameters>
 	<attack-boosts>
 		<attack-boost name="target_designator">

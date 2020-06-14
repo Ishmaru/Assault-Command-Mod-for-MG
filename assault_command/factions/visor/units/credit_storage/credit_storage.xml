@@ -18,7 +18,7 @@
 		<levels>
 		</levels>
 		<fields>
-			<field value="air"/>
+			<field value="land"/>
 		</fields>	
 		<properties>
 		</properties>
@@ -36,7 +36,9 @@
 		<meeting-point value="false"/>
 		<selection-sounds enabled="false"/>
 		<command-sounds enabled="false"/>
-
+		<tags>
+			<tag value="none" />
+   		</tags>
 	</parameters>
 
 

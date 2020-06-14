@@ -39,7 +39,9 @@
 		</selection-sounds>
 		<command-sounds enabled="true">
 		</command-sounds>
-
+		<tags>
+			<tag value="none" />
+   		</tags>
 	</parameters>
 
 

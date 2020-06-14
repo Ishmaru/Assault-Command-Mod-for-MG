@@ -36,7 +36,9 @@
 		<meeting-point value="false"/>
 		<selection-sounds enabled="false"/>
 		<command-sounds enabled="false"/>
-
+		<tags>
+			<tag value="none" />
+   		</tags>
 	</parameters>
 
 

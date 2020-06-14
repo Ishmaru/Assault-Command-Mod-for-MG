@@ -39,6 +39,10 @@
 		</selection-sounds>
 		<command-sounds enabled="true">
 		</command-sounds>
+		<tags>
+			<tag value="infantry" />
+			<tag value="land" />
+   		</tags>
 	</parameters>
 
 

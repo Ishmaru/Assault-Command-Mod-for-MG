@@ -44,6 +44,11 @@
 		<resources-death>
             <resource name="oil" amount-value="25" />
         </resources-death>
+        <tags>
+			<tag value="vehicle" />
+			<tag value="infantry" />
+			<tag value="land" />
+   		</tags>
 	</parameters>
 
 

@@ -30,7 +30,7 @@
 		</unit-requirements>
 		<upgrade-requirements/>
 		<resource-requirements>
-			<resource name="oil" amount="550"/>				
+			<resource name="oil" amount="450"/>				
 		</resource-requirements>
 		<resources-stored/>
 		<image path="../../../../icons/twintail.bmp"/>
@@ -43,6 +43,10 @@
 		<resources-death>
             <resource name="oil" amount-value="150" />
         </resources-death>
+        <tags>
+			<tag value="air" />
+			<tag value="vehicle" />
+   		</tags>
 	</parameters>
 
 

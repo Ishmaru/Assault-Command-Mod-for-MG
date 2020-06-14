@@ -10,7 +10,7 @@
 		<max-hp value="50" regeneration="0"/>
 		<max-ep value="4" regeneration="1"/>
 		<armor value="0"/>	
-		<armor-type value="armor_medium"/>				
+		<armor-type value="armor_light"/>				
 		<sight value="15"/>
 		<time value="8"/>	
 		<multi-selection value="true"/>	
@@ -40,6 +40,10 @@
 		<resources-death>
             <resource name="oil" amount-value="50" />
         </resources-death>
+        <tags>
+			<tag value="air" />
+			<tag value="vehicle" />
+   		</tags>
 	</parameters>
 	<attack-boosts>
 		<attack-boost name="stun">

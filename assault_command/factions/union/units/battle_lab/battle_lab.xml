@@ -48,6 +48,9 @@
 		<resources-death>
             <resource name="oil" amount-value="1500" />
         </resources-death>
+        <tags>
+			<tag value="land" />
+   		</tags>
 	</parameters>
 	
 	<!-- *** skills *** -->
@@ -129,6 +132,15 @@
 			<upgrade-requirements />			
 			<upgrade-skill value="upgrade_skill"/>			
 			<produced-upgrade name="nose_scanners"/>			
+		</command>
+		<command>				
+			<type value="upgrade"/>			
+			<name value="counter_flares"/>			
+			<image path="../../../../icons/counter.bmp" />			
+			<unit-requirements />			
+			<upgrade-requirements />			
+			<upgrade-skill value="upgrade_skill"/>			
+			<produced-upgrade name="counter_flares"/>			
 		</command>
 		<command>				
 			<type value="upgrade"/>			
