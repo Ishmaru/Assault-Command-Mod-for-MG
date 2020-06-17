@@ -151,6 +151,15 @@
 			<upgrade-skill value="upgrade_skill"/>			
 			<produced-upgrade name="after_burners"/>			
 		</command>
+		<command>				
+			<type value="upgrade"/>			
+			<name value="develope_nano_bots"/>			
+			<image path="../../../../icons/bots.bmp" />			
+			<unit-requirements />			
+			<upgrade-requirements />			
+			<upgrade-skill value="upgrade_skill"/>			
+			<produced-upgrade name="nano_bots"/>			
+		</command>
 <!-- 		<command>				
 			<type value="upgrade"/>			
 			<name value="develope_calibrated_scopes"/>			
