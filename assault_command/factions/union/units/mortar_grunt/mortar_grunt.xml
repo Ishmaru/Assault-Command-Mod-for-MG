@@ -8,11 +8,11 @@
 		<size value="1"/>
 		<height value="2"/>
 		<max-hp value="100" regeneration="1"/>
-		<max-ep value="0" regeneration="0"/>
+		<max-ep value="8" regeneration="1"/>
 		<armor value="0"/>	
 		<armor-type value="infantry"/>				
 		<sight value="10"/>
-		<time value="1"/>	
+		<time value="2"/>	
 		<multi-selection value="true"/>	
 		<cellmap value="false"/>
 		<levels>
@@ -29,17 +29,20 @@
 		</unit-requirements>
 		<upgrade-requirements/>
 		<resource-requirements>	
-					<resource name="oil" amount="50" />			
+					<resource name="oil" amount="150" />			
 		</resource-requirements>
 		<resources-stored/>
-		<image path="../../../../icons/grunt3.bmp"/>
+		<image path="../../../../icons/mortar.bmp"/>
 		<image-cancel path="../../../../icons/stop.bmp"/>
 		<meeting-point value="false"/>
 		<selection-sounds enabled="true">
 		</selection-sounds>
 		<command-sounds enabled="true">
 		</command-sounds>
-		<tags>
+		<resources-death>
+            <resource name="oil" amount-value="25" />
+        </resources-death>
+        <tags>
 			<tag value="infantry" />
 			<tag value="land" />
    		</tags>
@@ -56,10 +59,20 @@
 			<ep-cost value="0"/>
 			<speed value="1000"/>
 			<anim-speed value="15"/>
-			<animation path="troop/troopstand.g3d"/>
+			<animation path="troop/motarstand.g3d"/>
 			<sound enabled="false"/>
 		</skill>
 		
+		<skill>
+			<type value="move"/>
+			<name value="move_motar_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="200"/>
+			<anim-speed value="80"/>
+			<animation path="troop/motarrun.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+
 		<skill>
 			<type value="move"/>
 			<name value="move_skill"/>		
@@ -71,13 +84,35 @@
 		</skill>
 
 		<skill>
-			<type value="move"/>
-			<name value="run_skill"/>		
-			<ep-cost value="0"/>
-			<speed value="300"/>
-			<anim-speed value="175"/>
-			<animation path="troop/trooprun.g3d"/>
-			<sound enabled="false"/>
+			<type value="attack"/>
+			<name value="motar_skill"/>		
+			<ep-cost value="8"/>
+			<speed value="50"/>
+			<anim-speed value="50"/>
+			<animation path="troop/motarshoot.g3d"/>
+			<sound enabled="true" start-time="0.6">
+				<sound-file path="/sounds/mortar.wav"/>
+
+			</sound>
+			<attack-strenght value="2"/>
+			<attack-var value="2"/>
+			<attack-range value="12"/>
+			<attack-type value="explosive"/>
+			<attack-start-time value="0.60"/>
+			<attack-fields>
+				<field value="land"/>
+			</attack-fields>
+			<projectile value="true">
+				<particle value="true" path="particle_proj.xml"/>
+				<sound enabled="true">
+					<sound-file path="sounds/small_expl.wav"/>
+				</sound>
+			</projectile>
+			<splash value="true">
+				<radius value="0"/>
+				<damage-all value="true"/>
+				<particle value="true" path="particle_splash.xml"/>
+			</splash>
 		</skill>
 
 		<skill>
@@ -128,7 +163,7 @@
 			<ep-cost value="0"/>
 			<speed value="105"/>
 			<anim-speed value="90"/>
-			<animation path="/troop/troopstand.g3d"/>
+			<animation path="/troop/motarstand.g3d"/>
 			<sound enabled="false"/>
 		</skill>
 		
@@ -166,6 +201,7 @@
 			<anim-speed value="90"/>
 			<animation path="troop/troopbomb.g3d"/>
 			<sound enabled="false"/>
+
 		</skill>
 
 		<skill>												
@@ -175,6 +211,7 @@
 			<speed value="100"/>											
 			<anim-speed value="60"/>
 			<animation path="troop/troopbomb.g3d"/>
+			<anim-progress-bound value="true"/>	
 			<sound enabled="false"/>								
 		</skill>
 
@@ -213,7 +250,7 @@
 			<image path="../../../../icons/move.bmp"/>
 			<unit-requirements/>
 			<upgrade-requirements/>
-			<move-skill value="move_skill"/>
+			<move-skill value="move_motar_skill"/>
 		</command>
 
 		<command>
@@ -235,7 +272,17 @@
 
 		<command>
 			<type value="attack"/>
-			<name value="attack"/>
+			<name value="motar_attack"/>
+			<image path="../../../../icons/rocket.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_motar_skill"/>
+			<attack-skill value="motar_skill"/>
+		</command>
+
+		<command>
+			<type value="attack"/>
+			<name value="gun_attack"/>
 			<image path="../../../../icons/bullet.bmp"/>
 			<unit-requirements/>
 			<upgrade-requirements/>
@@ -250,7 +297,7 @@
 			<unit-requirements/>
 			<upgrade-requirements/>
 			<stop-skill value="stop_skill"/>
-			<attack-skill value="attack_skill"/>
+			<attack-skill value="motar_skill"/>
 		</command>
 
 		<command>
@@ -294,62 +341,28 @@
 			</built-sound>	
 		</command>
 
-		<command>												
+<!-- 		<command>												
 			<type value="morph"/>											
-			<name value="promote_to_heavy_gunner"/>										
-			<image path="../../../../icons/gunner.bmp"/>	
+			<name value="promote_commando"/>										
+			<image path="../../../../icons/karina.bmp"/>	
 			<unit-requirements/>											
 			<upgrade-requirements>
 			</upgrade-requirements>						
 			<morph-skill value="morph"/>										
-			<morph-unit name= "heavy_gunner"/>									
+			<morph-unit name= "commando"/>									
 			<discount value="0"/>											
-		</command>
-
+		</command> -->	
+		
 		<command>												
 			<type value="morph"/>											
-			<name value="promote_to_mortar_grunt"/>										
-			<image path="../../../../icons/mortar.bmp"/>	
+			<name value="promote_officer"/>										
+			<image path="../../../../icons/officer3.bmp"/>	
 			<unit-requirements/>											
 			<upgrade-requirements>
 			</upgrade-requirements>						
 			<morph-skill value="morph"/>										
-			<morph-unit name= "mortar_grunt"/>									
-			<discount value="0"/>											
-		</command>
-		<!-- 
-		<command>												
-			<type value="morph"/>											
-			<name value="promote_railgun_inf"/>										
-			<image path="../../../../icons/railgun.bmp"/>	
-			<unit-requirements/>											
-			<upgrade-requirements>
-			</upgrade-requirements>						
-			<morph-skill value="morph"/>										
-			<morph-unit name= "railgun_inf"/>									
+			<morph-unit name= "field_officer"/>									
 			<discount value="0"/>											
 		</command>	
-		<command>												
-			<type value="morph"/>											
-			<name value="promote_to_medic"/>										
-			<image path="../../../../icons/medic.bmp"/>	
-			<unit-requirements/>											
-			<upgrade-requirements>
-			</upgrade-requirements>						
-			<morph-skill value="morph"/>										
-			<morph-unit name= "medic"/>									
-			<discount value="0"/>											
-		</command>
-		<command>												
-			<type value="morph"/>											
-			<name value="promote_w_a_s_p"/>										
-			<image path="../../../../icons/wasp.bmp"/>	
-			<unit-requirements/>											
-			<upgrade-requirements>
-			</upgrade-requirements>						
-			<morph-skill value="morph"/>										
-			<morph-unit name= "w_a_s_p"/>									
-			<discount value="0"/>											
-		</command> -->
 	</commands>
 </unit>

@@ -89,7 +89,7 @@
          <particle-file path="gunsmoke.xml"/> <particle-file path="grunt_mflash.xml"/> <particle-file path="dust.xml"/>
 			</particles>
 			<sound enabled="true" start-time="0.4">
-				<sound-file path="/sounds/tank_cannon.wav"/>
+				<sound-file path="/sounds/mortar.wav"/>
 
 			</sound>
 			<attack-strenght value="2"/>
