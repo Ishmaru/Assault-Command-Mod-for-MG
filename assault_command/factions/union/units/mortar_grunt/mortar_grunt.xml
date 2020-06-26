@@ -29,7 +29,7 @@
 		</unit-requirements>
 		<upgrade-requirements/>
 		<resource-requirements>	
-					<resource name="oil" amount="150" />			
+					<resource name="oil" amount="200" />			
 		</resource-requirements>
 		<resources-stored/>
 		<image path="../../../../icons/mortar.bmp"/>
@@ -90,7 +90,10 @@
 			<speed value="50"/>
 			<anim-speed value="50"/>
 			<animation path="troop/motarshoot.g3d"/>
-			<sound enabled="true" start-time="0.6">
+			<particles value="true" start-time="0.50" end-time="0.70">
+				<particle-file path="gunsmoke.xml"/>
+			</particles>
+			<sound enabled="true" start-time="0.50">
 				<sound-file path="/sounds/mortar.wav"/>
 
 			</sound>
