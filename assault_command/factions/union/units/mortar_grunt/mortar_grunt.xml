@@ -29,7 +29,7 @@
 		</unit-requirements>
 		<upgrade-requirements/>
 		<resource-requirements>	
-					<resource name="oil" amount="200" />			
+					<resource name="oil" amount="150" />			
 		</resource-requirements>
 		<resources-stored/>
 		<image path="../../../../icons/mortar.bmp"/>
@@ -99,7 +99,7 @@
 			</sound>
 			<attack-strenght value="2"/>
 			<attack-var value="2"/>
-			<attack-range value="12"/>
+			<attack-range value="10"/>
 			<attack-type value="explosive"/>
 			<attack-start-time value="0.60"/>
 			<attack-fields>
