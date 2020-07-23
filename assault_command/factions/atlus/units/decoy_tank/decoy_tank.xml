@@ -7,7 +7,7 @@
 	<parameters>
 		<size value="2"/>
 		<height value="3"/>
-		<max-hp value="30" regeneration="-1"/>
+		<max-hp value="20" regeneration="-1"/>
 		<max-ep value="4" regeneration="1"/>
 		<count-unit-death-in-stats value="false" />
 		<count-unit-production-in-stats value="false" />
@@ -31,7 +31,7 @@
 		</unit-requirements>
 		<upgrade-requirements/>
 		<resource-requirements>
-			<resource name="oil" amount="25"/>				
+			<resource name="oil" amount="50"/>				
 		</resource-requirements>
 		<resources-stored/>
 		<image path="../../../../icons/decoy.bmp"/>
@@ -80,18 +80,16 @@
 			<name value="attack_skill"/>		
 			<ep-cost value="4"/>
 			<speed value="300"/>
-			<anim-speed value="160"/>
-			<animation path="tank/tankshoot.g3d"/>    <particles value="true">
-         <particle-file path="gunsmoke.xml"/> <particle-file path="grunt_mflash.xml"/> <particle-file path="dust.xml"/>
-			</particles>
+			<anim-speed value="5"/>
+			<animation path="tank/tankstand.g3d"/>
+			<!-- <particles value="true"><particle-file path="gunsmoke.xml"/> <particle-file path="grunt_mflash.xml"/> <particle-file path="dust.xml"/></particles> -->
 			<sound enabled="true" start-time="0.1">
-				<sound-file path="/sounds/tank_cannon.wav"/>
-
+				<!-- <sound-file path="/sounds/tank_cannon.wav"/> -->
 			</sound>
 			<attack-strenght value="0"/>
 			<attack-var value="0"/>
-			<attack-range value="5"/>
-			<attack-type value="bullet"/>
+			<attack-range value="2"/>
+			<attack-type value="na"/>
 			<attack-start-time value="0.3"/>
 			<attack-fields>
 				<field value="land"/>
@@ -111,9 +109,8 @@
 			<ep-cost value="0"/>
 			<speed value="60"/>
 			<anim-speed value="50"/>
-			<animation path="tank/tankdie2.g3d"/>    <particles value="true">
-         <particle-file path="smoke.xml"/> <particle-file path="expl_small.xml"/>
-			</particles>
+			<animation path="tank/tankdie2.g3d"/>
+			<!-- <particles value="true"><particle-file path="smoke.xml"/> <particle-file path="expl_small.xml"/></particles> -->
 			<sound enabled="false"/>			
 			<fade value="false"/>
 		</skill>
