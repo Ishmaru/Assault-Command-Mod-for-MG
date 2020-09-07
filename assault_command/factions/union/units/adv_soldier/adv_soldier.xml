@@ -7,18 +7,18 @@
 	<parameters>
 		<size value="1"/>
 		<height value="2"/>
-		<max-hp value="150" regeneration="1"/>
-		<max-ep value="0"/>
+		<max-hp value="200" regeneration="0"/>
+		<max-ep value="0" regeneration="0"/>
 		<armor value="1"/>	
-		<armor-type value="infantry"/>				
-		<sight value="12"/>
-		<time value="1"/>	
+		<armor-type value="armor_light"/>				
+		<sight value="10"/>
+		<time value="10"/>	
 		<multi-selection value="true"/>	
 		<cellmap value="false"/>
 		<levels>
-			<level name="rookie" kills="2"/>
-			<level name="experienced" kills="4"/>
-			<level name="veteran" kills="8"/>
+			<level name="rookie" kills="3"/>
+			<level name="experienced" kills="6"/>
+			<level name="veteran" kills="12"/>
 		</levels>
 		<fields>
 			<field value="land"/>
@@ -29,10 +29,10 @@
 		</unit-requirements>
 		<upgrade-requirements/>
 		<resource-requirements>	
-					<resource name="oil" amount="100" />			
+					<resource name="oil" amount="350" />			
 		</resource-requirements>
 		<resources-stored/>
-		<image path="../../../../icons/gunner.bmp"/>
+		<image path="../../../../icons/adv_soldier.bmp"/>
 		<image-cancel path="../../../../icons/stop.bmp"/>
 		<meeting-point value="false"/>
 		<selection-sounds enabled="true">
@@ -56,7 +56,7 @@
 			<ep-cost value="0"/>
 			<speed value="1000"/>
 			<anim-speed value="15"/>
-			<animation path="troop/troopstand.g3d"/>
+			<animation path="adv_grunt/robostand.g3d"/>
 			<sound enabled="false"/>
 		</skill>
 		
@@ -64,9 +64,12 @@
 			<type value="move"/>
 			<name value="move_skill"/>		
 			<ep-cost value="0"/>
-			<speed value="230"/>
-			<anim-speed value="130"/>
-			<animation path="troop/trooprun.g3d"/>
+			<speed value="300"/>
+			<anim-speed value="150"/>
+			<animation path="adv_grunt/roborun.g3d"/>
+			<particles value="true">
+				<particle-file path="dust.xml"/>
+			</particles>
 			<sound enabled="false"/>
 		</skill>
 
@@ -74,20 +77,23 @@
 			<type value="move"/>
 			<name value="run_skill"/>		
 			<ep-cost value="0"/>
-			<speed value="300"/>
+			<speed value="450"/>
 			<anim-speed value="175"/>
-			<animation path="troop/trooprun.g3d"/>
+			<animation path="adv_grunt/roborunattack.g3d"/>
+			<particles value="true">
+				<particle-file path="dust.xml"/>
+			</particles>
 			<sound enabled="false"/>
 		</skill>
 
 		<skill>
 			<type value="attack"/>
-			<name value="attack_skill"/>		
+			<name value="gun_skill"/>		
 			<ep-cost value="0"/>
 			<speed value="300"/>
 			<anim-speed value="60"/>
-			<animation path="troop/troopshoot3.g3d"/>
-			<particles value="true" start-time="0.2" end-time="0.75">
+			<animation path="adv_grunt/roboshoot.g3d"/>
+			<particles value="true" start-time="0.3" end-time="0.50">
 				<particle-file path="gun_muzzle.xml"/>
 				<particle-file path="grunt_mflash.xml"/>
 			</particles>
@@ -98,7 +104,7 @@
 			<attack-var value="2"/>
 			<attack-range value="6"/>
 			<attack-type value="hmg"/>
-			<attack-start-time value="0.40"/>
+			<attack-start-time value="0.3"/>
 			<attack-fields>
 				<field value="land"/>
 				<field value="air"/>
@@ -112,15 +118,44 @@
 		</skill>
 
 		<skill>
+			<type value="attack"/>
+			<name value="sword_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="300"/>
+			<anim-speed value="100"/>
+			<animation path="adv_grunt/robosword.g3d"/>
+			<particles value="true" start-time="0.2" end-time="0.3">
+				<particle-file path="sword.xml"/>
+			</particles>
+			<sound enabled="true" start-time="0.1">
+				<sound-file path="/sounds/sword.wav"/>
+			</sound>
+			<attack-strenght value="1"/>
+			<attack-var value="1"/>
+			<attack-range value="3"/>
+			<attack-type value="energy"/>
+			<attack-start-time value="0.2"/>
+			<attack-fields>
+				<field value="land"/>
+			</attack-fields>
+			<projectile value="false"/>
+			<splash value="true">
+				<radius value="0"/>
+				<damage-all value="true"/>
+				<particle value="true" path="sword_hit.xml"/>
+			</splash>
+		</skill>
+
+	<!-- 	<skill>
 			<type value="repair"/>
 			<name value="fix_skill"/>		
 			<ep-cost value="0"/>
 			<speed value="60"/>
 			<anim-speed value="60"/>
-			<animation path="/troop/troopbomb.g3d"/>
+			<animation path="/adv_grunt/roboharvest.g3d"/>
 			<sound enabled="true" start-time="0.5">
 			</sound>
-		</skill>
+		</skill> -->
 
 		<skill>
 			<type value="stop"/>
@@ -128,7 +163,7 @@
 			<ep-cost value="0"/>
 			<speed value="105"/>
 			<anim-speed value="90"/>
-			<animation path="/troop/troopstand.g3d"/>
+			<animation path="/adv_grunt/robostand.g3d"/>
 			<sound enabled="false"/>
 		</skill>
 		
@@ -138,7 +173,7 @@
 			<ep-cost value="0"/>
 			<speed value="270"/>
 			<anim-speed value="150"/>
-			<animation path="/troop/trooprun.g3d"/>
+			<animation path="/adv_grunt/roborun.g3d"/>
 			<sound enabled="false"/>
 		</skill>
 
@@ -148,9 +183,9 @@
 			<ep-cost value="0"/>
 			<speed value="60"/>
 			<anim-speed value="70"/>
-			<animation path="troop/troopdie2.g3d"/>
+			<animation path="adv_grunt/robodie.g3d"/>
 			<particles value="true">
-				<particle-file path="blood.xml"/>
+				<particle-file path="smoke.xml"/>  <particle-file path="expl_small.xml"/>
 			</particles>
 			<sound enabled="true" start-time="0">
 			</sound>			
@@ -164,7 +199,7 @@
 			<ep-cost value="0"/>
 			<speed value="150"/>
 			<anim-speed value="90"/>
-			<animation path="troop/troopbomb.g3d"/>
+			<animation path="adv_grunt/roboharvest.g3d"/>
 			<sound enabled="false"/>
 		</skill>
 
@@ -174,21 +209,21 @@
 			<ep-cost value="0"/>											
 			<speed value="100"/>											
 			<anim-speed value="60"/>
-			<animation path="troop/troopbomb.g3d"/>
+			<animation path="adv_grunt/roboharvest.g3d"/>
 			<sound enabled="false"/>								
 		</skill>
 
-		<skill>
+<!-- 		<skill>
 			<type value="build"/>
 			<name value="build_skill"/>		
 			<ep-cost value="0"/>
 			<speed value="60"/>
 			<anim-speed value="60"/>
-			<animation path="troop/troopbomb.g3d"/>
+			<animation path="adv_grunt/roboharvest.g3d"/>
 			<particles value="false"/>
 			<sound enabled="true" start-time="0.5">
 			</sound>
-		</skill>
+		</skill> -->
 
 	</skills>
 
@@ -229,19 +264,30 @@
 			<harvested-resources>
 				<resource name="oil"/>										
 			</harvested-resources>
-			<max-load value="15"/>
+			<max-load value="40"/>
 			<hits-per-unit value="1"/>				
 		</command>
 
 		<command>
 			<type value="attack"/>
-			<name value="attack"/>
+			<name value="sword"/>
+			<image path="../../../../icons/expl.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="run_skill"/>
+			<attack-skill value="sword_skill"/>
+		</command>
+
+		<command>
+			<type value="attack"/>
+			<name value="gun"/>
 			<image path="../../../../icons/bullet.bmp"/>
 			<unit-requirements/>
 			<upgrade-requirements/>
-			<move-skill value="move_skill"/>
-			<attack-skill value="attack_skill"/>
+			<move-skill value="run_skill"/>
+			<attack-skill value="gun_skill"/>
 		</command>
+
 		
 		<command>
 			<type value="attack_stopped"/>
@@ -250,10 +296,10 @@
 			<unit-requirements/>
 			<upgrade-requirements/>
 			<stop-skill value="stop_skill"/>
-			<attack-skill value="attack_skill"/>
+			<attack-skill value="gun_skill"/>
 		</command>
 
-		<command>
+<!-- 		<command>
 			<type value="repair"/>
 			<name value="repair_tank"/>
 			<image path="../../../../icons/repair.bmp"/>
@@ -266,18 +312,15 @@
 				<unit name="recon"/>
 				<unit name="mole_tank"/>
 				<unit name="jager_tank"/>
-				<unit name="adv_soldier"/>
 				<unit name="support_recon"/>
 				<unit name="pillbox"/>
 				<unit name="shield_generator"/>
 				<unit name="supply_truck"/>
 				<unit name="warehouse"/>
-<!-- 				<unit name="battle_lab"/>
- -->					
 			</repaired-units>		
-		</command>
+		</command> -->
 
-		<command>
+<!-- 		<command>
 			<type value= "build"/>
 			<name value="build_defense"/>
 			<image path="../../../../icons/build.bmp"/>
@@ -293,11 +336,12 @@
 			<start-sound enabled="false"/>
 			<built-sound enabled="true">							
 			</built-sound>	
-		</command>
+		</command> -->
 
+		
 		<command>												
 			<type value="morph"/>											
-			<name value="promote_to_field_officer"/>										
+			<name value="promote_field_officer"/>										
 			<image path="../../../../icons/officer3.bmp"/>	
 			<unit-requirements/>											
 			<upgrade-requirements>
@@ -305,41 +349,7 @@
 			<morph-skill value="morph"/>										
 			<morph-unit name= "field_officer"/>									
 			<discount value="0"/>											
-		</command>
-
-		<!-- 
-		<command>												
-			<type value="morph"/>											
-			<name value="promote_railgun_inf"/>										
-			<image path="../../../../icons/railgun.bmp"/>	
-			<unit-requirements/>											
-			<upgrade-requirements>
-			</upgrade-requirements>						
-			<morph-skill value="morph"/>										
-			<morph-unit name= "railgun_inf"/>									
-			<discount value="0"/>											
 		</command>	
-		<command>												
-			<type value="morph"/>											
-			<name value="promote_to_medic"/>										
-			<image path="../../../../icons/medic.bmp"/>	
-			<unit-requirements/>											
-			<upgrade-requirements>
-			</upgrade-requirements>						
-			<morph-skill value="morph"/>										
-			<morph-unit name= "medic"/>									
-			<discount value="0"/>											
-		</command>
-		<command>												
-			<type value="morph"/>											
-			<name value="promote_w_a_s_p"/>										
-			<image path="../../../../icons/wasp.bmp"/>	
-			<unit-requirements/>											
-			<upgrade-requirements>
-			</upgrade-requirements>						
-			<morph-skill value="morph"/>										
-			<morph-unit name= "w_a_s_p"/>									
-			<discount value="0"/>											
-		</command> -->
+
 	</commands>
 </unit>

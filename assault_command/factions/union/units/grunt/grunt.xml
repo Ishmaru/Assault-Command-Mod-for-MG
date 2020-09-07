@@ -266,6 +266,7 @@
 				<unit name="recon"/>
 				<unit name="mole_tank"/>
 				<unit name="jager_tank"/>
+				<unit name="adv_soldier"/>
 				<unit name="support_recon"/>
 				<unit name="pillbox"/>
 				<unit name="shield_generator"/>
@@ -315,6 +316,18 @@
 			</upgrade-requirements>						
 			<morph-skill value="morph"/>										
 			<morph-unit name= "mortar_grunt"/>									
+			<discount value="0"/>											
+		</command>
+
+		<command>												
+			<type value="morph"/>											
+			<name value="promote_to_adv_soldier"/>										
+			<image path="../../../../icons/adv_soldier.bmp"/>	
+			<unit-requirements/>											
+			<upgrade-requirements>
+			</upgrade-requirements>						
+			<morph-skill value="morph"/>										
+			<morph-unit name= "adv_soldier"/>									
 			<discount value="0"/>											
 		</command>
 		<!-- 

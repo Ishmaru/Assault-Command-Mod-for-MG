@@ -316,6 +316,7 @@
 				<unit name="recon"/>
 				<unit name="mole_tank"/>
 				<unit name="jager_tank"/>
+				<unit name="adv_soldier"/>
 				<unit name="support_recon"/>
 				<unit name="pillbox"/>
 				<unit name="shield_generator"/>
