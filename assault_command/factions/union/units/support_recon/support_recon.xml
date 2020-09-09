@@ -11,7 +11,7 @@
 		<max-ep value="10" regeneration="1"/>
 		<armor value="0"/>	
 		<armor-type value="armor_light"/>				
-		<sight value="15"/>
+		<sight value="25"/>
 		<time value="10"/>	
 		<multi-selection value="true"/>	
 		<cellmap value="false"/>

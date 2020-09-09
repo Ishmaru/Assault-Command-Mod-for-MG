@@ -9,7 +9,7 @@
 		<size value="1"/>
 		<height value="2"/>
 		<max-hp value="100" regeneration="3"/>
-		<max-ep value="20" regeneration="1"/>
+		<max-ep value="25" regeneration="1"/>
 		<armor value="1"/>	
 		<armor-type value="infantry"/>				
 		<sight value="15"/>
@@ -319,6 +319,17 @@
 			</repaired-units>		
 		</command>
 
+
+		<command>
+			<type value="attack"/>
+			<name value="lucky_shot"/>
+			<image path="../../../../icons/snipe.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+			<attack-skill value="lucky_skill"/>
+		</command>
+
 		<command>
 			<type value="attack"/>
 			<name value="attack"/>
@@ -357,16 +368,6 @@
 			<upgrade-requirements />
 			<produce-skill value="produce_skill"/>
 			<produced-unit name="e_m_p"/>
-		</command>
-
-		<command>
-			<type value="attack"/>
-			<name value="lucky_shot"/>
-			<image path="../../../../icons/snipe.bmp"/>
-			<unit-requirements/>
-			<upgrade-requirements/>
-			<move-skill value="move_skill"/>
-			<attack-skill value="lucky_skill"/>
 		</command>
 
 		<command>

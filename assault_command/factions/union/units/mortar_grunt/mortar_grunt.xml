@@ -29,7 +29,7 @@
 		</unit-requirements>
 		<upgrade-requirements/>
 		<resource-requirements>	
-					<resource name="oil" amount="150" />			
+					<resource name="oil" amount="100" />			
 		</resource-requirements>
 		<resources-stored/>
 		<image path="../../../../icons/mortar.bmp"/>
@@ -86,7 +86,7 @@
 		<skill>
 			<type value="attack"/>
 			<name value="motar_skill"/>		
-			<ep-cost value="8"/>
+			<ep-cost value="6"/>
 			<speed value="50"/>
 			<anim-speed value="50"/>
 			<animation path="troop/motarshoot.g3d"/>
