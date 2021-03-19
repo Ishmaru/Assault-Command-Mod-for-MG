@@ -3,12 +3,12 @@
 ### MOD FOR MEGAGLEST
 
 
-### Current version = 2.8
+### Current version = 3.0
 
 ![Screenshot](https://raw.githubusercontent.com/Ishmaru/Assault-Command-Mod-for-MG/master/screen5.png)
 
 
-### Adds a new Techtree (Assault Command) & 2 new factions Atlus (Tan Colored) and Visor (Green Colored)
+### Adds a new Techtree (Assault Command) & 3 new factions Atlus (Tan Colored), Visor (Green Colored), Union (Navy Blue Colored)
 
 Assault Command is a fast paced RTS experience. With some unique features:
 
@@ -16,17 +16,20 @@ Assault Command is a fast paced RTS experience. With some unique features:
 * Most infantry can perform "worker" commands such as building, repairing and harvesting. (Field Officers, and Kestrel are the exception).
 * Standard Grunts are promoted to other classes.
 * Transport Heli's can harvest over long distances.
-* Gatherers can Harvest indefinitely without returning to base.
+* Mole Tanks can travel underground.
+* Shield Generators.
+* Gatherers can Harvest indefinitely without returning to base, and act as a drop off point for resources.
+* Warehouses and be constructed to give a drop off point for resources.
 * Mobile Base, Large transport truck, can deploy Grunts, and act as a drop off point for resources. 
 * High variable damage. Units can do devastating damage or even miss entirely.
 * Fast paced combat. New method to calculate damage gives better random calculations. Units can seem to be able to avoid damage.
-* Unique special abilities, such as smoke grenades, EMP blasts, Decoy Tanks, Paradrop Infantry, Airlift Vehicles, and many more.
+* Unique special abilities, such as smoke grenades, EMP blasts, Decoy Tanks, Paradrop Infantry, Airlift Vehicles, self destructs, and many more.
 
 ### Contents:
 * 1 Techtree	- Assault Command
 * 1 Resource	- Oil
-* 2 Factions	- Assault, Defense
-* 30 + Units
+* 3 Factions	- Atlus, Visor, Union
+* ~90 Units
 * No Tilesets or maps.
 
 ![Screenshot](https://raw.githubusercontent.com/Ishmaru/Assault-Command-Mod-for-MG/master/screen1.png)
@@ -46,6 +49,7 @@ Start Megaglest and select Assault Command from the Techs option (in custom game
 ### Unit Build Tree: (Updated as of v2.8)
 ![alt text](https://raw.githubusercontent.com/Ishmaru/Assault-Command-Mod-for-MG/master/Atlus_Techtree.png "Atlus Build Tree Diagram")
 ![alt text](https://raw.githubusercontent.com/Ishmaru/Assault-Command-Mod-for-MG/master/Visor_Techtree.png "Visor Build Tree Diagram")
+![alt text](https://raw.githubusercontent.com/Ishmaru/Assault-Command-Mod-for-MG/master/Union_Techtree.png "Union Build Tree Diagram")
 
 ### Recomended Tilesets:
 Mediterran, Desert 4, Scrub Land, Birch Forest, Dark Forest

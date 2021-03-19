@@ -1,6 +1,18 @@
 Changelog:
 
 -----------------
+Version 3.0
+-----------------
+Whats Added:
+- New Faction - Union - Airpower focused, limited variety of ground forces. They are dependant on slower means of gathering and building warehouses to add resource drop points. No Commando or superweapon ATM.
+
+Balance changes:
+- Visor Harvestors no longer return to base to process resources, however resouse gathering rate decreased. Infantry can also drop resources to Harvestors.
+- Bunker Crusher stats increased.
+- Changes so there is more consistancy with max resource cap across all factions. +5000 limit per HQ. Additional drop points only grant +1
+- Atlus WASPs lower stats and increast cost.
+
+-----------------
 Version 2.8
 -----------------
 Whats Added:
