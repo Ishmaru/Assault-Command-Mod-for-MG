@@ -36,5 +36,5 @@
 			<static type-name="MaxMinWarriors" value="2"/>
 		</static-values>
 	</ai-behavior>
-	<music value="true" path="soundtrack_s31.ogg"/>
+	<music value="true" path="../atlus/soundtrack.ogg"/>
 </faction>

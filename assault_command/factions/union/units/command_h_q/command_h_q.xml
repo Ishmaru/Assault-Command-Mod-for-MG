@@ -237,6 +237,16 @@
 			<produced-unit name="apollo_gunship"/>
 		</command>
 
+		<command>
+			<type value="produce"/>
+			<name value="recruit_commando" />
+			<image path="../../../../icons/valkyre.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="commando"/>
+		</command>
+
 <!-- 
 		<command>
 			<type value="produce"/>

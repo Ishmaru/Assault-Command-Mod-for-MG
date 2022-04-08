@@ -1,0 +1,20 @@
+<?xml version="1.0" standalone="yes"?>
+<splash-particle-system>
+    	<texture value="true" path="../command_h_q/images/sparkbig.bmp" luminance="true"/>
+    	<model value="false"/>
+	<primitive value="quad"/>
+	<offset x="0" y="0" z="0"/>
+	<color red="1.0" green="0.8" blue="0.6" alpha="1" />
+	<color-no-energy red="1.0" green="0.8" blue="0.6" alpha="0.5" />
+    	<size value="0.8" />
+    	<size-no-energy value="1.2" />
+    	<speed value="6" />
+	<gravity value="0"/>
+    	<emission-rate value="4" />
+    	<energy-max value="6" />
+    	<energy-var value="0" />
+
+	<emission-rate-fade value="1"/>
+	<vertical-spread a="0" b="0"/>
+	<horizontal-spread a="1" b="0"/>
+</splash-particle-system>

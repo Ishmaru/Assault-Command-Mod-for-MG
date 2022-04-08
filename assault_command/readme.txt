@@ -1,4 +1,11 @@
 Changelog:
+-----------------
+Version 3.2
+-----------------
+Whats Added:
+- New Unit - Union Commando - Note: unlike other factions Commando's you dont promote from a previous infantry class, they are full standalone units created directly from your HQ
+- New Background Music by: FylypFimpossible https://fylypfimpossible.newgrounds.com/
+- Union hud is now properly green.
 
 -----------------
 Version 3.0
