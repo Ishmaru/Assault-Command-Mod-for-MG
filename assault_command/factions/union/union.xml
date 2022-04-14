@@ -10,6 +10,7 @@
 		<unit name="battle_lab" amount="1"/>
 		<unit name="grunt" amount="5"/>
 		<unit name="supply_truck" amount="1"/>
+		<!-- <unit name="field_officer" amount="1"/> -->
 	</starting-units>	
 	
 	<healthbar>

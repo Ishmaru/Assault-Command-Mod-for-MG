@@ -282,6 +282,14 @@
 			<produce-skill value="produce_skill"/>
 			<produced-unit name="decoy_tank"/>
 		</command>	
-
+		<command>
+			<type value="produce"/>
+			<name value="airstrike" />
+			<image path="../../../../icons/airstrike.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="airstrike"/>
+		</command>	
 	</commands>
 </unit>

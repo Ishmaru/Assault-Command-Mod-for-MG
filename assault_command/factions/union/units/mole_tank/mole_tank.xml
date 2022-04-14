@@ -120,10 +120,10 @@
 			<particles value="true">
          		<particle-file path="dust.xml"/>
 			</particles>
-			<sound enabled="true" start-time="0.02">
+			<sound enabled="true" start-time="0.45">
 				<sound-file path="/sounds/missle_.wav"/>
 			</sound>
-			<sound enabled="true" start-time="0.12">
+			<sound enabled="true" start-time="0.5">
 				<sound-file path="/sounds/missle_.wav"/>
 			</sound>
 			<attack-strenght value="4"/>

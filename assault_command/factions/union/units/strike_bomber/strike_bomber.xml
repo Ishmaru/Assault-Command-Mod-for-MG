@@ -1,0 +1,137 @@
+<?xml version="1.0" standalone="no"?>
+
+<unit>
+
+	<!-- *** parameters *** -->
+
+	<parameters>
+		<size value="0"/>
+		<height value="2"/>
+		<max-hp value="5" regeneration="-1"/>
+		<max-ep value="0"/>
+		<count-unit-death-in-stats value="false" />
+		<count-unit-production-in-stats value="false" />
+		<count-unit-kill-in-stats value="false" />
+		<armor value="1"/>	
+		<armor-type value="na"/>				
+		<sight value="10"/>
+		<time value="1"/>	
+		<multi-selection value="false"/>	
+		<cellmap value="false"/>
+		<levels>
+		</levels>
+		<fields>
+			<field value="land"/>
+		</fields>	
+		<properties/>
+		<light enabled="false"/>
+		<unit-requirements>
+		</unit-requirements>
+		<upgrade-requirements>
+		</upgrade-requirements>
+		<resource-requirements>	
+		</resource-requirements>
+		<resources-stored/>
+		<image path="../../../../icons/airstrike.bmp"/>
+		<image-cancel path="../../../../icons/stop.bmp"/>
+		<meeting-point value="false"/>
+		<selection-sounds enabled="true">
+		</selection-sounds>
+		<command-sounds enabled="true">
+		</command-sounds>
+		<resources-death>
+        </resources-death>
+	</parameters>
+
+
+	<!-- *** skills *** -->
+
+	<skills>
+	
+		<skill>
+			<type value="stop"/>
+			<name value="stop_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="1000"/>
+			<anim-speed value="15"/>
+			<animation path="strike_bomber/null.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+		
+		<skill>
+			<type value="move"/>
+			<name value="move_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="270"/>
+			<anim-speed value="150"/>
+			<animation path="strike_bomber/null.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="attack"/>
+			<name value="attack_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="20"/>
+			<anim-speed value="20"/>
+			<animation path="strike_bomber/strikebomber1.g3d"/>
+			<sound enabled="true" start-time="0.15">
+				<sound-file path="/sounds/jet2.wav"/>
+				<sound-file path="/sounds/jet1.wav"/>
+			</sound>
+			<attack-strenght value="4"/>
+			<attack-var value="4"/>
+			<attack-range value="10"/>
+			<attack-type value="explosive_"/>
+			<attack-start-time value="0.50"/>
+			<attack-fields>
+				<field value="land"/>
+				<field value="air"/>
+			</attack-fields>
+			<projectile value="false"/>
+			<splash value="true">
+				<radius value="1"/>
+				<damage-all value="true"/>
+				<particle value="true" path="particle_splash.xml"/>
+			</splash>
+			<shake enabled="true" intensity="200" duration="50" start-time="0.40">
+				<self enabled="true" visible="true" in-camera-view="false" camera-distance-affected="true"/>
+				<team enabled="true" visible="true" in-camera-view="false" camera-distance-affected="true"/>
+				<enemy enabled="true" visible="true" in-camera-view="false" camera-distance-affected="true"/>
+			</shake>
+		</skill>
+
+		<skill>
+			<type value="die"/>
+			<name value="die_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="60"/>
+			<anim-speed value="70"/>
+			<animation path="strike_bomber/null.g3d"/>
+			<sound enabled="true" start-time="0">
+			</sound>			
+			<fade value="false"/>
+		</skill>
+	</skills>
+	<commands>
+		<command>
+			<type value="attack"/>
+			<name value="attack"/>
+			<image path="../../../../icons/blank.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+			<attack-skill value="attack_skill"/>
+		</command>		
+		<command>
+			<type value="attack_stopped"/>
+			<name value="hold_position"/>
+			<image path="../../../../icons/blank.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+			<attack-skill value="attack_skill"/>
+		</command>
+
+	</commands>
+</unit>
