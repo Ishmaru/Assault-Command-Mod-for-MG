@@ -263,6 +263,7 @@
 			<repair-skill value="fix_skill"/>
 			<repaired-units>
 				<unit name="command_h_q"/>
+				<unit name="battle_lab"/>
 				<unit name="recon"/>
 				<unit name="mole_tank"/>
 				<unit name="jager_tank"/>
