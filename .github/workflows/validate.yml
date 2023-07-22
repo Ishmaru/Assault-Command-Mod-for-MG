@@ -1,0 +1,51 @@
+name: Validate MegaGlest mod
+
+on:
+  push:
+    branches:
+      - master
+    tags:
+      - v**
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  validate-mod:
+    runs-on: ubuntu-latest
+    env:
+      MOD_NAME: assault_command
+    steps:
+    - uses: actions/checkout@v3
+
+    - if: ${{ github.ref_type == 'tag' }}
+      run: |
+        MOD_VERSION=${{ github.ref_name }}
+        echo "MOD_VERSION=${MOD_VERSION:1}" >> $GITHUB_ENV
+    - uses:  megaglest/gh-action-validate-megaglest-mod@v1
+      with:
+        name: ${{ env.MOD_NAME }}
+        type: tech
+
+    - if: ${{ github.ref_type == 'tag' }}
+      name: Make 7z and sha256sum
+      run: |
+        OUT_FILE="$MOD_NAME-$MOD_VERSION"
+        cd output/$MOD_NAME
+        sudo mv $MOD_NAME.xml "$OUT_FILE".xml
+        cd ..
+        sudo mv "$MOD_NAME" "$OUT_FILE"
+        7z a "$OUT_FILE.7z" "$OUT_FILE"
+        sudo rm -rf "$OUT_FILE"
+        sha256sum "$OUT_FILE.7z" > "$OUT_FILE.7z.sha256sum"
+
+    - if: ${{ github.ref_type == 'tag' }}
+      name: Release Mod
+      uses: ncipollo/release-action@v1
+      with:
+        allowUpdates: True
+        prerelease: False
+        artifacts: "output/${{ env.MOD_NAME }}*.*"
+        token: ${{ secrets.GITHUB_TOKEN }}
+        omitNameDuringUpdate: True
+        omitBodyDuringUpdate: True
